@@ -1,0 +1,14 @@
+*.html
+config.cfg
+*.jpg
+*.ipynb
+*.pkl
+*.csv
+#*.txt
+*.xlsx
+*.xml
+*.twb
+*.twbx
+*.hyper
+*.pptx
+*.exe

@@ -1,24 +1,12 @@
+
 # Imports
 from selenium import webdriver
-import random
 from bs4 import BeautifulSoup
-import lxml
 import pandas as pd
 import os
 import time
 import random
 from datetime import datetime
-
-# Importing urls as dataframe
-urls_df = pd.read_csv('urls.csv')
-
-# Converting to dictionary
-urls = urls_df.set_index('Name')['Href'].to_dict()
-print(urls)
-
-# Instantiating browser instance
-browser = webdriver.Chrome(os.path.join(os.getcwd(), r'chromedriver.exe'))
-
 
 def html_from_javascript(href: str, lower: int=20, upper: int=30):
     """
@@ -53,8 +41,8 @@ def df_from_html(html: str, href_name: str, current_tmstmp: str):
     soup_prettified = str(soup.prettify())
     html_tables = soup.find_all('table')
     df = pd.read_html(str(html_tables))[0]
-    df.insert(0, 'metric_id', href_name)
-    df['collected_tmstmp'] = current_tmstmp
+    df.insert(0, 'Metric ID', href_name)
+    df['Collected Timestamp'] = current_tmstmp
     print("\t<parsed HTML into dataframe>")
     return df, soup_prettified
 
@@ -79,112 +67,62 @@ def save_raw_html(prettified_html, href_name):
 
 
 def get_dict_of_dfs(dict_of_hrefs):
-
+    """
+    Accepts dictionary of names: hrefs and returns a dictionary of DataFrames
+    containing the scraped, parsed, and tabularized data
+    :param dict_of_hrefs: Dictionary of names to hrefs
+    :return: dict
+    """
     dict_of_dfs = {}
     for href_name, href in dict_of_hrefs.items():
+
         print(f"Scraping started for: {href_name}")
-        raw_html, current_tmstmp = \
-            html_from_javascript(href)
+
+        raw_html, current_tmstmp = html_from_javascript(href)
 
         df, prettified_soup = df_from_html(raw_html, href_name, current_tmstmp)
-
         save_raw_html(prettified_soup, href_name)
         dict_of_dfs[href_name] = df
-        time_to_sleep = random.randint(5,15)
+
+        time_to_sleep = random.randint(5, 15)
         time.sleep(time_to_sleep)
         print(f"\t<data collection ended for {href_name} after "
               f"sleeping for {time_to_sleep} seconds>\n")
+
     return dict_of_dfs
 
 
-tester = {'NYH ULSD-Heating Oil':
-          r'https://www.cmegroup.com/trading/energy/refined-products/heating-oil.html'}
+# Importing urls as DataFrame
+urls_df = pd.read_csv('urls.csv')
 
+# Converting to dictionary
+urls = urls_df.set_index('Name')['Href'].to_dict()
+
+# Shuffling dictionary for randomized traversal of the site across deployments
+names = [val for val in urls.keys()]
+random.shuffle(names)
+urls = {k: urls[k] for k in names}
+
+# Instantiating browser instance
+browser = webdriver.Chrome(os.path.join(os.getcwd(), r'chromedriver.exe'))
+
+# Getting dictionary of DataFrames
 energy_dict = get_dict_of_dfs(urls)
-energy_dict = get_dict_of_dfs(tester)
-print(energy_dict.keys())
-print(urls.keys())
 
-
+# Stripping multi-level column index down to a single index
 for k, v in energy_dict.items():
     v.columns = [val[0] for val in v.columns]
+    v.drop(
+        columns=['Options', 'Unnamed: 12_level_0', 'Unnamed: 13_level_0'],
+        inplace=True)
     print(v.columns)
 
-total_cols = []
-for k, v in energy_dict.items():
-    total_cols.append(v.columns)
-    print(v.columns)
-print(total_cols)
-
-for i, _ in enumerate(total_cols):
-    print(total_cols[i] == total_cols [i+1])
-
-energy_dict.keys()
-
-
-
+# Combining into a single DataFrame
 df_total = pd.DataFrame()
 for _, v in energy_dict.items():
     v.drop(v.tail(1).index,inplace=True)
     df_total = df_total.append(v)
-# df_total.shape
+df_total.head()
 
-df_total.rename(columns={'metric_id': 'Metric',
-                 'collected_tmstmp': 'Collected Timestamp'}, inplace=True)
-
-df_total.columns
-
-df_total.drop(
-    columns=['Options', 'Unnamed: 12_level_0', 'Unnamed: 13_level_0'],
-    inplace=True)
-
-df_total.to_csv('Energy-Data Total v1.csv', index=False)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-test_df = pd.DataFrame()
-test_df.insert(0)
-# test_href = urls['WTI']
-# test_href_name = 'WTI'
-# raw_html, href_name, current_tmstmp = \
-#     html_from_javascript(test_href, test_href_name)
-
-# df, prettified_soup = df_from_html(raw_html, href_name, current_tmstmp)
-
-# save_raw_html(prettified_soup, test_href_name)
-
-browser.get(url)
-browser.get(test_other_url)
-
-time.sleep = random.randint(4, 8)
-html = browser.page_source
-# soup = BeautifulSoup(html, 'lxml')
-soup = BeautifulSoup(html, 'html.parser')
-
-print(soup.prettify())
-
-with open(r'C:\Users\GEM7318\Documents\Github\Store-Profitability\sample3'
-           r'.txt', 'w', encoding='utf-8') as f:
-    f.write(str(BeautifulSoup(raw_html, 'html.parser').prettify()))
-
-print(
-
-tables = soup.find_all('table')
-print(tables[0].prettify())
-len(tables)
-
-# df = pd.read_html(str(tables))[0]
-df2 = pd.read_html(str(tables))[0]
-df.head()
-tables[0]
+# Saving locally
+df_total.to_csv('Energy-Data Total v2.csv', index=False)

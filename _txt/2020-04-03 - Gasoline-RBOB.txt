@@ -1,17 +1,19 @@
-<html class="cmePineapple cmeTransform js cme-js cme-svg cme-canvas cme-canvas-text cme-localstorage cme-media-audio cme-media-video cme-css-columns cme-pseudo-elements cme-nth-selector cme-font-face cme-match-media no-flash cme-xml-transform cme-cookies chrome-80 chrome cme-display-large" lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html class="cmePineapple cmeTransform js cme-js cme-svg cme-canvas cme-canvas-text cme-localstorage cme-media-audio cme-media-video cme-css-columns cme-pseudo-elements cme-nth-selector cme-font-face cme-match-media no-flash cme-xml-transform cme-cookies chrome-80 chrome cme-display-xLarge" lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
  <!--<![endif]-->
  <head>
   <script type="application/ld+json">
-   {"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.cmegroup.com/trading/energy/refined-products/rbob-gasoline.html"},"headline":"RBOB Gasoline Futures  Quotes","image":{"@type":"ImageObject","url":"https://www.cmegroup.com/trading/energy/images/bnr-cme-direct-energy-244x100.jpg","width":244,"height":100},"datePublished":"2020-04-03T15:17:12-05:00","author":{"@type":"Organization","name":"CME Group"},"mentions":[{"@type":"FinancialProduct","name":"MAY 2020 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"0.6347","maxValue":"0.7600"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"JUN 2020 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"0.6964","maxValue":"0.8154"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"JUL 2020 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"0.7563","maxValue":"0.8641"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"AUG 2020 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"0.7984","maxValue":"0.9030"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"SEP 2020 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"0.8406","maxValue":"0.9268"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"OCT 2020 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"0.7905","maxValue":"0.8531"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"NOV 2020 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"0.7867","maxValue":"0.8550"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"DEC 2020 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"0.7910","maxValue":"0.8611"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"JAN 2021 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"0.8251","maxValue":"0.8597"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"FEB 2021 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"MAR 2021 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"0.8770","maxValue":"0.8927"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"APR 2021 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"MAY 2021 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"JUN 2021 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"1.0475","maxValue":"1.0820"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"JUL 2021 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"1.0600","maxValue":"1.0600"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"AUG 2021 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"SEP 2021 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"1.0810","maxValue":"1.0820"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"OCT 2021 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"NOV 2021 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"DEC 2021 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"0.9136","maxValue":"0.9570"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"JAN 2022 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"0.9173","maxValue":"0.9173"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"FEB 2022 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"MAR 2022 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"APR 2022 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"MAY 2022 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"JUN 2022 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"JUL 2022 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"AUG 2022 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"SEP 2022 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"OCT 2022 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"NOV 2022 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"DEC 2022 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"JAN 2023 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"FEB 2023 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"MAR 2023 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"APR 2023 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"MAY 2023 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"JUN 2023 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"JUL 2023 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"AUG 2023 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"SEP 2023 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"OCT 2023 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"NOV 2023 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"DEC 2023 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"JAN 2024 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T15:17:12-05:00","dateModified":"2020-04-03T15:17:12-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}}],"publisher":{"@type":"Organization","name":"CME Group","logo":{"@type":"ImageObject","url":"http://www.cmegroup.com/partner-services/images/cme-group-partner-logo.jpg"}},"description":" All market data contained within the CME Group website should be considered as a reference only and should not be used as validation against, nor as a complement to, real-time market data feeds. Settlement prices on instruments without open interest or volume are provided for web users only and are not published on Market Data Platform (MDP). These prices are not based on market activity. "}
+   {"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.cmegroup.com/trading/energy/refined-products/rbob-gasoline.html"},"headline":"RBOB Gasoline Futures  Quotes","image":{"@type":"ImageObject","url":"https://www.cmegroup.com/trading/energy/images/bnr-cme-direct-energy-244x100.jpg","width":244,"height":100},"datePublished":"2020-04-03T16:35:21-05:00","author":{"@type":"Organization","name":"CME Group"},"mentions":[{"@type":"FinancialProduct","name":"MAY 2020 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"0.6347","maxValue":"0.7600"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"JUN 2020 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"0.6964","maxValue":"0.8154"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"JUL 2020 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"0.7563","maxValue":"0.8641"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"AUG 2020 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"0.7984","maxValue":"0.9030"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"SEP 2020 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"0.8406","maxValue":"0.9268"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"OCT 2020 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"0.7905","maxValue":"0.8531"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"NOV 2020 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"0.7867","maxValue":"0.8550"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"DEC 2020 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"0.7910","maxValue":"0.8611"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"JAN 2021 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"0.8251","maxValue":"0.8597"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"FEB 2021 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"MAR 2021 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"0.8770","maxValue":"0.8927"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"APR 2021 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"MAY 2021 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"JUN 2021 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"1.0475","maxValue":"1.0820"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"JUL 2021 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"1.0600","maxValue":"1.0600"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"AUG 2021 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"SEP 2021 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"1.0810","maxValue":"1.0820"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"OCT 2021 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"0.9750","maxValue":"0.9750"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"NOV 2021 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"DEC 2021 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"0.9136","maxValue":"0.9570"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"JAN 2022 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"0.9173","maxValue":"0.9173"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"FEB 2022 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"MAR 2022 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"APR 2022 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"MAY 2022 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"JUN 2022 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"JUL 2022 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"AUG 2022 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"SEP 2022 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"OCT 2022 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"NOV 2022 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"DEC 2022 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"JAN 2023 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"FEB 2023 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"MAR 2023 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"APR 2023 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"MAY 2023 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"JUN 2023 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"JUL 2023 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"AUG 2023 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"SEP 2023 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"OCT 2023 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"NOV 2023 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"DEC 2023 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}},{"@type":"FinancialProduct","name":"JAN 2024 RBOB Gasoline Futures Quotes Globex","description":"Find information for RBOB Gasoline Futures Quotes provided by CME Group. View Quotes","datePublished":"2020-04-03T16:35:21-05:00","dateModified":"2020-04-03T16:35:21-05:00","amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"-","maxValue":"-"},"offers":{"@type":"Offer","offeredBy":"http://www.cmegroup.com/company/history/global-offices.html"}}],"publisher":{"@type":"Organization","name":"CME Group","logo":{"@type":"ImageObject","url":"http://www.cmegroup.com/partner-services/images/cme-group-partner-logo.jpg"}},"description":" All market data contained within the CME Group website should be considered as a reference only and should not be used as validation against, nor as a complement to, real-time market data feeds. Settlement prices on instruments without open interest or volume are provided for web users only and are not published on Market Data Platform (MDP). These prices are not based on market activity. "}
   </script>
   <meta data-jc="82" data-jc-version="r20200401"/>
-  <script async="" src="https://script.crazyegg.com/pages/scripts/0029/8712.js?440540" type="text/javascript">
+  <script async="" src="https://script.crazyegg.com/pages/scripts/0029/8712.js?440542" type="text/javascript">
   </script>
   <script src="https://pi.pardot.com/pd.js" type="text/javascript">
   </script>
   <script async="" src="https://www.google-analytics.com/analytics.js" type="text/javascript">
   </script>
-  <script src="https://m.addthis.com/live/red_lojson/300lo.json?si=5e8799c871cb7e2f&amp;bkl=0&amp;bl=1&amp;pdt=690&amp;sid=5e8799c871cb7e2f&amp;pub=cjoh44&amp;rev=v8.28.3-wp&amp;ln=en&amp;pc=men&amp;cb=0&amp;ab=-&amp;dp=www.cmegroup.com&amp;fp=trading%2Fenergy%2Frefined-products%2Frbob-gasoline.html&amp;fr=&amp;of=0&amp;pd=0&amp;irt=1&amp;vcl=1&amp;md=0&amp;ct=1&amp;tct=0&amp;abt=0&amp;cdn=0&amp;pi=1&amp;rb=0&amp;gen=100&amp;chr=UTF-8&amp;colc=1585945032375&amp;jsl=8193&amp;uvs=5e87991dd2d974fa004&amp;skipb=1&amp;callback=addthis.cbs.jsonp__90500883165251180" type="text/javascript">
+  <script async="" src="https://www.google-analytics.com/gtm/js?id=GTM-N54WCXC&amp;t=gtm2&amp;cid=385695197.1585949608" type="text/javascript">
+  </script>
+  <script src="https://m.addthis.com/live/red_lojson/300lo.json?si=5e87ac18156bdb09&amp;bkl=0&amp;bl=1&amp;pdt=373&amp;sid=5e87ac18156bdb09&amp;pub=cjoh44&amp;rev=v8.28.3-wp&amp;ln=en&amp;pc=men&amp;cb=0&amp;ab=-&amp;dp=www.cmegroup.com&amp;fp=trading%2Fenergy%2Frefined-products%2Frbob-gasoline.html&amp;fr=&amp;of=0&amp;pd=0&amp;irt=1&amp;vcl=1&amp;md=0&amp;ct=1&amp;tct=0&amp;abt=0&amp;cdn=0&amp;pi=1&amp;rb=0&amp;gen=100&amp;chr=UTF-8&amp;colc=1585949721068&amp;jsl=1&amp;uvs=5e87aba7acdb7476003&amp;skipb=1&amp;callback=addthis.cbs.jsonp__83854261303358140" type="text/javascript">
   </script>
   <script src="https://v1.addthisedge.com/live/boost/cjoh44/_ate.track.config_resp" type="text/javascript">
   </script>
@@ -24,8 +26,6 @@
   <style class="bc-style-NJia0b1jx-default" type="text/css">
    .bc-player-NJia0b1jx_default *,.bc-player-NJia0b1jx_default :after,.bc-player-NJia0b1jx_default :before{box-sizing:inherit;font-size:inherit;color:inherit;line-height:inherit}.bc-player-NJia0b1jx_default{width:300px;height:150px;font-size:14px;overflow:hidden}.bc-player-NJia0b1jx_default.vjs-fluid,.bc-player-NJia0b1jx_default.vjs-fluid.vjs-16-9{padding-top:56.25%}.bc-player-NJia0b1jx_default.vjs-fluid.vjs-4-3{padding-top:75%}.bc-player-NJia0b1jx_default.vjs-fill{width:100%;height:100%}.bc-iframe,.bc-iframe body,.bc-player-NJia0b1jx_default,.bc-player-NJia0b1jx_default .vjs-poster{background-color:#151B17}.bc-iframe,.bc-iframe .bc-player-NJia0b1jx_default,.bc-iframe body{margin:0;width:100%;height:100%;overflow:hidden}.bc-player-NJia0b1jx_default.vjs-fullscreen,.bc-player-NJia0b1jx_default.vjs-fullscreen .vjs-tech{width:100%!important;height:100%!important}.bc-player-NJia0b1jx_default .vjs-track-setting select{color:#000;background-color:#fff}.bc-player-NJia0b1jx_default .vjs-chapters-button .vjs-menu-item{text-transform:none}.bc-player-NJia0b1jx_default.vjs-waiting-for-autoplay .vjs-big-play-button{opacity:0}.bc-player-NJia0b1jx_default .vjs-progress-control .vjs-mouse-display{z-index:2}.vjs-error-display{color:#fff;display:none;font-family:Helvetica,Arial,sans serif;font-size:16px;line-height:1.428}.vjs-error .vjs-error-display{display:block;position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.5)}.vjs-error .vjs-error-display .vjs-modal-dialog-content{font-size:14px}.vjs-errors-dialog{text-align:left;border:1px #999 solid;overflow:hidden;position:absolute;top:2%;bottom:2%;left:5%;right:5%;padding-left:1%;padding-right:1%;background:rgba(24,24,24,.8);-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000, endColorstr=#CC000000)"}.vjs-errors-details{margin-top:15px}.vjs-errors-message{border:1px #999 solid;background-color:#2c2c2c;overflow:auto;margin-top:15px;padding:15px}.vjs-errors-ok-button-container{display:block;position:absolute;bottom:15px;left:15px;right:15px;text-align:center}.vjs-errors-ok-button{display:block;margin:0 auto;width:80px;height:36px;background-color:#000;border:1px #999 solid;border-radius:5px;color:#999;font-size:14px;cursor:pointer}.vjs-errors-ok-button:hover{border:1px #FFF solid;color:#CCC}.vjs-errors-content-container{overflow:auto;position:absolute;padding-bottom:15px;top:0;left:15px;right:15px;bottom:61px}.vjs-errors-headline{font-size:14px;font-weight:700;padding-right:3em}.vjs-errors-dialog .vjs-control.vjs-close-button{width:3em;height:3em;top:0}.vjs-errors-flashmessage{float:right;font-size:9px;font-style:italic}.vjs-xs.vjs-error-display{font-size:14px;background-color:#000}.vjs-xs.vjs-error-display .vjs-errors-details,.vjs-xs.vjs-error-display .vjs-errors-message{display:none}.vjs-xs .vjs-errors-content-container{top:0}.vjs-xs .vjs-errors-headline{font-size:16px;font-weight:700}.vjs-xs .vjs-errors-dialog{border:none;top:0;bottom:0;left:0;right:0}.vjs-xs.vjs-errors-flashmessage{display:none}@media (max-width:600px),(max-height:250px){.vjs-error-display{font-size:14px;background-color:#000}.vjs-error-display .vjs-errors-details,.vjs-error-display .vjs-errors-message{display:none}.vjs-error-display .vjs-errors-content-container{top:15px}.vjs-error-display .vjs-errors-headline{font-size:16px;font-weight:700}.vjs-error-display .vjs-errors-dialog{border:none;top:0;bottom:0;left:0;right:0}.vjs-errors-flashmessage{display:none}}.vjs-errors-ref-id{color:rgba(255,255,255,.5);font-size:.75em;margin:.5em 0 0}/*! @name videojs-contextmenu-ui @version 5.1.0 @license Apache-2.0 */.vjs-contextmenu-ui-menu{position:absolute}.vjs-contextmenu-ui-menu .vjs-menu-content{background-color:#2b333f;background-color:rgba(43,51,63,.7);border-radius:.3em;padding:.25em}.vjs-contextmenu-ui-menu .vjs-menu-item{border-radius:.3em;cursor:pointer;margin:0 0 1px;padding:.5em 1em;font-size:1em;line-height:1.2;text-transform:none}.vjs-contextmenu-ui-menu .vjs-menu-item:active,.vjs-contextmenu-ui-menu .vjs-menu-item:hover{background-color:rgba(0,0,0,.5);text-shadow:0 0 1em #fff}.vjs-modal-dialog.vjs-player-info-modal{background:rgba(0,0,0,.9);font-size:10px}.vjs-modal-dialog.vjs-player-info-modal .vjs-modal-dialog-content{overflow:auto}.vjs-modal-dialog.vjs-player-info-modal .vjs-pi-section{float:left;width:49%}.vjs-modal-dialog.vjs-player-info-modal .vjs-pi-section:nth-child(2n+1){float:right}.vjs-modal-dialog.vjs-player-info-modal .vjs-pi-section.vjs-pi-section--source{float:none;clear:both;width:auto}.vjs-modal-dialog.vjs-player-info-modal .vjs-pi-section.vjs-pi-section--source td:first-child{min-width:150px}.vjs-modal-dialog.vjs-player-info-modal table{border-collapse:collapse;margin-bottom:1em;width:100%}.vjs-modal-dialog.vjs-player-info-modal th{font-weight:400;text-align:left}.vjs-modal-dialog.vjs-player-info-modal td{border-bottom:1px solid rgba(255,255,255,.2);opacity:.5}.vjs-modal-dialog.vjs-player-info-modal tr:last-child td{border-bottom:0}.vjs-modal-dialog.vjs-player-info-modal tr:hover td{opacity:1}.bc-player-NJia0b1jx_default .vjs-control-bar{background-color:rgba(0,0,0,.45);color:#fff}.bc-player-NJia0b1jx_default .vjs-control{color:inherit}.bc-player-NJia0b1jx_default .vjs-mouse-display:after,.bc-player-NJia0b1jx_default .vjs-play-progress:after{border-radius:0}.bc-player-NJia0b1jx_default .vjs-menu-button-inline:hover,.bc-player-NJia0b1jx_default.vjs-no-flex .vjs-menu-button-inline{width:8.35em}.bc-player-NJia0b1jx_default .vjs-control:focus:before,.bc-player-NJia0b1jx_default .vjs-control:hover:before{text-shadow:0 0 1em #fff,0 0 1em #fff,0 0 1em #fff}.bc-player-NJia0b1jx_default .vjs-spacer{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-box-flex:1 1 auto;-moz-box-flex:1 1 auto;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto}.bc-player-NJia0b1jx_default .vjs-time-control{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-box-flex:0 1 auto;-moz-box-flex:0 1 auto;-webkit-flex:0 1 auto;-ms-flex:0 1 auto;flex:0 1 auto;width:auto}.bc-player-NJia0b1jx_default .vjs-time-control.vjs-time-divider{width:14px}.bc-player-NJia0b1jx_default .vjs-time-control.vjs-time-divider div{width:100%;text-align:center}.bc-player-NJia0b1jx_default .vjs-time-control.vjs-current-time{margin-left:1em}.bc-player-NJia0b1jx_default .vjs-time-control .vjs-current-time-display,.bc-player-NJia0b1jx_default .vjs-time-control .vjs-duration-display{width:100%}.bc-player-NJia0b1jx_default .vjs-time-control .vjs-current-time-display{text-align:right}.bc-player-NJia0b1jx_default .vjs-time-control .vjs-duration-display{text-align:left}.bc-player-NJia0b1jx_default .vjs-remaining-time{display:none}.bc-player-NJia0b1jx_default.vjs-no-flex .vjs-time-control.vjs-remaining-time{display:none}.bc-player-NJia0b1jx_default.vjs-no-flex .vjs-time-control{display:table-cell;width:4em}.bc-player-NJia0b1jx_default .vjs-play-progress,.bc-player-NJia0b1jx_default .vjs-volume-level{background-color:#d52484}.bc-player-NJia0b1jx_default .vjs-play-progress:before,.bc-player-NJia0b1jx_default .vjs-volume-level:before{display:none}.bc-player-NJia0b1jx_default .vjs-volume-level:after{display:none}.bc-player-NJia0b1jx_default .vjs-progress-control{position:absolute;left:0;right:0;width:100%;height:1.5em;top:-1.5em}.bc-player-NJia0b1jx_default .vjs-progress-control .vjs-load-progress,.bc-player-NJia0b1jx_default .vjs-progress-control .vjs-play-progress,.bc-player-NJia0b1jx_default .vjs-progress-control .vjs-progress-holder{height:100%}.bc-player-NJia0b1jx_default .vjs-progress-control .vjs-progress-holder{margin:0}.bc-player-NJia0b1jx_default .vjs-progress-control:hover{height:1.5em;top:-1.5em}.bc-player-NJia0b1jx_default .vjs-control-bar:not(.vjs-focus-within){-webkit-transition:-webkit-transform .1s ease 0s;-moz-transition:-moz-transform .1s ease 0s;-ms-transition:-ms-transform .1s ease 0s;-o-transition:-o-transform .1s ease 0s;transition:transform .1s ease 0s}.bc-player-NJia0b1jx_default.not-hover.vjs-has-started.vjs-paused.vjs-user-active .vjs-control-bar:not(.vjs-focus-within):not(.vjs-control-bar-visible),.bc-player-NJia0b1jx_default.not-hover.vjs-has-started.vjs-paused.vjs-user-inactive .vjs-control-bar:not(.vjs-focus-within):not(.vjs-control-bar-visible),.bc-player-NJia0b1jx_default.not-hover.vjs-has-started.vjs-playing.vjs-user-active .vjs-control-bar:not(.vjs-focus-within):not(.vjs-control-bar-visible),.bc-player-NJia0b1jx_default.not-hover.vjs-has-started.vjs-playing.vjs-user-inactive .vjs-control-bar:not(.vjs-focus-within):not(.vjs-control-bar-visible),.bc-player-NJia0b1jx_default.vjs-has-started.vjs-paused.vjs-ad-playing.vjs-user-inactive .vjs-control-bar,.bc-player-NJia0b1jx_default.vjs-has-started.vjs-playing.vjs-user-inactive .vjs-control-bar:not(.vjs-focus-within):not(.vjs-control-bar-visible){visibility:visible;opacity:1;-webkit-backface-visibility:hidden;-webkit-transform:translateY(3em);-moz-transform:translateY(3em);-ms-transform:translateY(3em);-o-transform:translateY(3em);transform:translateY(3em);-webkit-transition:-webkit-transform 1s ease 0s;-moz-transition:-moz-transform 1s ease 0s;-ms-transition:-ms-transform 1s ease 0s;-o-transition:-o-transform 1s ease 0s;transition:transform 1s ease 0s}.bc-player-NJia0b1jx_default.not-hover.vjs-has-started.vjs-paused.vjs-user-active .vjs-progress-control,.bc-player-NJia0b1jx_default.not-hover.vjs-has-started.vjs-paused.vjs-user-inactive .vjs-progress-control,.bc-player-NJia0b1jx_default.not-hover.vjs-has-started.vjs-playing.vjs-user-active .vjs-progress-control,.bc-player-NJia0b1jx_default.not-hover.vjs-has-started.vjs-playing.vjs-user-inactive .vjs-progress-control,.bc-player-NJia0b1jx_default.vjs-has-started.vjs-paused.vjs-ad-playing.vjs-user-inactive .vjs-progress-control,.bc-player-NJia0b1jx_default.vjs-has-started.vjs-playing.vjs-user-inactive .vjs-progress-control{height:.3em;top:-.3em;pointer-events:none;-webkit-transition:height 1s,top 1s;-moz-transition:height 1s,top 1s;-ms-transition:height 1s,top 1s;-o-transition:height 1s,top 1s;transition:height 1s,top 1s}.bc-player-NJia0b1jx_default.not-hover.vjs-has-started.vjs-paused.vjs-user-active.vjs-fullscreen .vjs-progress-control,.bc-player-NJia0b1jx_default.not-hover.vjs-has-started.vjs-paused.vjs-user-inactive.vjs-fullscreen .vjs-progress-control,.bc-player-NJia0b1jx_default.not-hover.vjs-has-started.vjs-playing.vjs-user-active.vjs-fullscreen .vjs-progress-control,.bc-player-NJia0b1jx_default.not-hover.vjs-has-started.vjs-playing.vjs-user-inactive.vjs-fullscreen .vjs-progress-control,.bc-player-NJia0b1jx_default.vjs-has-started.vjs-playing.vjs-user-inactive.vjs-fullscreen .vjs-progress-control{opacity:0;-webkit-transition:opacity 1s;-moz-transition:opacity 1s;-ms-transition:opacity 1s;-o-transition:opacity 1s;transition:opacity 1s}.bc-player-NJia0b1jx_default.not-hover.vjs-has-started.vjs-paused.vjs-user-active .vjs-menu,.bc-player-NJia0b1jx_default.not-hover.vjs-has-started.vjs-paused.vjs-user-active .vjs-volume-vertical,.bc-player-NJia0b1jx_default.not-hover.vjs-has-started.vjs-paused.vjs-user-inactive .vjs-menu,.bc-player-NJia0b1jx_default.not-hover.vjs-has-started.vjs-paused.vjs-user-inactive .vjs-volume-vertical,.bc-player-NJia0b1jx_default.not-hover.vjs-has-started.vjs-playing.vjs-user-active .vjs-menu,.bc-player-NJia0b1jx_default.not-hover.vjs-has-started.vjs-playing.vjs-user-active .vjs-volume-vertical,.bc-player-NJia0b1jx_default.not-hover.vjs-has-started.vjs-playing.vjs-user-inactive .vjs-menu,.bc-player-NJia0b1jx_default.not-hover.vjs-has-started.vjs-playing.vjs-user-inactive .vjs-volume-vertical,.bc-player-NJia0b1jx_default.vjs-has-started.vjs-paused.vjs-ad-playing.vjs-user-inactive .vjs-menu,.bc-player-NJia0b1jx_default.vjs-has-started.vjs-paused.vjs-ad-playing.vjs-user-inactive .vjs-volume-vertical,.bc-player-NJia0b1jx_default.vjs-has-started.vjs-playing.vjs-user-inactive .vjs-menu,.bc-player-NJia0b1jx_default.vjs-has-started.vjs-playing.vjs-user-inactive .vjs-volume-vertical{opacity:0;-webkit-transition:opacity 1s;-moz-transition:opacity 1s;-ms-transition:opacity 1s;-o-transition:opacity 1s;transition:opacity 1s}.bc-player-NJia0b1jx_default.not-hover.vjs-has-started.vjs-paused.vjs-user-active .vjs-control-bar-visible .vjs-menu,.bc-player-NJia0b1jx_default.not-hover.vjs-has-started.vjs-paused.vjs-user-inactive .vjs-control-bar-visible .vjs-menu,.bc-player-NJia0b1jx_default.not-hover.vjs-has-started.vjs-playing.vjs-user-active .vjs-control-bar-visible .vjs-menu,.bc-player-NJia0b1jx_default.not-hover.vjs-has-started.vjs-playing.vjs-user-inactive .vjs-control-bar-visible .vjs-menu,.bc-player-NJia0b1jx_default.vjs-has-started.vjs-paused.vjs-ad-playing.vjs-user-inactive .vjs-control-bar-visible .vjs-menu-item,.bc-player-NJia0b1jx_default.vjs-has-started.vjs-playing.vjs-user-inactive .vjs-control-bar-visible .vjs-menu{opacity:1}.bc-player-NJia0b1jx_default.vjs-live .vjs-live-control{margin-left:1em}.bc-player-NJia0b1jx_default.vjs-live .vjs-time-control.vjs-current-time,.bc-player-NJia0b1jx_default.vjs-live .vjs-time-control.vjs-duration,.bc-player-NJia0b1jx_default.vjs-live .vjs-time-control.vjs-time-divider{display:none}.bc-player-NJia0b1jx_default .vjs-big-play-button{top:50%;left:50%;margin-left:-1em;margin-top:-1em;width:2em;height:2em;line-height:2em;border:none;border-radius:50%;font-size:3.5em;background-color:rgba(0,0,0,.45);color:#fff;-webkit-transition:border-color .4s,outline .4s,background-color .4s;-moz-transition:border-color .4s,outline .4s,background-color .4s;-ms-transition:border-color .4s,outline .4s,background-color .4s;-o-transition:border-color .4s,outline .4s,background-color .4s;transition:border-color .4s,outline .4s,background-color .4s}.bc-player-NJia0b1jx_default .vjs-big-play-button:active,.bc-player-NJia0b1jx_default .vjs-big-play-button:focus,.bc-player-NJia0b1jx_default:active .vjs-big-play-button,.bc-player-NJia0b1jx_default:hover .vjs-big-play-button{background-color:#d52484}.bc-player-NJia0b1jx_default .vjs-menu-button-popup .vjs-menu{left:-3em}.bc-player-NJia0b1jx_default .vjs-menu-button-popup .vjs-menu .vjs-menu-content{background-color:transparent;width:12em;left:-1.5em;padding-bottom:.5em}.bc-player-NJia0b1jx_default .vjs-menu-button-popup .vjs-menu .vjs-menu-item,.bc-player-NJia0b1jx_default .vjs-menu-button-popup .vjs-menu .vjs-menu-title{background-color:#151B17;margin:.3em 0;padding:.5em;border-radius:.3em}.bc-player-NJia0b1jx_default .vjs-menu-button-popup .vjs-menu .vjs-menu-item.vjs-selected{background-color:#d52484}.bc-player-NJia0b1jx_default .vjs-menu-button-popup .vjs-menu .vjs-menu-item:active,.bc-player-NJia0b1jx_default .vjs-menu-button-popup .vjs-menu .vjs-menu-item:focus,.bc-player-NJia0b1jx_default .vjs-menu-button-popup .vjs-menu .vjs-menu-item:hover{text-shadow:0 0 1em #fff,0 0 1em #fff,0 0 1em #fff;color:#fff}.bc-player-NJia0b1jx_default.vjs-ad-playing .vjs-mouse-display,.bc-player-NJia0b1jx_default.vjs-ad-playing .vjs-mouse-display:after{display:none}.bc-player-NJia0b1jx_default.vjs-ad-playing.vjs-ad-playing .vjs-progress-control:after{pointer-events:auto;width:100%;height:100%;position:absolute;left:0;bottom:0;content:" ";user-select:none;-ms-user-select:none;-moz-user-select:none;-webkit-user-select:none}.bc-player-NJia0b1jx_default.vjs-no-flex .vjs-spacer{display:table-cell}.bc-player-NJia0b1jx_default.vjs-no-flex .vjs-time-control{display:table-cell;width:4em}.bc-player-NJia0b1jx_default.vjs-no-flex .vjs-remaining-time{display:none}.vjs-mouse.bc-player-NJia0b1jx_default .vjs-control-bar{font-size:10px}.vjs-mouse.bc-player-NJia0b1jx_default .vjs-progress-control{height:.5em;top:-.5em}.vjs-mouse.bc-player-NJia0b1jx_default .vjs-progress-control:hover{height:1.5em;top:-1.5em}.bc-player-NJia0b1jx_default select{width:inherit}.bc-player-NJia0b1jx_default .vjs-big-play-button,.bc-player-NJia0b1jx_default .vjs-control-bar{background-color:rgba(0,0,0,.7)}.bc-iframe .vjs-playlist-sidebar .vjs-playlist-show-hide button:hover,.bc-player-NJia0b1jx_default .vjs-big-play-button:active,.bc-player-NJia0b1jx_default .vjs-big-play-button:focus,.bc-player-NJia0b1jx_default .vjs-menu-button-popup .vjs-menu .vjs-menu-item.vjs-selected,.bc-player-NJia0b1jx_default .vjs-play-progress,.bc-player-NJia0b1jx_default .vjs-volume-level,.bc-player-NJia0b1jx_default:active .vjs-big-play-button,.bc-player-NJia0b1jx_default:hover .vjs-big-play-button{background-color:#0195e7}.vjs-social-overlay{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;letter-spacing:1px}.vjs-social-overlay .vjs-icon-facebook{background-color:#3b5998}.vjs-social-overlay .vjs-icon-gplus{background-color:#d53326}.vjs-social-overlay .vjs-icon-linkedin{background-color:#069}.vjs-social-overlay .vjs-icon-twitter{background-color:#55acee}.vjs-social-overlay .vjs-icon-tumblr{background-color:#29364b}.vjs-social-overlay .vjs-icon-pinterest{background-color:#c10218}.vjs-social-overlay a{color:#fff}.vjs-social-overlay .vjs-social-description,.vjs-social-overlay .vjs-social-title{margin:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.vjs-social-overlay .vjs-social-title{font-size:1.25em;font-weight:700;line-height:1.33333;margin-bottom:.33333em}.vjs-social-overlay .vjs-social-description{font-size:1em;font-weight:400;line-height:1.5;margin-bottom:1em}.vjs-social-overlay .vjs-social-share-links{margin:-.33333em 0 .66667em -.28333em;overflow:auto}.vjs-social-overlay .vjs-social-share-link{border-radius:2px;float:left;font-size:1.16667em;line-height:1.07143;margin:.33571em .28571em;padding:.42857em;text-decoration:none}.vjs-social-overlay .vjs-social-direct-link,.vjs-social-overlay .vjs-social-embed-code,.vjs-social-overlay .vjs-social-start-from{float:left;margin-bottom:.66667em}.vjs-social-overlay .vjs-social-direct-link .vjs-social-label-text,.vjs-social-overlay .vjs-social-embed-code .vjs-social-label-text,.vjs-social-overlay .vjs-social-start-from .vjs-social-label-text{display:block;margin-bottom:.16667em}.vjs-social-overlay .vjs-social-direct-link input,.vjs-social-overlay .vjs-social-embed-code input,.vjs-social-overlay .vjs-social-start-from input{border:0;color:#333;display:block;font-size:1em;padding:.5em .66667em;width:100%}.vjs-social-overlay .vjs-social-direct-link input.vjs-invalid,.vjs-social-overlay .vjs-social-embed-code input.vjs-invalid,.vjs-social-overlay .vjs-social-start-from input.vjs-invalid{background-color:red;color:#fff}.vjs-social-overlay .vjs-social-direct-link{padding-right:24px;width:80%}.vjs-social-overlay .vjs-social-start-from{width:20%}.vjs-social-overlay .vjs-social-embed-code{margin-bottom:.33333em;width:100%}.vjs-social-overlay.vjs-social-as-endscreen .vjs-restart{border:0;cursor:pointer;display:block;font-size:4em;margin:0 auto;outline:0;padding:0}.vjs-social-overlay.vjs-social-as-endscreen .vjs-restart:focus:before,.vjs-social-overlay.vjs-social-as-endscreen .vjs-restart:hover:before{text-shadow:1px -1px 20px #fff,-1px 1px 20px #fff}.vjs-social-overlay.vjs-social-as-endscreen.vjs-social-short-player .vjs-social-description{display:none}.vjs-social-overlay .vjs-control.vjs-close-button{height:4.5em;top:0;width:4.5em}.vjs-social-overlay .vjs-control.vjs-close-button .vjs-icon-placeholder:before{line-height:2.5}.vjs-button.vjs-share-control{cursor:pointer;font-weight:700}.vjs-button.vjs-share-control:hover{text-shadow:0 0 1em rgba(255,255,255,.5),0 0 1em rgba(255,255,255,.5),0 0 1em rgba(255,255,255,.5)}.vjs-dock-shelf .vjs-button.vjs-share-control{position:relative;padding:1em;margin:-1em}.vjs-dock-shelf .vjs-button.vjs-share-control:before{position:relative;vertical-align:top}.vjs-dock-shelf .vjs-button.vjs-share-control span{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;vertical-align:top;text-decoration:underline;margin-left:2px}.vjs-button.vjs-share-control:before{font-family:VideoJS;font-weight:400;font-style:normal;content:"\f10f"}.vjs-v6 .vjs-button.vjs-share-control:before,.vjs-v7 .vjs-button.vjs-share-control:before{content:none}.vjs-v6 .vjs-button.vjs-share-control .vjs-icon-placeholder:before,.vjs-v7 .vjs-button.vjs-share-control .vjs-icon-placeholder:before{font-family:VideoJS;font-weight:400;font-style:normal;content:"\f10f"}.vjs-v6 .vjs-dock-shelf .vjs-button.vjs-share-control:before,.vjs-v7 .vjs-dock-shelf .vjs-button.vjs-share-control:before{content:"\f10f"}.vjs-v6 .vjs-dock-shelf .vjs-button.vjs-share-control .vjs-icon-placeholder:before,.vjs-v7 .vjs-dock-shelf .vjs-button.vjs-share-control .vjs-icon-placeholder:before{content:none}.vjs-layout-tiny:not(.vjs-fullscreen) .vjs-button.vjs-share-control,.vjs-layout-x-small:not(.vjs-fullscreen) .vjs-button.vjs-share-control{display:none}.vjs-layout-small .vjs-social-overlay .vjs-social-direct-link,.vjs-layout-tiny .vjs-social-overlay .vjs-social-direct-link,.vjs-layout-x-small .vjs-social-overlay .vjs-social-direct-link,.vjs-social-small .vjs-social-overlay .vjs-social-direct-link{width:100%;padding-right:0}.vjs-layout-small .vjs-social-overlay .vjs-social-start-from,.vjs-layout-tiny .vjs-social-overlay .vjs-social-start-from,.vjs-layout-x-small .vjs-social-overlay .vjs-social-start-from,.vjs-social-small .vjs-social-overlay .vjs-social-start-from{width:100%}.vjs-layout-small .vjs-social-overlay .vjs-social-embed-code,.vjs-layout-tiny .vjs-social-overlay .vjs-social-embed-code,.vjs-layout-x-small .vjs-social-overlay .vjs-social-embed-code,.vjs-social-small .vjs-social-overlay .vjs-social-embed-code{margin-bottom:2em}.vjs-playlist{padding:0;background-color:#1a1a1a;color:#fff;list-style-type:none}.vjs-playlist img{display:block;height:auto;width:auto}.vjs-playlist .vjs-playlist-item-list{position:relative;margin:0;padding:0;list-style:none}.vjs-playlist .vjs-playlist-item{position:relative;cursor:pointer;overflow:hidden}.vjs-playlist .vjs-playlist-thumbnail-placeholder{background:#303030}.vjs-playlist .vjs-playlist-now-playing-text{display:none;position:absolute;top:0;left:0;padding-left:2px;margin:.8rem}.vjs-playlist .vjs-playlist-duration{position:absolute;top:.5rem;left:.5rem;padding:2px 5px 3px;margin-left:2px;background-color:rgba(26,26,26,.8)}.vjs-playlist .vjs-playlist-title-container{position:absolute;bottom:0;box-sizing:border-box;width:100%;padding:.5rem .8rem;text-shadow:1px 1px 2px #000,-1px 1px 2px #000,1px -1px 2px #000,-1px -1px 2px #000}.vjs-playlist .vjs-playlist-name{display:block;max-height:2.5em;padding:0 0 4px 2px;font-style:normal;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;line-height:20px}.vjs-playlist .vjs-playlist-description{margin:0;text-overflow:ellipsis;overflow:hidden}.vjs-playlist .vjs-up-next-text{display:none;padding:.1rem 2px;font-size:.8em;text-transform:uppercase}.vjs-playlist .vjs-up-next .vjs-up-next-text{display:block}.vjs-playlist .vjs-selected{background-color:#141a21}.vjs-playlist .vjs-selected img{opacity:.2}.vjs-playlist .vjs-selected .vjs-playlist-duration{display:none}.vjs-playlist .vjs-selected .vjs-playlist-now-playing-text{display:block}.vjs-playlist .vjs-selected .vjs-playlist-title-container{text-shadow:none}.vjs-playlist-vertical{overflow-x:hidden;overflow-y:auto}.vjs-playlist-vertical img{width:100%;min-height:54px}.vjs-playlist-vertical .vjs-playlist-item{margin-bottom:5px}.vjs-playlist-vertical .vjs-playlist-thumbnail{display:block;width:100%}.vjs-playlist-vertical .vjs-playlist-thumbnail-placeholder{height:100px}.vjs-playlist-horizontal{overflow-x:auto;overflow-y:hidden}.vjs-playlist-horizontal img{min-width:100px;height:100%}.vjs-playlist-horizontal .vjs-playlist-item-list{height:100%;white-space:nowrap}.vjs-playlist-horizontal .vjs-playlist-item{display:inline-block;height:100%;margin-right:5px}.vjs-playlist-horizontal .vjs-playlist-thumbnail{display:block;height:100%}.vjs-playlist-horizontal .vjs-playlist-thumbnail-placeholder{height:100%;width:180px}.vjs-playlist.vjs-ad-playing{overflow:hidden}.vjs-playlist.vjs-ad-playing.vjs-csspointerevents{pointer-events:none;overflow:auto}.vjs-playlist.vjs-ad-playing.vjs-csspointerevents .vjs-playlist-ad-overlay{pointer-events:auto}.vjs-playlist.vjs-ad-playing .vjs-playlist-ad-overlay{display:block;position:absolute;top:0;left:0;width:100%;height:100%;background-color:#1a1a1a;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";background-color:rgba(0,0,0,.5)}.vjs-playlist{font-size:14px}.vjs-playlist .vjs-playlist-description{height:42px;line-height:21px}.vjs-mouse.vjs-playlist{font-size:15px}.vjs-mouse.vjs-playlist .vjs-playlist-description{height:45px;line-height:23px}@media (min-width:600px){.vjs-mouse.vjs-playlist{font-size:17px}.vjs-mouse.vjs-playlist .vjs-playlist-description{height:51px;line-height:26px}.vjs-playlist .vjs-playlist-name{line-height:22px}}@media (max-width:520px){.vjs-playlist .vjs-selected .vjs-playlist-now-playing-text,.vjs-playlist .vjs-up-next .vjs-up-next-text{display:none}.vjs-mouse.vjs-playlist .vjs-selected .vjs-playlist-now-playing-text,.vjs-mouse.vjs-playlist .vjs-up-next .vjs-up-next-text{display:none}}@media (min-width:521px){.vjs-playlist img{min-height:85px}}@media (max-width:750px){.vjs-playlist .vjs-playlist-duration{display:none}}.vjs-next-endscreen,.vjs-next-overlay,.vjs-playlist{font-family:"Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif}.vjs-playlist .vjs-selected,.vjs-playlist.vjs-mouse .vjs-selected{background-color:#0CC5D7}.vjs-next-button{cursor:pointer}.vjs-next-button .vjs-icon-placeholder{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-next-button .vjs-icon-placeholder:before{content:"\f11f"}.vjs-next-endscreen{background:rgba(0,0,0,.8);cursor:pointer}.vjs-next-endscreen .vjs-modal-dialog-content{font-size:16px;line-height:1.5;text-align:center}.vjs-next-endscreen .vjs-next-endscreen-countdown,.vjs-next-endscreen .vjs-next-endscreen-name{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.vjs-next-endscreen .vjs-next-endscreen-countdown{font-size:12px}.vjs-next-endscreen .vjs-next-endscreen-thumbnail{position:relative}.vjs-next-endscreen .vjs-next-endscreen-thumbnail img{display:block;margin:1em auto;max-height:50%;max-width:50%}.vjs-next-endscreen .vjs-next-endscreen-thumbnail button{position:absolute;top:50%;left:50%;height:50px;width:50px;margin:-25px 0 0 -25px}.vjs-next-overlay{position:absolute;bottom:4.25em;right:1.25em;width:15em;max-width:25%;height:auto;max-height:50%;transition:transform 1s ease 0s;cursor:pointer}.vjs-has-started.not-hover .vjs-next-overlay{transform:translateY(3em)}.vjs-next-overlay .vjs-control.vjs-close-button{right:-.7em;top:.1em}.vjs-next-overlay .vjs-next-overlay-banner{background-color:#000;color:#fff;line-height:1.25;padding:.5em 2.5em .5em 1em}.vjs-next-overlay .vjs-next-overlay-countdown,.vjs-next-overlay .vjs-next-overlay-name{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.vjs-next-overlay .vjs-next-overlay-countdown{font-size:.7857em}.vjs-next-overlay img{width:100%}.bc-iframe .vjs-playlist{box-sizing:border-box;height:100%}.bc-iframe .vjs-playlist-enabled.vjs-fullscreen{width:100%!important}.bc-iframe .vjs-playlist-show-hide{position:absolute;top:0;left:0;width:35px;height:100%;transition:opacity .2s}.bc-iframe .vjs-playlist-show-hide button{width:100%;margin:0;padding:0 0 3px 4px;position:relative;top:50%;transform:translateY(-50%);font-family:"Trebuchet MS";font-size:48px;background:#1a1a1a;border-radius:10px 0 0 10px;border:none;cursor:pointer;color:#e1e1e1}.bc-iframe .vjs-playlist-show-hide button:focus{border-style:solid none solid solid;border-color:#5C99EC;border-width:2px;outline:0}.bc-iframe .vjs-playlist-show-hide button:hover{background:#D61A84}.bc-iframe .vjs-playlist-sidebar-vertical{position:absolute;right:0;top:0;min-width:0;height:100%;width:40%;transition:width .1s}.bc-iframe .vjs-playlist-sidebar-vertical.vjs-playlist-hidden{width:35px;top:10%;height:70%}.bc-iframe .vjs-playlist-sidebar-vertical.vjs-playlist-hidden .vjs-playlist-item{opacity:0}.bc-iframe .vjs-playlist-sidebar-vertical.vjs-playlist-show-hide-hidden .vjs-playlist-show-hide{opacity:0}.bc-iframe .vjs-playlist-sidebar-vertical.vjs-playlist-animating .vjs-playlist-item{opacity:0}@media (min-width:380px){.bc-iframe .vjs-playlist-sidebar-vertical .vjs-playlist-sidebar-vertical{height:100%;width:35%}}@media (min-width:640px){.bc-iframe .vjs-playlist-sidebar-vertical .vjs-playlist-sidebar-vertical{height:100%;width:30%}}@media (min-width:920px){.bc-iframe .vjs-playlist-sidebar-vertical .vjs-playlist-sidebar-vertical{width:25%;height:100%}}.bc-iframe .vjs-playlist-vertical{margin:0 0 0 35px}.bc-iframe .vjs-playlist-vertical .vjs-playlist-item{transition:opacity .1s}.bc-iframe .vjs-playlist-sidebar-horizontal{position:relative;top:auto;right:auto;bottom:auto;left:auto;flex:1;max-height:20%;min-height:20%;width:100%}.bc-iframe .vjs-playlist-sidebar-horizontal .vjs-playlist img{min-height:0}.bc-iframe .vjs-playlist-horizontal-enabled{display:flex;flex-direction:column}.bc-iframe .vjs-playlist-horizontal-enabled .video-js{flex:1;height:auto}.video-js{position:absolute;width:100%;height:100%;top:0;left:0}.vjs-poster{background-size:cover}.bc-iframe .video-js{position:relative}.vjs-playlist .vjs-selected,.vjs-playlist.vjs-mouse .vjs-selected{background-color:#272727}.vjs-playlist .vjs-playlist-item{height:56px;padding:8px 8px 14px;border-top:1px solid #333;margin-bottom:0;width:100%}.vjs-playlist .vjs-playlist-item:hover{background:#272727}.vjs-playlist .vjs-up-next .vjs-up-next-text{color:#3cc8ff;font-size:9px;padding:0 2px}.vjs-playlist img{height:56px;min-height:56px;width:96px}.vjs-mouse.vjs-playlist time{font-size:10px;margin:0;padding:0 6px}.vjs-playlist .vjs-playlist-name{font-size:12px;line-height:14px;white-space:normal;overflow:visible;text-shadow:none}.vjs-playlist .vjs-playlist-now-playing-text{font-size:11px;margin:1.8rem;padding-left:0}.vjs-playlist .vjs-selected .vjs-playlist-now-playing-text{display:block}.vjs-playlist.vjs-playlist-horizontal{overflow-x:hidden;overflow-y:auto}.vjs-playlist-horizontal .vjs-playlist-item{display:block}.vjs-playlist-horizontal .vjs-playlist-item-list{min-height:340px;max-height:340px}.vjs-playlist.vjs-playlist-horizontal .vjs-playlist-name{max-height:38px;max-width:85%}.vjs-playlist.vjs-playlist-horizontal .vjs-playlist-title-container{width:80%;font-size:14px;margin-left:110px;margin-top:10px;padding:.2rem .5rem 0 0;top:0;text-shadow:none;position:absolute}.bc-iframe .vjs-playlist-sidebar-horizontal{min-height:340px;max-height:340px}.cmeRightColumnLayout .vjs-playlist-horizontal img{max-width:80px;min-width:80px}.cmeRightColumnLayout .vjs-playlist.vjs-playlist-horizontal .vjs-playlist-title-container{width:53%;margin-top:3px;margin-left:87px}.cmeRightColumnLayout .vjs-playlist .vjs-up-next .vjs-up-next-text{display:none}.cmeRightColumnLayout .vjs-playlist .vjs-playlist-now-playing-text{margin:1.8rem 1rem}.cmeRightColumnLayout .vjs-playlist-horizontal .vjs-playlist-item-list{min-height:210px;max-height:210px}.cmeRightColumnLayout .vjs-playlist-enabled .vjs-big-play-button{margin-left:-.75em;margin-top:-.75em;width:1.5em;height:1.5em;line-height:1.5em}@media (max-width:750px){.bc-iframe .vjs-playlist .vjs-playlist-duration,.vjs-playlist .vjs-playlist-duration{display:block}.vjs-playlist.vjs-playlist-horizontal .vjs-playlist-title-container{width:67%}}@media (max-width:520px){.vjs-mouse.vjs-playlist .vjs-selected .vjs-playlist-now-playing-text,.vjs-mouse.vjs-playlist .vjs-up-next .vjs-up-next-text{display:block}}
   </style>
-  <script async="" src="https://www.google-analytics.com/gtm/js?id=GTM-N54WCXC&amp;t=gtm2&amp;cid=2072338177.1585922289" type="text/javascript">
-  </script>
   <script async="" id="demandbase_js_lib" src="https://tag.demandbase.com/uOJ961oi.min.js">
   </script>
   <script async="" src="https://connect.facebook.net/signals/config/876457932742633?v=2.9.15&amp;r=stable">
@@ -164,9 +164,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </script>
   <script async="" src="https://securepubads.g.doubleclick.net/gpt/pubads_impl_2020032401.js">
   </script>
-  <script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/857621163/?random=1585945032285&amp;cv=9&amp;fst=1585945032285&amp;num=1&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;u_h=720&amp;u_w=1280&amp;u_ah=680&amp;u_aw=1280&amp;u_cd=24&amp;u_his=18&amp;u_tz=-300&amp;u_java=false&amp;u_nplug=3&amp;u_nmime=4&amp;gtm=2wg3p1&amp;sendb=1&amp;ig=1&amp;frm=0&amp;url=https%3A%2F%2Fwww.cmegroup.com%2Ftrading%2Fenergy%2Frefined-products%2Frbob-gasoline.html&amp;tiba=RBOB%20Gasoline%20Futures%20Quotes%20-%20CME%20Group&amp;hn=www.googleadservices.com&amp;async=1&amp;rfmt=3&amp;fmt=4">
+  <script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/969288431/?random=1585949721110&amp;cv=9&amp;fst=1585949721110&amp;num=1&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1040&amp;u_aw=1920&amp;u_cd=24&amp;u_his=5&amp;u_tz=-300&amp;u_java=false&amp;u_nplug=3&amp;u_nmime=4&amp;gtm=2wg3p1&amp;sendb=1&amp;ig=1&amp;frm=0&amp;url=https%3A%2F%2Fwww.cmegroup.com%2Ftrading%2Fenergy%2Frefined-products%2Frbob-gasoline.html&amp;tiba=RBOB%20Gasoline%20Futures%20Quotes%20-%20CME%20Group&amp;hn=www.googleadservices.com&amp;async=1&amp;rfmt=3&amp;fmt=4">
   </script>
-  <script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/969288431/?random=1585945032287&amp;cv=9&amp;fst=1585945032287&amp;num=1&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;u_h=720&amp;u_w=1280&amp;u_ah=680&amp;u_aw=1280&amp;u_cd=24&amp;u_his=18&amp;u_tz=-300&amp;u_java=false&amp;u_nplug=3&amp;u_nmime=4&amp;gtm=2wg3p1&amp;sendb=1&amp;ig=1&amp;frm=0&amp;url=https%3A%2F%2Fwww.cmegroup.com%2Ftrading%2Fenergy%2Frefined-products%2Frbob-gasoline.html&amp;tiba=RBOB%20Gasoline%20Futures%20Quotes%20-%20CME%20Group&amp;hn=www.googleadservices.com&amp;async=1&amp;rfmt=3&amp;fmt=4">
+  <script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/857621163/?random=1585949721111&amp;cv=9&amp;fst=1585949721111&amp;num=1&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1040&amp;u_aw=1920&amp;u_cd=24&amp;u_his=5&amp;u_tz=-300&amp;u_java=false&amp;u_nplug=3&amp;u_nmime=4&amp;gtm=2wg3p1&amp;sendb=1&amp;ig=1&amp;frm=0&amp;url=https%3A%2F%2Fwww.cmegroup.com%2Ftrading%2Fenergy%2Frefined-products%2Frbob-gasoline.html&amp;tiba=RBOB%20Gasoline%20Futures%20Quotes%20-%20CME%20Group&amp;hn=www.googleadservices.com&amp;async=1&amp;rfmt=3&amp;fmt=4">
   </script>
   <script async="" charset="utf-8" src="https://s7.addthis.com/static/custom-messages.9d2410e8a911195172fb.js" type="text/javascript">
   </script>
@@ -241,14 +241,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <style type="text/css">
    #addthissmartlayerscssready{color:#bada55!important}.addthis-smartlayers,div#at4-follow,div#at4-share,div#at4-thankyou,div#at4-whatsnext{padding:0;margin:0}#at4-follow-label,#at4-share-label,#at4-whatsnext-label,.at4-recommended-label.hidden{padding:0;border:none;background:none;position:absolute;top:0;left:0;height:0;width:0;overflow:hidden;text-indent:-9999em}.addthis-smartlayers .at4-arrow:hover{cursor:pointer}.addthis-smartlayers .at4-arrow:after,.addthis-smartlayers .at4-arrow:before{content:none}a.at4-logo{background:url(data:image/gif;base64,R0lGODlhBwAHAJEAAP9uQf///wAAAAAAACH5BAkKAAIALAAAAAAHAAcAAAILFH6Ge8EBH2MKiQIAOw==) no-repeat left center}.at4-minimal a.at4-logo{background:url(data:image/gif;base64,R0lGODlhBwAHAJEAAP9uQf///wAAAAAAACH5BAkKAAIALAAAAAAHAAcAAAILFH6Ge8EBH2MKiQIAOw==) no-repeat left center!important}button.at4-closebutton{position:absolute;top:0;right:0;padding:0;margin-right:10px;cursor:pointer;background:transparent;border:0;-webkit-appearance:none;font-size:19px;line-height:1;color:#000;text-shadow:0 1px 0 #fff;opacity:.2}button.at4-closebutton:hover{color:#000;text-decoration:none;cursor:pointer;opacity:.5}div.at4-arrow{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAoCAYAAABpYH0BAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAV1JREFUeNrsmesOgyAMhQfxwfrofTM3E10ME2i5Oeppwr9a5OMUCrh1XV+wcvNAAIAA+BiAzrmtUWln27dbjEcC3AdODfo0BdEPhmcO4nIDvDNELi2jggk4/k8dT7skfeKzWIEd4VUpMQKvNB7X+OZSmAZkATWC1xvipbpnLmOosbJZC08CkAeA4E6qFUEMwLAGnlSBPCE8lW8CYnZTcimH2HoT7kSFOx5HBmCnDhTIu1p5s98G+QZrxGPhZVMY1vgyAQaAAAiAAAgDQACcBOD+BvJtBWfRy7NpJK5tBe4FNzXokywV734wPHMQlxvgnSGyNoUP/2ACjv/7iSeYKO3YWKzAjvCqlBiBVxqPa3ynexNJwOsN8TJbzL6JNIYYXWpMv4lIIAZgWANPqkCeEJ7KNwExu8lpLlSpAVQarO77TyKdBsyRPuwV0h0gmoGnTWFYzVkYBoAA+I/2FmAAt6+b5XM9mFkAAAAASUVORK5CYII=);background-repeat:no-repeat;width:20px;height:20px;margin:0;padding:0;overflow:hidden;text-indent:-9999em;text-align:left;cursor:pointer}#at4-recommendedpanel-outer-container .at4-arrow.at-right,div.at4-arrow.at-right{background-position:-20px 0}#at4-recommendedpanel-outer-container .at4-arrow.at-left,div.at4-arrow.at-left{background-position:0 0}div.at4-arrow.at-down{background-position:-60px 0}div.at4-arrow.at-up{background-position:-40px 0}.ats-dark div.at4-arrow.at-right{background-position:-20px -20px}.ats-dark div.at4-arrow.at-left{background-position:0 -20px}.ats-dark div.at4-arrow.at-down{background-position:-60px -20px}.ats-dark div.at4-arrow.at-up{background-position:-40px -20}.at4-opacity-hidden{opacity:0!important}.at4-opacity-visible{opacity:1!important}.at4-visually-hidden{position:absolute;clip:rect(1px,1px,1px,1px);padding:0;border:0;overflow:hidden}.at4-hidden-off-screen,.at4-hidden-off-screen *{position:absolute!important;top:-9999px!important;left:-9999px!important}.at4-show{display:block!important;opacity:1!important}.at4-show-content{opacity:1!important;visibility:visible}.at4-hide{display:none!important;opacity:0!important}.at4-hide-content{opacity:0!important;visibility:hidden}.at4-visible{display:block!important;opacity:0!important}.at-wordpress-hide{display:none!important;opacity:0!important}.addthis-animated{animation-fill-mode:both;animation-timing-function:ease-out;animation-duration:.3s}.slideInDown.addthis-animated,.slideInLeft.addthis-animated,.slideInRight.addthis-animated,.slideInUp.addthis-animated,.slideOutDown.addthis-animated,.slideOutLeft.addthis-animated,.slideOutRight.addthis-animated,.slideOutUp.addthis-animated{animation-duration:.4s}@keyframes fadeIn{0%{opacity:0}to{opacity:1}}.fadeIn{animation-name:fadeIn}@keyframes fadeInUp{0%{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}.fadeInUp{animation-name:fadeInUp}@keyframes fadeInDown{0%{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}.fadeInDown{animation-name:fadeInDown}@keyframes fadeInLeft{0%{opacity:0;transform:translateX(-20px)}to{opacity:1;transform:translateX(0)}}.fadeInLeft{animation-name:fadeInLeft}@keyframes fadeInRight{0%{opacity:0;transform:translateX(20px)}to{opacity:1;transform:translateX(0)}}.fadeInRight{animation-name:fadeInRight}@keyframes fadeOut{0%{opacity:1}to{opacity:0}}.fadeOut{animation-name:fadeOut}@keyframes fadeOutUp{0%{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(-20px)}}.fadeOutUp{animation-name:fadeOutUp}@keyframes fadeOutDown{0%{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(20px)}}.fadeOutDown{animation-name:fadeOutDown}@keyframes fadeOutLeft{0%{opacity:1;transform:translateX(0)}to{opacity:0;transform:translateX(-20px)}}.fadeOutLeft{animation-name:fadeOutLeft}@keyframes fadeOutRight{0%{opacity:1;transform:translateX(0)}to{opacity:0;transform:translateX(20px)}}.fadeOutRight{animation-name:fadeOutRight}@keyframes slideInUp{0%{transform:translateY(1500px)}0%,to{opacity:1}to{transform:translateY(0)}}.slideInUp{animation-name:slideInUp}.slideInUp.addthis-animated{animation-duration:.4s}@keyframes slideInDown{0%{transform:translateY(-850px)}0%,to{opacity:1}to{transform:translateY(0)}}.slideInDown{animation-name:slideInDown}@keyframes slideOutUp{0%{transform:translateY(0)}0%,to{opacity:1}to{transform:translateY(-250px)}}.slideOutUp{animation-name:slideOutUp}@keyframes slideOutUpFast{0%{transform:translateY(0)}0%,to{opacity:1}to{transform:translateY(-1250px)}}#at4m-menu.slideOutUp{animation-name:slideOutUpFast}@keyframes slideOutDown{0%{transform:translateY(0)}0%,to{opacity:1}to{transform:translateY(350px)}}.slideOutDown{animation-name:slideOutDown}@keyframes slideOutDownFast{0%{transform:translateY(0)}0%,to{opacity:1}to{transform:translateY(1250px)}}#at4m-menu.slideOutDown{animation-name:slideOutDownFast}@keyframes slideInLeft{0%{opacity:0;transform:translateX(-850px)}to{transform:translateX(0)}}.slideInLeft{animation-name:slideInLeft}@keyframes slideInRight{0%{opacity:0;transform:translateX(1250px)}to{transform:translateX(0)}}.slideInRight{animation-name:slideInRight}@keyframes slideOutLeft{0%{transform:translateX(0)}to{opacity:0;transform:translateX(-350px)}}.slideOutLeft{animation-name:slideOutLeft}@keyframes slideOutRight{0%{transform:translateX(0)}to{opacity:0;transform:translateX(350px)}}.slideOutRight{animation-name:slideOutRight}.at4win{margin:0 auto;background:#fff;border:1px solid #ebeced;width:25pc;box-shadow:0 0 10px rgba(0,0,0,.3);border-radius:8px;font-family:helvetica neue,helvetica,arial,sans-serif;text-align:left;z-index:9999}.at4win .at4win-header{position:relative;border-bottom:1px solid #f2f2f2;background:#fff;height:49px;-webkit-border-top-left-radius:8px;-webkit-border-top-right-radius:8px;-moz-border-radius-topleft:8px;-moz-border-radius-topright:8px;border-top-left-radius:8px;border-top-right-radius:8px;cursor:default}.at4win .at4win-header .at-h3,.at4win .at4win-header h3{height:49px;line-height:49px;margin:0 50px 0 0;padding:1px 0 0;margin-left:20px;font-family:helvetica neue,helvetica,arial,sans-serif;font-size:1pc;font-weight:700;text-shadow:0 1px #fff;color:#333}.at4win .at4win-header .at-h3 img,.at4win .at4win-header h3 img{display:inline-block;margin-right:4px}.at4win .at4win-header .at4-close{display:block;position:absolute;top:0;right:0;background:url("data:image/gif;base64,R0lGODlhFAAUAIABAAAAAP///yH5BAEAAAEALAAAAAAUABQAAAIzBIKpG+YMm5Enpodw1HlCfnkKOIqU1VXk55goVb2hi7Y0q95lfG70uurNaqLgTviyyUoFADs=") no-repeat center center;background-repeat:no-repeat;background-position:center center;border-left:1px solid #d2d2d1;width:49px;height:49px;line-height:49px;overflow:hidden;text-indent:-9999px;text-shadow:none;cursor:pointer;opacity:.5;border:0;transition:opacity .15s ease-in}.at4win .at4win-header .at4-close::-moz-focus-inner{border:0;padding:0}.at4win .at4win-header .at4-close:hover{opacity:1;background-color:#ebeced;border-top-right-radius:7px}.at4win .at4win-content{position:relative;background:#fff;min-height:220px}#at4win-footer{position:relative;background:#fff;border-top:1px solid #d2d2d1;-webkit-border-bottom-right-radius:8px;-webkit-border-bottom-left-radius:8px;-moz-border-radius-bottomright:8px;-moz-border-radius-bottomleft:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px;height:11px;line-height:11px;padding:5px 20px;font-size:11px;color:#666;-ms-box-sizing:content-box;-o-box-sizing:content-box;box-sizing:content-box}#at4win-footer a{margin-right:10px;text-decoration:none;color:#666}#at4win-footer a:hover{text-decoration:none;color:#000}#at4win-footer a.at4-logo{top:5px;padding-left:10px}#at4win-footer a.at4-privacy{position:absolute;top:5px;right:10px;padding-right:14px}.at4win.ats-dark{border-color:#555;box-shadow:none}.at4win.ats-dark .at4win-header{background:#1b1b1b;-webkit-border-top-left-radius:6px;-webkit-border-top-right-radius:6px;-moz-border-radius-topleft:6px;-moz-border-radius-topright:6px;border-top-left-radius:6px;border-top-right-radius:6px}.at4win.ats-dark .at4win-header .at4-close{background:url("data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAWdEVYdENyZWF0aW9uIFRpbWUAMTEvMTMvMTKswDp5AAAAd0lEQVQ4jb2VQRLAIAgDE///Z3qqY1FAhalHMCsCIkVEAIAkkVgvp2lDBgYAnAyHkWotLccNrEd4A7X2TqIdqLfnWBAdaF5rJdyJfjtPH5GT37CaGhoVq3nOm/XflUuLUto2pY1d+vRKh0Pp+MrAVtDe2JkvYNQ+jVSEEFmOkggAAAAASUVORK5CYII=") no-repeat center center;background-image:url(https://s7.addthis.com/static/fb08f6d50887bd0caacc86a62bcdcf68.svg),none;border-color:#333}.at4win.ats-dark .at4win-header .at4-close:hover{background-color:#000}.at4win.ats-dark .at4win-header .at-h3,.at4win.ats-dark .at4win-header h3{color:#fff;text-shadow:0 1px #000}.at4win.ats-gray .at4win-header{background:#fff;border-color:#d2d2d1;-webkit-border-top-left-radius:6px;-webkit-border-top-right-radius:6px;-moz-border-radius-topleft:6px;-moz-border-radius-topright:6px;border-top-left-radius:6px;border-top-right-radius:6px}.at4win.ats-gray .at4win-header a.at4-close{border-color:#d2d2d1}.at4win.ats-gray .at4win-header a.at4-close:hover{background-color:#ebeced}.at4win.ats-gray #at4win-footer{border-color:#ebeced}.at4win .clear{clear:both}.at4win ::selection{background:#fe6d4c;color:#fff}.at4win ::-moz-selection{background:#fe6d4c;color:#fff}.at4-icon-fw{display:inline-block;background-repeat:no-repeat;background-position:0 0;margin:0 5px 0 0;overflow:hidden;text-indent:-9999em;cursor:pointer;padding:0;border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%}.at44-follow-container a.aticon{height:2pc;margin:0 5px 5px 0}.at44-follow-container .at4-icon-fw{margin:0}
   </style>
-  <script src="https://pi.pardot.com/analytics?ver=3&amp;visitor_id=&amp;visitor_id_sign=&amp;pi_opt_in=&amp;campaign_id=11574&amp;account_id=503091&amp;title=RBOB%20Gasoline%20Futures%20Quotes%20-%20CME%20Group&amp;url=https%3A%2F%2Fwww.cmegroup.com%2Ftrading%2Fenergy%2Frefined-products%2Frbob-gasoline.html&amp;referrer=" type="text/javascript">
-  </script>
   <style id="at4-share-offset" media="screen" type="text/css">
    #at4-share,#at4-soc {top:100px !important;bottom:auto}
   </style>
+  <script src="https://pi.pardot.com/analytics?ver=3&amp;visitor_id=&amp;visitor_id_sign=&amp;pi_opt_in=&amp;campaign_id=11574&amp;account_id=503091&amp;title=RBOB%20Gasoline%20Futures%20Quotes%20-%20CME%20Group&amp;url=https%3A%2F%2Fwww.cmegroup.com%2Ftrading%2Fenergy%2Frefined-products%2Frbob-gasoline.html&amp;referrer=" type="text/javascript">
+  </script>
  </head>
  <body class="productTemplate cmeHasTransformNav os-windows include-nav">
-  <script async="" src="https://www.googletagservices.com/activeview/js/current/lidar.js?cache=r20110914" type="text/javascript">
+  <script async="" src="https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914" type="text/javascript">
   </script>
   <!-- Google Tag Manager -->
   <noscript>
@@ -271,7 +271,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="experiencefragment">
        <div class="custom-navbar">
         <div class="component react custom-navbar loaded" data-is-edit="false" data-items='[{"title":"Markets","type":"primary","uniqueId":"1555445523288"},{"title":"Data","type":"primary","uniqueId":"1555445524535"},{"title":"Services","type":"primary","uniqueId":"1555445523905"},{"title":"Education","type":"primary","uniqueId":"1561493316506"}]' data-items-login='[{"linkUrl":"/my-profile.html","linkTarget":null,"linkDownload":false,"linkNoFollow":null,"title":"Profile"},{"linkUrl":"/portfolio.html","linkTarget":null,"linkDownload":false,"linkNoFollow":null,"title":"My Portfolio"},{"linkUrl":"https://login.cmegroup.com","linkTarget":"_blank","linkDownload":false,"linkNoFollow":null,"title":"CME Customer Center"},{"linkUrl":"https://cmedirect.cmegroup.com","linkTarget":"_blank","linkDownload":false,"linkNoFollow":null,"title":"CME Direct"},{"linkUrl":"/subscribe","linkTarget":null,"linkDownload":false,"linkNoFollow":null,"title":"Subscription Center"}]' data-items-login-out='[{"linkUrl":"/portfolio.html?itm_source=login_menu&amp;itm_medium=link&amp;itm_campaign=my_portfolio&amp;itm_content=without_login","linkTarget":"_blank","linkDownload":false,"linkNoFollow":null,"title":"My Portfolio"},{"linkUrl":"https://login.cmegroup.com","linkTarget":"_blank","linkDownload":false,"linkNoFollow":null,"title":"CME Customer Center"},{"linkUrl":"https://cmedirect.cmegroup.com","linkTarget":"_blank","linkDownload":false,"linkNoFollow":null,"title":"CME  Direct"},{"linkUrl":"/subscribe","linkTarget":"_blank","linkDownload":false,"linkNoFollow":null,"title":"Subscription Center"}]' data-login-text="Log In" data-login-text-mobile="Login to your account" data-logo-alt="CME Group" data-logo-url="/" data-logout-text="Logout" data-search-placeholder="Search products, pages and more" data-search-url="/search.html" data-welcome-text="Welcome">
-         <nav class="fixed-top animate-color scroll-functionality allow-scroll navbar navbar-expand-lg navbar-light" id="navbar" style="top: 0px;">
+         <nav class="fixed-top animate-color scroll-functionality allow-scroll need-hide navbar navbar-expand-lg navbar-light" id="navbar" style="">
           <div class="navbar-container">
            <div class="container">
             <a class="navbar-brand" href="/">
@@ -341,7 +341,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
              </button>
             </div>
             <div class="collapse navbar-collapse" id="collapsibleNavbarMenu">
-             <ul class="items-list navbar-nav" style="max-height: 466px;">
+             <ul class="items-list navbar-nav" style="max-height: 825px;">
               <li class="reverse primary-item dropdown nav-item">
                <a aria-expanded="false" aria-haspopup="true" class="nav-link" data-event="1" href="#">
                 Markets
@@ -1465,13 +1465,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
    </div>
    <div class="cmePageContentArea cmeSectionLayout cmeClearContent" id="cmePageContentArea">
     <div class="alert-section cmeAlertComponent parbase">
-     <div class="cmeAlertBody" id="alert_vvnx98i">
+     <div class="cmeAlertBody" id="alert_y6paogh">
      </div>
      <script src="/etc/clientlibs/cmegroup/cmeAlert.81f8ecd625f28b45e162d889823a1ace.js" type="text/javascript">
      </script>
      <script type="text/javascript">
       jQuery(function() {
-    jQuery('#alert_vvnx98i').cmeAlert({
+    jQuery('#alert_y6paogh').cmeAlert({
         currPath: "/content/cmegroup/en/trading/energy/refined-products/rbob-gasoline/jcr:content/alert-section",
         requestURL: "/libs/cmegroup/alerts/search.ajax.json?rootNode=/content/cmegroup/config/alerts&currentPath=/content/cmegroup/en/trading/energy/refined-products/rbob-gasoline/jcr:content/alert-section&tab=QUOTES&venue=G&foi=F",
         
@@ -1859,12 +1859,12 @@ window.cmeRequestManagers[1] = {
           </div>
           <div class="cmeTableBlockWrapper cmeContentSection cmeContentGroup" style="">
            <table border="0" cellpadding="2" cellspacing="0" class="cmeTable cmeQuotesOptionstrue cmeQuotesGlobextrue cmeQuotesHighLowtrue cmeFloatingHead" id="quotesFuturesProductTable1" summary="Quotes Product Table">
-            <thead class="cmeFloatingHeader" style="width: 693px;">
+            <thead class="cmeFloatingHeader is-alone" style="width: 693px;">
              <tr>
-              <th class="cmeQuotesMonth" scope="col" style="width: 62px; min-width: 62px;">
+              <th class="cmeQuotesMonth" scope="col" style="width: 61px; min-width: 61px;">
                Month
               </th>
-              <th class="cmeQuotesOptions" scope="col" style="width: 48px; min-width: 48px;">
+              <th class="cmeQuotesOptions" scope="col" style="width: 49px; min-width: 49px;">
                Options
               </th>
               <th class="cmeQuotesCharts" scope="col" style="width: 44px; min-width: 44px;">
@@ -1888,13 +1888,13 @@ window.cmeRequestManagers[1] = {
               <th class="cmeQuotesLow" scope="col" style="width: 44px; min-width: 44px;">
                Low
               </th>
-              <th class="cmeQuotesVolume" scope="col" style="width: 46px; min-width: 46px;">
+              <th class="cmeQuotesVolume" scope="col" style="width: 47px; min-width: 47px;">
                Volume
               </th>
               <th class="cmeQuotesHiLow" scope="col" style="width: 45px; min-width: 45px;">
                Hi / Low Limit
               </th>
-              <th class="cmeQuotesUpdated" scope="col" style="width: 72px; min-width: 72px;">
+              <th class="cmeQuotesUpdated" scope="col" style="width: 71px; min-width: 71px;">
                Updated
               </th>
              </tr>
@@ -1970,7 +1970,7 @@ window.cmeRequestManagers[1] = {
              </tr>
             </tfoot>
             <tbody>
-             <tr>
+             <tr class="">
               <th scope="row">
                <span class="cmeNoWrap">
                 MAY 2020
@@ -1992,11 +1992,11 @@ window.cmeRequestManagers[1] = {
               </td>
               <td id="quotesFuturesProductTable1_RBK0_last">
                <strong>
-                0.7088
+                0.7149
                </strong>
               </td>
               <td class="statusOK" id="quotesFuturesProductTable1_RBK0_change">
-               +0.0460
+               +0.0521
               </td>
               <td id="quotesFuturesProductTable1_RBK0_priorSettle">
                0.6628
@@ -2011,13 +2011,13 @@ window.cmeRequestManagers[1] = {
                0.6347
               </td>
               <td class="cmeTableRight" id="quotesFuturesProductTable1_RBK0_volume">
-               38,328
+               38,849
               </td>
               <td id="quotesFuturesProductTable1_RBK0_highLowLimits">
                No Limit / 0.0001
               </td>
               <td class="cmeUpdatedField" id="quotesFuturesProductTable1_RBK0_updated">
-               15:07:11 CT
+               15:59:14 CT
                <br/>
                03 Apr 2020
               </td>
@@ -2044,11 +2044,11 @@ window.cmeRequestManagers[1] = {
               </td>
               <td id="quotesFuturesProductTable1_RBM0_last">
                <strong>
-                0.7700
+                0.7740
                </strong>
               </td>
               <td class="statusOK" id="quotesFuturesProductTable1_RBM0_change">
-               +0.0464
+               +0.0504
               </td>
               <td id="quotesFuturesProductTable1_RBM0_priorSettle">
                0.7236
@@ -2063,13 +2063,13 @@ window.cmeRequestManagers[1] = {
                0.6964
               </td>
               <td class="cmeTableRight" id="quotesFuturesProductTable1_RBM0_volume">
-               31,725
+               31,927
               </td>
               <td id="quotesFuturesProductTable1_RBM0_highLowLimits">
                No Limit / 0.0001
               </td>
               <td class="cmeUpdatedField" id="quotesFuturesProductTable1_RBM0_updated">
-               15:06:40 CT
+               15:58:55 CT
                <br/>
                03 Apr 2020
               </td>
@@ -2096,11 +2096,11 @@ window.cmeRequestManagers[1] = {
               </td>
               <td id="quotesFuturesProductTable1_RBN0_last">
                <strong>
-                0.8239
+                0.8279
                </strong>
               </td>
               <td class="statusOK" id="quotesFuturesProductTable1_RBN0_change">
-               +0.0452
+               +0.0492
               </td>
               <td id="quotesFuturesProductTable1_RBN0_priorSettle">
                0.7787
@@ -2115,13 +2115,13 @@ window.cmeRequestManagers[1] = {
                0.7563
               </td>
               <td class="cmeTableRight" id="quotesFuturesProductTable1_RBN0_volume">
-               22,001
+               22,279
               </td>
               <td id="quotesFuturesProductTable1_RBN0_highLowLimits">
                No Limit / 0.0001
               </td>
               <td class="cmeUpdatedField" id="quotesFuturesProductTable1_RBN0_updated">
-               15:06:40 CT
+               15:59:14 CT
                <br/>
                03 Apr 2020
               </td>
@@ -2148,11 +2148,11 @@ window.cmeRequestManagers[1] = {
               </td>
               <td id="quotesFuturesProductTable1_RBQ0_last">
                <strong>
-                0.8582
+                0.8672
                </strong>
               </td>
               <td class="statusOK" id="quotesFuturesProductTable1_RBQ0_change">
-               +0.0361
+               +0.0451
               </td>
               <td id="quotesFuturesProductTable1_RBQ0_priorSettle">
                0.8221
@@ -2167,13 +2167,13 @@ window.cmeRequestManagers[1] = {
                0.7984
               </td>
               <td class="cmeTableRight" id="quotesFuturesProductTable1_RBQ0_volume">
-               13,844
+               13,896
               </td>
               <td id="quotesFuturesProductTable1_RBQ0_highLowLimits">
                No Limit / 0.0001
               </td>
               <td class="cmeUpdatedField" id="quotesFuturesProductTable1_RBQ0_updated">
-               14:53:27 CT
+               15:56:21 CT
                <br/>
                03 Apr 2020
               </td>
@@ -2200,11 +2200,11 @@ window.cmeRequestManagers[1] = {
               </td>
               <td id="quotesFuturesProductTable1_RBU0_last">
                <strong>
-                0.8843
+                0.8931
                </strong>
               </td>
               <td class="statusOK" id="quotesFuturesProductTable1_RBU0_change">
-               +0.0327
+               +0.0415
               </td>
               <td id="quotesFuturesProductTable1_RBU0_priorSettle">
                0.8516
@@ -2219,18 +2219,18 @@ window.cmeRequestManagers[1] = {
                0.8406
               </td>
               <td class="cmeTableRight" id="quotesFuturesProductTable1_RBU0_volume">
-               14,750
+               14,792
               </td>
               <td id="quotesFuturesProductTable1_RBU0_highLowLimits">
                No Limit / 0.0001
               </td>
               <td class="cmeUpdatedField" id="quotesFuturesProductTable1_RBU0_updated">
-               14:52:44 CT
+               15:58:04 CT
                <br/>
                03 Apr 2020
               </td>
              </tr>
-             <tr>
+             <tr class="">
               <th scope="row">
                <span class="cmeNoWrap">
                 OCT 2020
@@ -2271,13 +2271,13 @@ window.cmeRequestManagers[1] = {
                0.7905
               </td>
               <td class="cmeTableRight" id="quotesFuturesProductTable1_RBV0_volume">
-               7,910
+               7,917
               </td>
               <td id="quotesFuturesProductTable1_RBV0_highLowLimits">
                No Limit / 0.0001
               </td>
               <td class="cmeUpdatedField" id="quotesFuturesProductTable1_RBV0_updated">
-               15:00:56 CT
+               15:48:12 CT
                <br/>
                03 Apr 2020
               </td>
@@ -2304,11 +2304,11 @@ window.cmeRequestManagers[1] = {
               </td>
               <td id="quotesFuturesProductTable1_RBX0_last">
                <strong>
-                0.8157
+                0.8279
                </strong>
               </td>
               <td class="statusOK" id="quotesFuturesProductTable1_RBX0_change">
-               +0.0175
+               +0.0297
               </td>
               <td id="quotesFuturesProductTable1_RBX0_priorSettle">
                0.7982
@@ -2323,13 +2323,13 @@ window.cmeRequestManagers[1] = {
                0.7867
               </td>
               <td class="cmeTableRight" id="quotesFuturesProductTable1_RBX0_volume">
-               5,703
+               5,708
               </td>
               <td id="quotesFuturesProductTable1_RBX0_highLowLimits">
                No Limit / 0.0001
               </td>
               <td class="cmeUpdatedField" id="quotesFuturesProductTable1_RBX0_updated">
-               14:42:15 CT
+               15:54:50 CT
                <br/>
                03 Apr 2020
               </td>
@@ -2356,11 +2356,11 @@ window.cmeRequestManagers[1] = {
               </td>
               <td id="quotesFuturesProductTable1_RBZ0_last">
                <strong>
-                0.8322
+                0.8372
                </strong>
               </td>
               <td class="statusOK" id="quotesFuturesProductTable1_RBZ0_change">
-               +0.0255
+               +0.0305
               </td>
               <td id="quotesFuturesProductTable1_RBZ0_priorSettle">
                0.8067
@@ -2375,13 +2375,13 @@ window.cmeRequestManagers[1] = {
                0.7910
               </td>
               <td class="cmeTableRight" id="quotesFuturesProductTable1_RBZ0_volume">
-               9,739
+               9,762
               </td>
               <td id="quotesFuturesProductTable1_RBZ0_highLowLimits">
                No Limit / 0.0001
               </td>
               <td class="cmeUpdatedField" id="quotesFuturesProductTable1_RBZ0_updated">
-               15:00:56 CT
+               15:53:03 CT
                <br/>
                03 Apr 2020
               </td>
@@ -2531,13 +2531,13 @@ window.cmeRequestManagers[1] = {
                0.8770
               </td>
               <td class="cmeTableRight" id="quotesFuturesProductTable1_RBH1_volume">
-               1,954
+               1,970
               </td>
               <td id="quotesFuturesProductTable1_RBH1_highLowLimits">
                No Limit / 0.0001
               </td>
               <td class="cmeUpdatedField" id="quotesFuturesProductTable1_RBH1_updated">
-               14:42:49 CT
+               15:16:56 CT
                <br/>
                03 Apr 2020
               </td>
@@ -2668,11 +2668,11 @@ window.cmeRequestManagers[1] = {
               </td>
               <td id="quotesFuturesProductTable1_RBM1_last">
                <strong>
-                1.0753
+                1.0799
                </strong>
               </td>
               <td class="statusOK" id="quotesFuturesProductTable1_RBM1_change">
-               +0.0107
+               +0.0153
               </td>
               <td id="quotesFuturesProductTable1_RBM1_priorSettle">
                1.0646
@@ -2687,13 +2687,13 @@ window.cmeRequestManagers[1] = {
                1.0475
               </td>
               <td class="cmeTableRight" id="quotesFuturesProductTable1_RBM1_volume">
-               2,348
+               2,349
               </td>
               <td id="quotesFuturesProductTable1_RBM1_highLowLimits">
                No Limit / 0.0001
               </td>
               <td class="cmeUpdatedField" id="quotesFuturesProductTable1_RBM1_updated">
-               14:33:06 CT
+               15:16:43 CT
                <br/>
                03 Apr 2020
               </td>
@@ -2876,32 +2876,32 @@ window.cmeRequestManagers[1] = {
               </td>
               <td id="quotesFuturesProductTable1_RBV1_last">
                <strong>
-                -
+                0.9750
                </strong>
               </td>
-              <td class="statusNull" id="quotesFuturesProductTable1_RBV1_change">
-               -
+              <td class="statusOK" id="quotesFuturesProductTable1_RBV1_change">
+               +0.0172
               </td>
               <td id="quotesFuturesProductTable1_RBV1_priorSettle">
                0.9578
               </td>
               <td id="quotesFuturesProductTable1_RBV1_open">
-               -
+               0.9750
               </td>
               <td id="quotesFuturesProductTable1_RBV1_high">
-               -
+               0.9750
               </td>
               <td id="quotesFuturesProductTable1_RBV1_low">
-               -
+               0.9750
               </td>
               <td class="cmeTableRight" id="quotesFuturesProductTable1_RBV1_volume">
-               19
+               21
               </td>
               <td id="quotesFuturesProductTable1_RBV1_highLowLimits">
                No Limit / 0.0001
               </td>
               <td class="cmeUpdatedField" id="quotesFuturesProductTable1_RBV1_updated">
-               13:33:41 CT
+               15:37:07 CT
                <br/>
                03 Apr 2020
               </td>
@@ -2947,13 +2947,13 @@ window.cmeRequestManagers[1] = {
                -
               </td>
               <td class="cmeTableRight" id="quotesFuturesProductTable1_RBX1_volume">
-               15
+               17
               </td>
               <td id="quotesFuturesProductTable1_RBX1_highLowLimits">
                No Limit / 0.0001
               </td>
               <td class="cmeUpdatedField" id="quotesFuturesProductTable1_RBX1_updated">
-               13:33:41 CT
+               15:37:07 CT
                <br/>
                03 Apr 2020
               </td>
@@ -2980,11 +2980,11 @@ window.cmeRequestManagers[1] = {
               </td>
               <td id="quotesFuturesProductTable1_RBZ1_last">
                <strong>
-                0.9300
+                0.9318
                </strong>
               </td>
               <td class="statusOK" id="quotesFuturesProductTable1_RBZ1_change">
-               +0.0042
+               +0.0060
               </td>
               <td id="quotesFuturesProductTable1_RBZ1_priorSettle">
                0.9258
@@ -2999,13 +2999,13 @@ window.cmeRequestManagers[1] = {
                0.9136
               </td>
               <td class="cmeTableRight" id="quotesFuturesProductTable1_RBZ1_volume">
-               186
+               196
               </td>
               <td id="quotesFuturesProductTable1_RBZ1_highLowLimits">
                No Limit / 0.0001
               </td>
               <td class="cmeUpdatedField" id="quotesFuturesProductTable1_RBZ1_updated">
-               15:02:07 CT
+               15:53:03 CT
                <br/>
                03 Apr 2020
               </td>
@@ -4396,12 +4396,12 @@ window.cmeRequestManagers[1].links.push({  el : document.getElementById("link-1-
              <div class="bcSpinnerContainer">
              </div>
              <div class="bcPlayerContainer loaded" style="padding-top: 56.25%;">
-              <div aria-label="Video Player" class="cmeBcVideo video-js vjs-paused vjs-controls-enabled vjs-workinghover vjs-v7 vjs-user-active vjs-layout-x-small bc-player-NJia0b1jx_default bc-player-NJia0b1jx_default-index-0 vjs-mouse vjs-playlist-enabled vjs-plugins-ready vjs-contextmenu vjs-contextmenu-ui vjs-player-info vjs-errors" data-account="49919183001" data-embed="default" data-player="NJia0b1jx" data-playlist-id="73547231001" id="cmeVideo73547231001" lang="en" role="region" style="" tabindex="-1">
-               <video class="vjs-tech" data-account="49919183001" data-embed="default" data-player="NJia0b1jx" data-playlist-id="73547231001" id="cmeVideo73547231001_html5_api" poster="https://brightcove.hs.llnwd.net/v1/unsecured/media/49919183001/202004/1550/49919183001_6146646019001_6146650633001-vs.jpg?pubId=49919183001&amp;videoId=6146650633001" preload="metadata" src="blob:https://www.cmegroup.com/2fe224c4-126b-4381-a423-fe68346eeafa" style="" tabindex="-1">
+              <div aria-label="Video Player" class="cmeBcVideo video-js vjs-paused vjs-controls-enabled vjs-workinghover vjs-v7 vjs-user-active vjs-layout-x-small bc-player-NJia0b1jx_default bc-player-NJia0b1jx_default-index-0 vjs-mouse vjs-playlist-enabled vjs-plugins-ready vjs-contextmenu vjs-contextmenu-ui vjs-player-info vjs-errors" data-account="49919183001" data-embed="default" data-gtm-vis-first-on-screen-52832_446="157" data-gtm-vis-has-fired-52832_446="1" data-gtm-vis-recent-on-screen-52832_446="157" data-gtm-vis-total-visible-time-52832_446="100" data-player="NJia0b1jx" data-playlist-id="73547231001" id="cmeVideo73547231001" lang="en" role="region" style="" tabindex="-1">
+               <video class="vjs-tech" data-account="49919183001" data-embed="default" data-player="NJia0b1jx" data-playlist-id="73547231001" id="cmeVideo73547231001_html5_api" poster="https://brightcove.hs.llnwd.net/v1/unsecured/media/49919183001/202004/2658/49919183001_6146960194001_6146952651001-vs.jpg?pubId=49919183001&amp;videoId=6146952651001" preload="metadata" src="blob:https://www.cmegroup.com/7afabeb6-d518-4a53-89ab-17b6cfa99b48" style="" tabindex="-1">
                </video>
                <script src="https://vjs.zencdn.net/vttjs/0.12.5/vtt.global.min.js">
                </script>
-               <div aria-disabled="false" class="vjs-poster" style='background-image: url("https://brightcove.hs.llnwd.net/v1/unsecured/media/49919183001/202004/1550/49919183001_6146646019001_6146650633001-vs.jpg?pubId=49919183001&amp;videoId=6146650633001");' tabindex="-1">
+               <div aria-disabled="false" class="vjs-poster" style='background-image: url("https://brightcove.hs.llnwd.net/v1/unsecured/media/49919183001/202004/2658/49919183001_6146960194001_6146952651001-vs.jpg?pubId=49919183001&amp;videoId=6146952651001");' tabindex="-1">
                </div>
                <div aria-atomic="true" aria-live="off" class="vjs-text-track-display">
                 <div style="position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; margin: 1.5%;">
@@ -4471,22 +4471,22 @@ window.cmeRequestManagers[1].links.push({  el : document.getElementById("link-1-
                   Duration
                  </span>
                  <span aria-live="off" class="vjs-duration-display" role="presentation">
-                  2:38
+                  3:13
                  </span>
                 </div>
                 <div class="vjs-progress-control vjs-control">
-                 <div aria-label="Progress Bar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0.00" aria-valuetext="0:00 of 2:38" class="vjs-progress-holder vjs-slider vjs-slider-horizontal" role="slider" tabindex="0">
-                  <div class="vjs-load-progress" style="width: 6.14177%;">
+                 <div aria-label="Progress Bar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0.00" aria-valuetext="0:00 of 3:13" class="vjs-progress-holder vjs-slider vjs-slider-horizontal" role="slider" tabindex="0">
+                  <div class="vjs-load-progress" style="width: 5.11641%;">
                    <span class="vjs-control-text">
                     <span>
                      Loaded
                     </span>
                     :
                     <span class="vjs-control-text-loaded-percentage">
-                     6.14%
+                     5.12%
                     </span>
                    </span>
-                   <div style="left: 0.192354%; width: 99.8076%;">
+                   <div style="left: 0.189029%; width: 99.811%;">
                    </div>
                   </div>
                   <div class="vjs-mouse-display">
@@ -4526,7 +4526,7 @@ window.cmeRequestManagers[1].links.push({  el : document.getElementById("link-1-
                   -
                  </span>
                  <span aria-live="off" class="vjs-remaining-time-display" role="presentation">
-                  2:38
+                  3:13
                  </span>
                 </div>
                 <div class="vjs-custom-control-spacer vjs-spacer">
@@ -4959,6 +4959,25 @@ window.cmeRequestManagers[1].links.push({  el : document.getElementById("link-1-
              <ol class="vjs-playlist-item-list">
               <li class="vjs-playlist-item vjs-selected" tabindex="0">
                <picture class="vjs-playlist-thumbnail vjs-playlist-now-playing">
+                <img alt="" src="https://brightcove.hs.llnwd.net/v1/unsecured/media/49919183001/202004/2658/49919183001_6146960193001_6146952651001-th.jpg?pubId=49919183001&amp;videoId=6146952651001"/>
+                <span class="vjs-playlist-now-playing-text" title="Now Playing">
+                 Now Playing
+                </span>
+                <div class="vjs-playlist-title-container">
+                 <span class="vjs-up-next-text" title="Up Next">
+                  Up Next
+                 </span>
+                 <cite class="vjs-playlist-name" title="April 3 Energy Commentary: Dan Deming">
+                  April 3 Energy Commentary: Dan Deming
+                 </cite>
+                </div>
+               </picture>
+               <time class="vjs-playlist-duration" datetime="PT0H0M192.57500000000002S">
+                3:12
+               </time>
+              </li>
+              <li class="vjs-playlist-item vjs-up-next" tabindex="0">
+               <picture class="vjs-playlist-thumbnail">
                 <img alt="" src="https://brightcove.hs.llnwd.net/v1/unsecured/media/49919183001/202004/1550/49919183001_6146646020001_6146650633001-th.jpg?pubId=49919183001&amp;videoId=6146650633001"/>
                 <span class="vjs-playlist-now-playing-text" title="Now Playing">
                  Now Playing
@@ -4976,7 +4995,7 @@ window.cmeRequestManagers[1].links.push({  el : document.getElementById("link-1-
                 2:37
                </time>
               </li>
-              <li class="vjs-playlist-item vjs-up-next" tabindex="0">
+              <li class="vjs-playlist-item" tabindex="0">
                <picture class="vjs-playlist-thumbnail">
                 <img alt="" src="https://brightcove.hs.llnwd.net/v1/unsecured/media/49919183001/202004/1994/49919183001_6146391963001_6146393868001-th.jpg?pubId=49919183001&amp;videoId=6146393868001"/>
                 <span class="vjs-playlist-now-playing-text" title="Now Playing">
@@ -6838,25 +6857,6 @@ window.cmeRequestManagers[1].links.push({  el : document.getElementById("link-1-
                 2:33
                </time>
               </li>
-              <li class="vjs-playlist-item" tabindex="0">
-               <picture class="vjs-playlist-thumbnail">
-                <img alt="" src="https://f1.media.brightcove.com/7/49919183001/49919183001_6102051395001_6102030360001-th.jpg?pubId=49919183001&amp;videoId=6102030360001"/>
-                <span class="vjs-playlist-now-playing-text" title="Now Playing">
-                 Now Playing
-                </span>
-                <div class="vjs-playlist-title-container">
-                 <span class="vjs-up-next-text" title="Up Next">
-                  Up Next
-                 </span>
-                 <cite class="vjs-playlist-name" title="November 8 Energy Commentary: Bob Iaccino">
-                  November 8 Energy Commentary: Bob Iaccino
-                 </cite>
-                </div>
-               </picture>
-               <time class="vjs-playlist-duration" datetime="PT0H0M133.44S">
-                2:13
-               </time>
-              </li>
               <li class="vjs-playlist-ad-overlay">
               </li>
              </ol>
@@ -7362,12 +7362,12 @@ window.cmeRequestManagers[1].links.push({  el : document.getElementById("link-1-
    </div>
   </div>
   <div id="_atssh" style="visibility: hidden; height: 1px; width: 1px; position: absolute; top: -9999px; z-index: 100000;">
-   <iframe id="_atssh230" src="https://s7.addthis.com/static/sh.f48a1a04fe8dbf021b4cda1d.html#rand=0.2936204551473258&amp;iit=1585945032369&amp;tmr=load%3D1585945032124%26core%3D1585945032138%26main%3D1585945032365%26ifr%3D1585945032372&amp;cb=0&amp;cdn=0&amp;md=0&amp;kw=&amp;ab=-&amp;dh=www.cmegroup.com&amp;dr=&amp;du=https%3A%2F%2Fwww.cmegroup.com%2Ftrading%2Fenergy%2Frefined-products%2Frbob-gasoline.html&amp;href=https%3A%2F%2Fwww.cmegroup.com%2Ftrading%2Fenergy%2Frefined-products%2Frbob-gasoline.html&amp;dt=RBOB%20Gasoline%20Futures%20Quotes%20-%20CME%20Group&amp;dbg=0&amp;cap=tc%3D0%26ab%3D0&amp;inst=1&amp;jsl=8193&amp;prod=undefined&amp;lng=en&amp;ogt=url%2Cimage%2Cimage%2Ctype%3Dwebsite%2Cdescription%2Ctitle&amp;pc=men&amp;pub=cjoh44&amp;ssl=1&amp;sid=5e8799c871cb7e2f&amp;srf=0.01&amp;ver=300&amp;xck=0&amp;xtr=0&amp;og=title%3DRBOB%2520Gasoline%2520Futures%2520Quotes%2520-%2520CME%2520Group%26description%3DFind%2520information%2520for%2520RBOB%2520Gasoline%2520Futures%2520Quotes%2520provided%2520by%2520CME%2520Group.%2520View%2520Quotes%26type%3Dwebsite%26image%3Dhttps%253A%252F%252Fwww.cmegroup.com%252Fimages%252Fog-cme-group-fb.jpg%26url%3Dhttps%253A%252F%252Fwww.cmegroup.com%252Fcontent%252Fcmegroup%252Fen%252Ftrading%252Fenergy%252Frefined-products%252Frbob-gasoline.html&amp;csi=undefined&amp;rev=v8.28.3-wp&amp;ct=1&amp;xld=1&amp;xd=1" style="height: 1px; width: 1px; position: absolute; top: 0px; z-index: 100000; border: 0px; left: 0px;" title="AddThis utility frame">
+   <iframe id="_atssh188" src="https://s7.addthis.com/static/sh.f48a1a04fe8dbf021b4cda1d.html#rand=0.040736476048962134&amp;iit=1585949721061&amp;tmr=load%3D1585949720840%26core%3D1585949720852%26main%3D1585949721057%26ifr%3D1585949721064&amp;cb=0&amp;cdn=0&amp;md=0&amp;kw=&amp;ab=-&amp;dh=www.cmegroup.com&amp;dr=&amp;du=https%3A%2F%2Fwww.cmegroup.com%2Ftrading%2Fenergy%2Frefined-products%2Frbob-gasoline.html&amp;href=https%3A%2F%2Fwww.cmegroup.com%2Ftrading%2Fenergy%2Frefined-products%2Frbob-gasoline.html&amp;dt=RBOB%20Gasoline%20Futures%20Quotes%20-%20CME%20Group&amp;dbg=0&amp;cap=tc%3D0%26ab%3D0&amp;inst=1&amp;jsl=1&amp;prod=undefined&amp;lng=en&amp;ogt=url%2Cimage%2Cimage%2Ctype%3Dwebsite%2Cdescription%2Ctitle&amp;pc=men&amp;pub=cjoh44&amp;ssl=1&amp;sid=5e87ac18156bdb09&amp;srf=0.01&amp;ver=300&amp;xck=0&amp;xtr=0&amp;og=title%3DRBOB%2520Gasoline%2520Futures%2520Quotes%2520-%2520CME%2520Group%26description%3DFind%2520information%2520for%2520RBOB%2520Gasoline%2520Futures%2520Quotes%2520provided%2520by%2520CME%2520Group.%2520View%2520Quotes%26type%3Dwebsite%26image%3Dhttps%253A%252F%252Fwww.cmegroup.com%252Fimages%252Fog-cme-group-fb.jpg%26url%3Dhttps%253A%252F%252Fwww.cmegroup.com%252Fcontent%252Fcmegroup%252Fen%252Ftrading%252Fenergy%252Frefined-products%252Frbob-gasoline.html&amp;csi=undefined&amp;rev=v8.28.3-wp&amp;ct=1&amp;xld=1&amp;xd=1" style="height: 1px; width: 1px; position: absolute; top: 0px; z-index: 100000; border: 0px; left: 0px;" title="AddThis utility frame">
    </iframe>
   </div>
   <style id="service-icons-0">
   </style>
-  <script id="" src="https://ad.doubleclick.net/ddm/adj/N6540.nso.codesrv/B20125859.202020331;sz=1x2;ord=800455771;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=?" type="text/javascript">
+  <script id="" src="https://ad.doubleclick.net/ddm/adj/N6540.nso.codesrv/B20125859.202020331;sz=1x2;ord=310957065;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=?" type="text/javascript">
   </script>
   <script id="" type="text/javascript">
    (function(){var a,b=function(){a||(a=!0,dataLayer.push({event:"printedPage"}))};if(window.matchMedia){var c=window.matchMedia("print");c.addListener(function(a){a.matches||b()})}window.onafterprint=b})();
@@ -7406,7 +7406,6 @@ b.readyState&&404==b.status&&(dataLayer["AEM Tags"]="",dataLayer.push({event:"ta
   <script id="" type="text/javascript">
    var cmeTodayDate=new Date,cmeTodayYear=cmeTodayDate.getUTCFullYear();document.querySelectorAll(".cmeCurrentYear").forEach(function(a){a.innerText=cmeTodayYear});
   </script>
-  <img alt="" aria-hidden="true" id="db_bw_pixel_ad" src="https://match.prod.bidr.io/cookie-sync/demandbase" style="display:none"/>
   <script src="/etc/clientlibs/cmegroup/cmeJsUtils.f1d38b4bad891d9dbbe237612331029d.js" type="text/javascript">
   </script>
   <script src="/apps/cmegroup/widgets/commonLibs.466db378dcf2580ac7f97296a5d8afd1.js" type="text/javascript">
@@ -7425,28 +7424,18 @@ b.readyState&&404==b.status&&(dataLayer["AEM Tags"]="",dataLayer.push({event:"ta
   </script>
   <!--
 -->
-  <noscript>
-   <a href="https://ad.doubleclick.net/ddm/jump/N6540.nso.codesrv/B20125859.202020331;sz=1x2;ord=441538184?">
-    <img alt="Advertisement" border="0" height="2" src="https://ad.doubleclick.net/ddm/ad/N6540.nso.codesrv/B20125859.202020331;sz=1x2;ord=1888873354;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=?" width="1"/>
-   </a>
-  </noscript>
+  <img alt="" aria-hidden="true" id="db_bw_pixel_ad" src="https://match.prod.bidr.io/cookie-sync/demandbase" style="display:none"/>
   <script id="" type="text/javascript">
    (function(){var l=!0;if(window.Storage){var b=JSON.parse(localStorage.getItem("_tab_ids")),d=sessionStorage.getItem("_tab_id"),a=JSON.parse(sessionStorage.getItem("_nav_path")),c=document.location.href,e=!1,m=document.location.origin,k,g,n=function(){if(!1===l)return"BACK/FORWARD";if(2>a.length)return"FORWARD";k=a[a.length-2];g=a[a.length-1];return k===c||g===c?"BACK":"FORWARD"},p=function(){b=JSON.parse(localStorage.getItem("_tab_ids"));d=sessionStorage.getItem("_tab_id");if(null!==b&&null!==d){var a=
 b.indexOf(d);-1<a&&b.splice(a,1);localStorage.setItem("_tab_ids",JSON.stringify(b))}};var h=function(){var a=(new Date).getTime();"undefined"!==typeof performance&&"function"===typeof performance.now&&(a+=performance.now());return"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,function(b){var c=(a+16*Math.random())%16|0;a=Math.floor(a/16);return("x"===b?c:c&3|8).toString(16)})};var q=function(a,b){return!(!0===b&&0!==a&&255!==a)};null===d&&(d=h(),e=!0,sessionStorage.setItem("_tab_id",d));b=
 b||[];-1===b.indexOf(d)&&(b.push(d),localStorage.setItem("_tab_ids",JSON.stringify(b)));h=b.length;if(window.PerformanceNavigation){a=a||[];var r=window.performance.navigation.redirectCount;if(q(window.performance.navigation.type,e))switch(window.performance.navigation.type){case 0:var f="NAVIGATE";a.push(c);break;case 1:f="RELOAD";0!==a.length&&a[a.length-1]===c||a.push(c);break;case 2:f=n();"FORWARD"===f?-1<document.referrer.indexOf(m)&&a.push(c):"BACK"===f?g!==c&&a.pop():a.push(c);break;default:f=
-"OTHER",a.push(c)}else a.push(c);sessionStorage.setItem("_nav_path",JSON.stringify(a))}window.addEventListener("beforeunload",p);e={tabCount:h,redirectCount:r,navigationType:f,newTab:!0===e?"New":"Existing",tabId:d};window.google_tag_manager[google_tag_manager["GTM-PLCS"].macro(9)].dataLayer.set("browsingBehavior",e);window.dataLayer.push({event:"custom.navigation",browsingBehavior:e})}})();
+"OTHER",a.push(c)}else a.push(c);sessionStorage.setItem("_nav_path",JSON.stringify(a))}window.addEventListener("beforeunload",p);e={tabCount:h,redirectCount:r,navigationType:f,newTab:!0===e?"New":"Existing",tabId:d};window.google_tag_manager[google_tag_manager["GTM-PLCS"].macro(7)].dataLayer.set("browsingBehavior",e);window.dataLayer.push({event:"custom.navigation",browsingBehavior:e})}})();
   </script>
-  <script src="https://analytics.twitter.com/i/adsct?p_id=Twitter&amp;p_user_id=0&amp;txn_id=nzrzc&amp;events=%5B%5B%22pageview%22%2Cnull%5D%5D&amp;tw_sale_amount=0&amp;tw_order_quantity=0&amp;tw_iframe_status=0&amp;tpx_cb=twttr.conversion.loadPixels&amp;tw_document_href=https%3A%2F%2Fwww.cmegroup.com%2Ftrading%2Fenergy%2Frefined-products%2Frbob-gasoline.html" type="text/javascript">
-  </script>
-  <script src="https://analytics.twitter.com/i/adsct?p_id=Twitter&amp;p_user_id=0&amp;txn_id=o1lzd&amp;events=%5B%5B%22pageview%22%2Cnull%5D%5D&amp;tw_sale_amount=0&amp;tw_order_quantity=0&amp;tw_iframe_status=0&amp;tpx_cb=twttr.conversion.loadPixels&amp;tw_document_href=https%3A%2F%2Fwww.cmegroup.com%2Ftrading%2Fenergy%2Frefined-products%2Frbob-gasoline.html" type="text/javascript">
-  </script>
-  <script id="" type="text/javascript">
-   function CE_READY(){1==cmeAjax.isLoggedIn?CE2.set(1,"Logged in Users"):CE2.set(1,"Non-Logged in Users")};
-  </script>
-  <script id="" type="text/javascript">
-   var cookieName="isLoggedInHere",cookieValue=google_tag_manager["GTM-PLCS"].macro(16),expires=3600;expirationTime=1752E4*expires;var date=new Date,time=date.getTime();date.setTime(time+expirationTime);date=date.toUTCString();var timerDelay=1E4;
-1!=cmeAjax.isLoggedIn||void 0!=cookieValue&&""!=cookieValue&&"false"!=cookieValue?0==cmeAjax.isLoggedIn&&"true"==cookieValue&&(cookieValue=!1,document.cookie=cookieName+"\x3d"+cookieValue+"; expires\x3dThu, 01 Jan 1970 00:00:01 GMT; domain\x3d.cmegroup.com; path\x3d/;"):(window.dataLayer.push({event:"loginPage"}),setTimeout(function(){window.dataLayer.push({event:"loginPageDelay"})},timerDelay),cookieValue=!0,document.cookie=cookieName+"\x3d"+cookieValue+"; expires\x3d"+date+"; domain\x3d.cmegroup.com; path\x3d/;");
-  </script>
+  <noscript>
+   <a href="https://ad.doubleclick.net/ddm/jump/N6540.nso.codesrv/B20125859.202020331;sz=1x2;ord=229767008?">
+    <img alt="Advertisement" border="0" height="2" src="https://ad.doubleclick.net/ddm/ad/N6540.nso.codesrv/B20125859.202020331;sz=1x2;ord=1051647043;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=?" width="1"/>
+   </a>
+  </noscript>
   <div aria-labelledby="at4-share-label" class="addthis-smartlayers addthis-smartlayers-desktop" role="region">
    <div id="at4-share-label">
     AddThis Sharing Sidebar
@@ -7542,7 +7531,7 @@ b||[];-1===b.indexOf(d)&&(b.push(d),localStorage.setItem("_tab_ids",JSON.stringi
      </div>
     </div>
    </div>
-   <div class="at-share-open-control at-share-open-control-right ats-transparent at4-hide" id="at4-soc" style="padding-right: 16px;" title="Show">
+   <div class="at-share-open-control at-share-open-control-right ats-transparent at4-hide" id="at4-soc" style="padding-right: 17px;" title="Show">
     <div class="at4-arrow at-left">
      Show
     </div>
@@ -7576,7 +7565,7 @@ b||[];-1===b.indexOf(d)&&(b.push(d),localStorage.setItem("_tab_ids",JSON.stringi
    <div class="at4-hide" id="at-share-dock-label">
     AddThis Sharing
    </div>
-   <div class="at-share-dock atss atss-bottom at-shfs-small addthis-animated slideInUp at4-show at4-hide" id="at-share-dock">
+   <div class="at-share-dock atss atss-bottom at-shfs-small addthis-animated slideInUp" id="at-share-dock">
     <a class="at-share-btn at-svc-facebook" role="button" style="width: 20%;" tabindex="0" title="Facebook">
      <span class="at-icon-wrapper" style="background-color: rgb(10, 40, 69);">
       <svg alt="Facebook" aria-labelledby="at-svg-facebook-6" class="at-icon at-icon-facebook" role="img" style="fill: rgb(255, 255, 255); width: 24px; height: 24px;" title="Facebook" version="1.1" viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -7648,6 +7637,17 @@ b||[];-1===b.indexOf(d)&&(b.push(d),localStorage.setItem("_tab_ids",JSON.stringi
     </a>
    </div>
   </div>
+  <script src="https://analytics.twitter.com/i/adsct?p_id=Twitter&amp;p_user_id=0&amp;txn_id=nzrzc&amp;events=%5B%5B%22pageview%22%2Cnull%5D%5D&amp;tw_sale_amount=0&amp;tw_order_quantity=0&amp;tw_iframe_status=0&amp;tpx_cb=twttr.conversion.loadPixels&amp;tw_document_href=https%3A%2F%2Fwww.cmegroup.com%2Ftrading%2Fenergy%2Frefined-products%2Frbob-gasoline.html" type="text/javascript">
+  </script>
+  <script src="https://analytics.twitter.com/i/adsct?p_id=Twitter&amp;p_user_id=0&amp;txn_id=o1lzd&amp;events=%5B%5B%22pageview%22%2Cnull%5D%5D&amp;tw_sale_amount=0&amp;tw_order_quantity=0&amp;tw_iframe_status=0&amp;tpx_cb=twttr.conversion.loadPixels&amp;tw_document_href=https%3A%2F%2Fwww.cmegroup.com%2Ftrading%2Fenergy%2Frefined-products%2Frbob-gasoline.html" type="text/javascript">
+  </script>
+  <script id="" type="text/javascript">
+   function CE_READY(){1==cmeAjax.isLoggedIn?CE2.set(1,"Logged in Users"):CE2.set(1,"Non-Logged in Users")};
+  </script>
+  <script id="" type="text/javascript">
+   var cookieName="isLoggedInHere",cookieValue=google_tag_manager["GTM-PLCS"].macro(22),expires=3600;expirationTime=1752E4*expires;var date=new Date,time=date.getTime();date.setTime(time+expirationTime);date=date.toUTCString();var timerDelay=1E4;
+1!=cmeAjax.isLoggedIn||void 0!=cookieValue&&""!=cookieValue&&"false"!=cookieValue?0==cmeAjax.isLoggedIn&&"true"==cookieValue&&(cookieValue=!1,document.cookie=cookieName+"\x3d"+cookieValue+"; expires\x3dThu, 01 Jan 1970 00:00:01 GMT; domain\x3d.cmegroup.com; path\x3d/;"):(window.dataLayer.push({event:"loginPage"}),setTimeout(function(){window.dataLayer.push({event:"loginPageDelay"})},timerDelay),cookieValue=!0,document.cookie=cookieName+"\x3d"+cookieValue+"; expires\x3d"+date+"; domain\x3d.cmegroup.com; path\x3d/;");
+  </script>
   <div>
    <div id="pi_tracking_opt_in_div" style="position: fixed;
 z-index: 1000201;">

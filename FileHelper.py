@@ -1,6 +1,7 @@
 import os
 from datetime import datetime
 import random
+import pandas as pd
 
 
 def read_and_shuffle_hrefs():
@@ -20,6 +21,24 @@ def read_and_shuffle_hrefs():
     return shuffled_urls
 # urls = read_and_shuffle_hrefs()
 # print(urls.keys())
+
+
+def combine_scraped_dfs(dict_of_dfs: dict) -> pd.DataFrame:
+    """
+    Receives dictionary of DataFrames and combines into a single DataFrame.
+    Strips out the last record of every df that was observed to be junk/a
+    descriptor appended to all of them
+    :param dict_of_dfs: Dictionary of metric name to DataFrame containing
+    the futures by month for that metric
+    :return: A single DataFrame containing futures by month for all metrics
+    """
+    df_total = pd.DataFrame()
+
+    for _, v in dict_of_dfs.items():
+        v.drop(v.tail(1).index, inplace=True)
+        df_total = df_total.append(v)
+
+    return df_total
 
 
 def get_file_name(folder_ext: str, file_name: str) -> str:
@@ -48,22 +67,37 @@ def get_file_name(folder_ext: str, file_name: str) -> str:
 # get_file_name('_txt', 'Brent')
 
 
-def save_raw_html(prettified_html, href_name, folder_ext='_txt'):
+def save_raw_file(data, file_name, folder_ext):
     """
-    Accepts prettified string of raw HTML and writes out to local text file.
+    Accepts data (string of HTML or DataFrame) and writes out to local text
+    file in appropriate place.
+    :param data: HTML or DataFrame
     :param folder_ext: Base folder name to save raw html in
-    :param prettified_html: String of HTML
-    :param href_name: Name of href from which the HTML was pulled (used in
-    file name)
+    :param file_name: Name of Href or File to save
     :return: None
     """
-
-    file_name = get_file_name(folder_ext, href_name)
+    file_name = get_file_name(folder_ext, file_name)
     path_to_write = os.path.join(os.getcwd(), folder_ext, file_name)
 
-    with open(path_to_write, 'w', encoding='utf-8') as f:
-        f.write(prettified_html)
+    file_ext = os.path.splitext(file_name)[-1]
 
-    print("\t<raw html written to local text file>")
+    if file_ext == r'.txt':
+
+        with open(path_to_write, 'w', encoding='utf-8') as f:
+            f.write(data)
+
+    elif file_ext == r'.csv':
+
+        data.to_csv(path_to_write, index=False)
+
+    print(f"\t<local file saved to {path_to_write}>")
 
     return None
+
+# df = pd.DataFrame()
+# save_raw_file(df, 'Combined Total', 'outputs_csv')
+
+# sample_str = 'Sample string'
+# save_raw_file(sample_str, 'Test', '_txt')
+
+

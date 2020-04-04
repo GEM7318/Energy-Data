@@ -122,19 +122,23 @@ def save_raw_html(prettified_html, href_name, folder_ext='_txt'):
     return None
 
 
-def get_dict_of_dfs(dict_of_hrefs):
+def get_dict_of_dfs(dict_of_hrefs, sleep_floor=45, sleep_ceiling=65):
     """
     Accepts dictionary of names: hrefs and returns a dictionary of DataFrames
     containing the scraped, parsed, and tabularized data
     :param dict_of_hrefs: Dictionary of names to hrefs
-    :return: dict
+    :param sleep_floor: Lower bound of time to sleep between loading page
+    and pulling the source data
+    :param sleep_ceiling: Upper bound of time to sleep between loading page
+    :return: Dictionary of dataframes
     """
     dict_of_dfs = {}
     for href_name, href in dict_of_hrefs.items():
 
         print(f"Scraping started for: {href_name}")
 
-        raw_html, current_tmstmp = html_from_javascript(href, 45, 65)
+        raw_html, current_tmstmp = \
+            html_from_javascript(href, sleep_floor, sleep_ceiling)
 
         df, prettified_soup = df_from_html(raw_html, href_name, current_tmstmp)
         save_raw_html(prettified_soup, href_name)

@@ -6,10 +6,9 @@ import FileHelper as fh
 from selenium import webdriver
 import os
 
-from importlib import reload
-reload(cr)
-reload(fh)
-
+# from importlib import reload
+# reload(cr)
+# reload(fh)
 
 urls = fh.read_and_shuffle_hrefs()
 # print(urls.keys())

@@ -4,6 +4,7 @@ import pandas as pd
 import calendar
 from datetime import datetime as dt
 import janitor as pj
+import re
 
 
 def get_most_recently_modified_file():
@@ -48,6 +49,15 @@ df.drop(columns=[col for col in df.columns
 df.columns = [col.lower().replace(' ', '_') for col in df.columns]
 df.columns = [col.lower().replace('_/_', '_') for col in df.columns]
 
+
+# List of preferred column order
+new_col_order = ['metric_id', 'month', 'prior_settle', 'last', 'open', 'high',
+                 'low', 'change', 'volume', 'hi_low_limit', 'updated',
+                 'collected_timestamp']
+
+# Changing column-order pre-pivot
+df = df[new_col_order]
+
 # Splitting 'high/low limit' into two different columns
 df[['limit_low', 'limit_high']] = \
     df['hi_low_limit'].str.split('/', expand=True)
@@ -83,8 +93,7 @@ def parse_last_updated(val):
 
     return to_explode
 
-time_test = df.last_updated_time.apply(lambda x: dt.strptime(x, '%H:%M:%S').
-                                       strftime('%I:%M %p'))
+
 # Implementing above function
 cols_to_explode = ['last_updated_date', 'last_updated_time_military',
                    'last_updated_time_local', 'last_updated_time_zone']
@@ -100,7 +109,6 @@ df['collected_date'] = df.collected_timestamp.apply(lambda x: x.split(' ')[0])
 # Dropping 'collected timestamp' column
 df.drop(columns=['collected_timestamp'], inplace=True)
 
-
 # Pivoting all columns in DataFrame
 # test4 = df.pivot(index='month', columns='metric_id')
 df_pivoted = df.pivot(index='month', columns='metric_id',
@@ -109,11 +117,88 @@ df_pivoted = df.pivot(index='month', columns='metric_id',
 # Combining multi-index into single column index
 df_pivoted.columns = [f"{col[0]}: {col[1]}" for col in df_pivoted.columns]
 
-# Coalescing all 'collected_dates' into a single column
-df_pivoted = pj.coalesce(df_pivoted,
-                         [col for col in df_pivoted.columns if
-                          'collected_date' in col],
-                         'collected_date')
+
+def coalesce(df1, cols_to_coalesce):
+    """
+    Quick & dirty custom function to SQL-style coalesce multiple columns into
+    a single field.
+    :param df1:
+    :param cols_to_coalesce:
+    :return:
+    """
+    i = iter(cols_to_coalesce)
+    column_name = next(i)
+    coalesced = df1[column_name]
+    for column_name in i:
+        coalesced = coalesced.fillna(df1[column_name])
+    return coalesced
+
+# Coalescing and dropping time zone
+cols_to_coalesce = [col for col in df_pivoted.columns if
+                    re.findall('.*_zone:', col) != []]
+
+df_pivoted['last_updated_time_zone'] = coalesce(df_pivoted.copy(),
+                                                cols_to_coalesce)
+
+cols_to_drop = [col for col in df_pivoted.copy().columns if
+                re.findall('.*_zone:', col) != []]
+
+df_pivoted.drop(columns=cols_to_drop, inplace=True)
+
+# Coalescing and dropping date
+cols_to_coalesce = [col for col in df_pivoted.columns if 'collected_date' in
+                    col]
+
+df_pivoted['collected_date'] = coalesce(df_pivoted.copy(), cols_to_coalesce)
+
+cols_to_drop = [col for col in df_pivoted.copy().columns if
+                re.findall('collected_date: ', col) != []]
+
+df_pivoted.drop(columns=cols_to_drop, inplace=True)
+
+
+# Stripping out index and ordering dataframe
+df_pivoted.reset_index(inplace=True)
+
+
+def get_numeric_time_index(val):
+    """
+    Function to create numeric value for month and year combination (for
+    sorting purposes)
+    """
+    month, year = val.split(' ')
+    month_to_index.get(val.split(' ')[0].title())
+    to_return = int(f"{year}{month_to_index.get(month.title())}")
+    return to_return
+
+df_pivoted.insert(1, 'month_rank',
+                  df_pivoted.month.apply(get_numeric_time_index))
+
+df_pivoted.sort_values('month_rank', inplace=True)
+
+
+def quick_col_reformat(col):
+    if not re.findall(':', col):
+        col = col.replace('_', ' ').title()
+    else:
+        first, last = col.split(': ')
+        first = first.replace('_', ' ').title()
+        col = f"{first}: {last}"
+
+    return col
+
+
+
+df_pivoted.columns = [quick_col_reformat(col) for col in df_pivoted.columns]
+
+import FileHelper as fh
+
+file_nm = fh.get_file_name('etl_outputs_csv', 'Cleansed Output')
+
+df_pivoted.to_csv(file_nm, index=False)
+
+
+
 
 df_pivoted.applymap(str.replace('+', ''))
 for col in df_pivoted.columns:
@@ -125,9 +210,6 @@ for col in df_pivoted.columns:
         pass
 
 df_pivoted.loc['DEC 2020', 'change: Gasoline-RBOB']
-
-
-
 
 time_test = df.last_updated_time.apply(lambda x: dt.strptime(x, '%H:%M:%S').
                                        strftime('%I:%M %p'))

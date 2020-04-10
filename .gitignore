@@ -12,4 +12,4 @@ config.cfg
 *.hyper
 *.pptx
 *.exe
-C:\Users\GEM7318\Documents\Github\Energy-Scraping\outputs_txt\*.txt
+C:/Users/GEM7318/Documents/Github/Energy-Scraping/outputs_txt/*.*

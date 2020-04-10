@@ -3,7 +3,6 @@ import os
 import pandas as pd
 import calendar
 from datetime import datetime as dt
-import janitor as pj
 import re
 
 
@@ -51,19 +50,22 @@ df.columns = [col.lower().replace('_/_', '_') for col in df.columns]
 
 
 # List of preferred column order
-new_col_order = ['metric_id', 'month', 'prior_settle', 'last', 'open', 'high',
-                 'low', 'change', 'volume', 'hi_low_limit', 'updated',
+# new_col_order = ['metric_id', 'month', 'prior_settle', 'last', 'open', 'high',
+#                  'low', 'change', 'volume', 'hi_low_limit', 'updated',
+#                  'collected_timestamp']
+
+new_col_order = ['metric_id', 'month', 'prior_settle', 'updated',
                  'collected_timestamp']
 
 # Changing column-order pre-pivot
 df = df[new_col_order]
 
 # Splitting 'high/low limit' into two different columns
-df[['limit_low', 'limit_high']] = \
-    df['hi_low_limit'].str.split('/', expand=True)
+# df[['limit_low', 'limit_high']] = \
+#     df['hi_low_limit'].str.split('/', expand=True)
 
 # Dropping old column
-df.drop(columns=['hi_low_limit'], inplace=True)
+# df.drop(columns=['hi_low_limit'], inplace=True)
 
 
 # Splitting 'updated' string into three different columns
@@ -156,6 +158,18 @@ cols_to_drop = [col for col in df_pivoted.copy().columns if
 
 df_pivoted.drop(columns=cols_to_drop, inplace=True)
 
+# Coalescing and dropping date
+cols_to_coalesce = [col for col in df_pivoted.columns if
+                    re.findall('.*time_local:', col) != []]
+
+df_pivoted['last_updated_time_local'] = coalesce(df_pivoted.copy(),
+                                            cols_to_coalesce)
+
+cols_to_drop = [col for col in df_pivoted.copy().columns if
+                re.findall('.*time_local:', col) != []]
+
+df_pivoted.drop(columns=cols_to_drop, inplace=True)
+
 
 # Stripping out index and ordering dataframe
 df_pivoted.reset_index(inplace=True)
@@ -188,86 +202,37 @@ def quick_col_reformat(col):
     return col
 
 
-
 df_pivoted.columns = [quick_col_reformat(col) for col in df_pivoted.columns]
 
 import FileHelper as fh
 
 file_nm = fh.get_file_name('etl_outputs_csv', 'Cleansed Output')
 
+df_pivoted = df_pivoted[['Collected Date',
+                        'Last Updated Time Local',
+                        'Last Updated Time Zone',
+                        'Month',
+                        'Month Rank',
+                        'Prior Settle: Brent',
+                        'Prior Settle: Gasoline-RBOB',
+                        'Prior Settle: NYH ULSD-Heating Oil',
+                        'Prior Settle: USGC-ULSD',
+                        'Prior Settle: USGE-HSFO',
+                        'Prior Settle: WTI']]
+
+
 df_pivoted.to_csv(file_nm, index=False)
 
 
 
 
-df_pivoted.applymap(str.replace('+', ''))
-for col in df_pivoted.columns:
-    try:
-        df_pivoted[col] = df_pivoted[col].apply(
-            lambda x: str(x).replace('+', ''))
-        print(f"{col}")
-    except:
-        pass
+# df_pivoted.applymap(str.replace('+', ''))
+# for col in df_pivoted.columns:
+#     try:
+#         df_pivoted[col] = df_pivoted[col].apply(
+#             lambda x: str(x).replace('+', ''))
+#         print(f"{col}")
+#     except:
+#         pass
 
-df_pivoted.loc['DEC 2020', 'change: Gasoline-RBOB']
-
-time_test = df.last_updated_time.apply(lambda x: dt.strptime(x, '%H:%M:%S').
-                                       strftime('%I:%M %p'))
-
-print(col)
-df_pivoted.dtypes
-
-# need to parse out:
-# -- updated date for each metric
-# -- updated timestamp for each metric
-
-
-months = test5.index.to_list()
-print(months)
-month_names = [val.split(' ')[0] for val in months]
-
-test_month = month_names[0]
-print(test_month)
-
-datetime.datetime.month()
-
-test3 = (df.set_index('month')
-         .groupby(level='month')
-         .apply(lambda g: g.sum())
-         .unstack(level=1)
-         .fillna(0))
-
-test4.columns
-test4.columns = [col[0].replace('/', ': ') for col in test4.columns]
-
-test5 = df.pivot(index='month', columns='metric_id',
-                 values=df.columns.tolist()[2:])
-
-type(cols)
-
-df.dtypes
-
-df.head(1).index
-df.columns
-df.loc[0]
-
-df.head()
-
-print(most_recent_mod)
-test = sorted(mod_file_dict.keys(), reverse=True)
-test[0] - test[-1]
-
-print(full_paths)
-os.listdir(base_path)
-time = os.path.getmtime("file.txt")
-
-[os.path.getmtime(os.path.join(base_path, val)) for val in os.listdir(
-    base_path)]
-
-os.path.isfile()
-
-test = df.pivot_table(index='month', columns='metric_id', values='prior_'
-                                                                 'settle')
-
-test2 = df.pivot(index='month', columns='metric_id', values='prior_'
-                                                            'settle')
+# df_pivoted.loc['DEC 2020', 'change: Gasoline-RBOB']

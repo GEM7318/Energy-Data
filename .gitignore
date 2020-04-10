@@ -4,7 +4,7 @@ config.cfg
 *.ipynb
 *.pkl
 *.csv
-#*.txt
+*.txt
 *.xlsx
 *.xml
 *.twb
@@ -12,3 +12,4 @@ config.cfg
 *.hyper
 *.pptx
 *.exe
+C:\Users\GEM7318\Documents\Github\Energy-Scraping\outputs_txt\*.txt

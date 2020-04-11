@@ -4,12 +4,12 @@ import random
 import pandas as pd
 
 
-def read_and_shuffle_hrefs():
+def read_and_shuffle_hrefs(file_nm=r'urls.csv'):
     """
     Reads in csv of names and hrefs and returns shuffled dictionary to
     traverse.
     """
-    path_to_read = os.path.join(os.getcwd(), r'urls.csv')
+    path_to_read = os.path.join(os.getcwd(), file_nm)
     urls_df = pd.read_csv(path_to_read)
 
     urls = urls_df.set_index('Name')['Href'].to_dict()
@@ -41,7 +41,7 @@ def combine_scraped_dfs(dict_of_dfs: dict) -> pd.DataFrame:
     return df_total
 
 
-def get_file_name(folder_ext: str, file_name: str) -> str:
+def get_file_name(folder_ext: str, file_name: str, is_etl=False) -> str:
     """
     Creates a file name with an index number based on folder extension and
     file name inputs.
@@ -60,7 +60,11 @@ def get_file_name(folder_ext: str, file_name: str) -> str:
     index_num = len(pre_existing_files) + 1
 
     file_ext = folder_ext.split('_')[-1]
-    file_name = f"{current_date} ~ {file_name} ~ v{index_num}.{file_ext}"
+
+    if not is_etl:
+        file_name = f"{current_date} ~ {file_name} ~ v{index_num}.{file_ext}"
+    else:
+        file_name = f"{file_name} {current_date}.{file_ext}"
 
     return file_name
 # get_file_name('outputs_csv', 'Daily Total')

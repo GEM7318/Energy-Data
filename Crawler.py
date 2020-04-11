@@ -8,8 +8,10 @@ import time
 import random
 from datetime import datetime
 
+# TODO: Break Scroller into its own module
 
-def get_list_of_directions(upper_lower: int = 2, up_upper: int = 5,
+
+def get_list_of_directions(up_lower: int = 2, up_upper: int = 4,
                            down_lower: int = 0, down_upper: int = 2) \
                             -> list:
     """
@@ -19,7 +21,7 @@ def get_list_of_directions(upper_lower: int = 2, up_upper: int = 5,
     """
 
     down_scroll = [f"Down-{val}"
-                   for val in range(1, random.randint(upper_lower, up_upper))]
+                   for val in range(1, random.randint(up_lower, up_upper))]
     up_scroll = [f"Up-{other}"
                  for other in range(1, random.randint(down_lower,
                                                       down_upper) + 1)]
@@ -29,6 +31,7 @@ def get_list_of_directions(upper_lower: int = 2, up_upper: int = 5,
     all_directions = [val.split('-')[0] for val in all_scroll]
 
     return all_directions
+
 
 def calc_random_scroll_amt(direction: str, screen_height: int = 1080,
                            lower_bound: float = 0.5,
@@ -55,12 +58,11 @@ def calc_random_scroll_amt(direction: str, screen_height: int = 1080,
     return scroll_total
 
 
-def simulate_scrolling(list_of_directions: list, browser: webdriver,
+def simulate_scrolling(browser: webdriver,
                        sleep_lower: int = 20, sleep_upper: int = 45) \
                         -> object:
     """
     Scrolls on a web page based on a list of Up/Down directions and
-    :param list_of_directions: List of up/down directions to scroll
     :param browser: Webdriver browser object (pre-instantiated)
     :param sleep_lower: Lower bound of seconds to sleep for between scrolls
     :param sleep_upper: Upper bound of seconds to sleep for between scrolls
@@ -69,6 +71,8 @@ def simulate_scrolling(list_of_directions: list, browser: webdriver,
     print("<Begin Scrolling Simluation>")
     total_scroll_height = \
         browser.execute_script("return document.body.scrollHeight")
+
+    list_of_directions = get_list_of_directions()
 
     for i, direction in enumerate(list_of_directions, start=1):
 
@@ -94,13 +98,11 @@ def simulate_scrolling(list_of_directions: list, browser: webdriver,
     return None
 
 
-def html_from_javascript(browser: object, href: str, dirs_to_scroll):
+def html_from_javascript(browser: object, href: str):
     """
     Retrieves html from web page given an href, delaying for javascript to
     fire and load data.
     :param browser: Webdriver browser object
-    :param lower: Lower bound of seconds to sleep for
-    :param upper: Upper bound of seconds to sleep for
     :param href: href of web page
     :return: Pre-soup HTML string, String of timestamp
     """
@@ -109,7 +111,7 @@ def html_from_javascript(browser: object, href: str, dirs_to_scroll):
     # time_to_sleep = random.randint(lower, upper)
     print(f"\t<page opened>")
     time.sleep(random.randint(3, 8))  # Sleeping a bit before scrolling
-    simulate_scrolling(dirs_to_scroll, browser)
+    simulate_scrolling(browser)
 
     html = browser.page_source
     current_tmstmp = str(datetime.today())
@@ -134,13 +136,15 @@ def df_from_html(html: str, href_name: str, current_tmstmp: str):
     df = pd.read_html(str(html_tables))[0]
 
     df.insert(0, 'Metric ID', href_name)
+    current_date, current_tmstmp = current_tmstmp.split(' ')
     df['Collected Timestamp'] = current_tmstmp
+    df['Collected Date'] = current_date
     print("\t<parsed HTML into dataframe>")
 
     return df, soup_prettified
 
 
-def get_dict_of_dfs(dict_of_hrefs, browser, dirs_to_scroll,
+def get_dict_of_dfs(dict_of_hrefs, browser,
                     minutes_page_sleep_floor=2, minutes_page_sleep_ceiling=5):
     """
     Accepts dictionary of names: hrefs and returns a dictionary of DataFrames
@@ -162,7 +166,7 @@ def get_dict_of_dfs(dict_of_hrefs, browser, dirs_to_scroll,
         print(f"Scraping started for: {href_name}")
 
         raw_html, current_tmstmp = \
-            html_from_javascript(browser, href, dirs_to_scroll)
+            html_from_javascript(browser, href)
 
         df, prettified_soup = df_from_html(raw_html, href_name, current_tmstmp)
         fh.save_raw_file(prettified_soup, href_name, 'outputs_txt')
@@ -175,6 +179,9 @@ def get_dict_of_dfs(dict_of_hrefs, browser, dirs_to_scroll,
               f"sleeping for {time_to_sleep} seconds>\n")
         time.sleep(time_to_sleep)
 
+    browser.close()
     return dict_of_dfs
 
 
+# TODO: Add  to the end of get_dict_of_dfs() function to close
+#   the browser once the job is finished

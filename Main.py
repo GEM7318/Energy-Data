@@ -17,11 +17,15 @@ urls = fh.read_and_shuffle_hrefs()
 browser = webdriver.Chrome(os.path.join(os.getcwd(), r'chromedriver.exe'))
 browser.maximize_window()
 
-dirs_to_scroll = cr.get_list_of_directions()
 
-dict_of_dfs = cr.get_dict_of_dfs(urls, browser, dirs_to_scroll)
+dict_of_dfs = cr.get_dict_of_dfs(urls, browser)
 
 df_total = fh.combine_scraped_dfs(dict_of_dfs)
 
 fh.save_raw_file(df_total, 'Combined Output', 'outputs_csv')
+
+browser.close()
+
+
+import ETL
 

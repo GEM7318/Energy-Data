@@ -1,64 +1,51 @@
+
 # Imports
 import os
 import pandas as pd
 import calendar
 from datetime import datetime as dt
 import re
-import FileHelper as fh
 import numpy as np
 from collections import Counter
 
 # Creating dictionary of abbreviated month to month-index number
 month_to_index = \
     {v: str(k).zfill(2) for k, v in enumerate(calendar.month_abbr) if k}
-print(month_to_index)
 
 
-def get_most_recently_modified_file():
+def standardize_excel_date_str(val):
     """
-    Imports most recently modified raw output csv as a DataFrame
-    :return: DataFrame
+    Quick & dirty function to convert the Excel-reformatted M/D/YYYY to a
+    YYYY-MM-DD style string.
     """
-    base_path = os.path.join(os.getcwd(), r'outputs_csv')
-    full_paths = [os.path.join(base_path, val) for val in
-                  os.listdir(base_path)]
-    file_paths = [val for val in full_paths if os.path.isfile(val)]
+    year, day, month = val.split('/')[::-1]
+    reformatted_date = f"{str(year).zfill(4)}-{str(month).zfill(2)}" \
+                       f"-{str(day).zfill(2)}"
+    return reformatted_date
 
-    mod_file_dict = {os.path.getmtime(path): path for path in file_paths}
-    most_recent_mod = \
-        mod_file_dict[sorted(mod_file_dict.keys(), reverse=True)[0]]
 
-    df = pd.read_csv(most_recent_mod)
+def read_csv_from_path(full_path: str):
+    """
+    Reads in combined csv from single scraping run output based on a
+    directory path and performs some basic cleanup.
+    :param full_path: Path where CSV is stored
+    :return: pd.DataFrame with slight modifications performed
+    """
+    df = pd.read_csv(full_path)
     df.drop(df.head(1).index, inplace=True)
-    print(f"Imported:\n\t\t{most_recent_mod}")
 
-    return df
-
-
-def standardize_cols(df):
-    """
-    Simple function to modify columns of df for easier modeling in Python.
-    """
     df.columns = [col.lower().replace(' ', '_') for col in df.columns]
     df.columns = [col.lower().replace('_/_', '_') for col in df.columns]
+
+    cols_to_drop = ['options', 'charts', 'last', 'change', 'open', 'high',
+                    'low', 'volume', 'hi_low_limit', 'unnamed:_12_level_0',
+                    'unnamed:_13_level_0', 'collected_timestamp']
+    df.drop(columns=cols_to_drop, inplace=True)
+
+    df.collected_date = df.collected_date.apply(standardize_excel_date_str)
+
     return df
-
-
-# Importing df
-df = get_most_recently_modified_file()
-
-# df = pd.read_csv(r'C:\Users\GEM7318\Documents\Github\Energy-Scraping'
-#                  r'\outputs_csv\2020-04-06 ~ Combined Output ~ v3.csv')
-# df.drop(df.head(1).index, inplace=True)
-# Standardizing columns
-df = standardize_cols(df)
-
-# Dropping unused columns
-cols_to_drop = ['options', 'charts', 'last', 'change', 'open', 'high',
-                'low', 'volume', 'hi_low_limit', 'unnamed:_12_level_0',
-                'unnamed:_13_level_0', 'collected_timestamp']
-
-df.drop(columns=cols_to_drop, inplace=True)
+# TODO: Modularize the above two functions (ETL-reader)
 
 
 def parse_last_updated(val):
@@ -109,27 +96,7 @@ def explode_col_by_func(df: pd.DataFrame, old_col: str, new_cols: list,
         pass
 
     return df
-
-
-# Implementing above function
-cols_to_explode = ['last_updated_date', 'last_updated_time_military',
-                   'last_updated_time_local', 'last_updated_time_zone']
-
-df = explode_col_by_func(df, 'updated', cols_to_explode, parse_last_updated)
-
-
-# Dropping military time column pre-pivot
-df.drop(columns=['last_updated_time_military'], inplace=True)
-
-# Pivoting all columns in DataFrame
-df_pivoted = df.pivot(index='month', columns='metric_id',
-                      values=df.columns.tolist()[2:])
-
-# Combining multi-index into single column index
-df_pivoted.columns = [f"{col[0]}: {col[1]}" for col in df_pivoted.columns]
-
-df_pivoted.index.name = 'month'
-df_pivoted.reset_index(inplace=True)
+# TODO: Modularize the above two functions (column-exploder)
 
 
 def get_coalesced_col(df1, cols_to_coalesce):
@@ -150,7 +117,7 @@ def get_coalesced_col(df1, cols_to_coalesce):
 
 def coalesce(df: pd.DataFrame, cols_to_coalesce: list,
              col_to_coalesce_into: str, drop_coalesced_cols: bool = True) \
-            -> None:
+        -> None:
     """
     Function to in-place coalesce multiple columns of a DataFrame into a
     single column.
@@ -170,28 +137,31 @@ def coalesce(df: pd.DataFrame, cols_to_coalesce: list,
     return None
 
 
-# Coalescing many columns into one
-cols_time_zone = [col for col in df_pivoted.columns if 
-                  re.findall('.*_zone:', col) != []]
+def coalesce_multiple(df: pd.DataFrame, col_patterns_to_coalesce: list,
+                      col_nms_to_coalesce_into: list,
+                      drop_coalesced_cols: bool = True) \
+        -> None:
+    """
+    Function to in-place coalesce multiple sets of columns within a
+    DataFrame into a single column per set.
+    :param df: DataFrame to perform operation on
+    :param col_patterns_to_coalesce: N-length list of regex patterns to
+    identify different sets of columns
+    :param col_nms_to_coalesce_into: N-length List of column names to store
+    results of each coalescion in
+    :param drop_coalesced_cols: Boolean value indicating whether or not to
+    columns that have been coalesced
+    """
+    sets_of_cols = []
+    for patt in col_patterns_to_coalesce:
+        cols = [col for col in df.columns if re.findall(patt, col) != []]
+        sets_of_cols.append(cols)
 
-cols_collected_date = [col for col in df_pivoted.columns if re.findall(
-    'collected_date: ', col) != []]
+    for cols, col_nm in zip(sets_of_cols, col_nms_to_coalesce_into):
+        coalesce(df, cols, col_nm, drop_coalesced_cols)
 
-cols_updated_date = [col for col in df_pivoted.columns if re.findall(
-    'last_updated_date: ', col) != []]
-
-cols_local_time = [col for col in df_pivoted.columns if re.findall(
-    '.*time_local:', col) != []]
-
-
-coalesce_col_names = ['updated_time_zone', 'collected_date',
-                      'updated_date', 'updated_time']
-cols_to_coalesce = [cols_time_zone, cols_collected_date, 
-                    cols_updated_date, cols_local_time]
-
-for col_nm, cols in zip(coalesce_col_names, cols_to_coalesce):
-    coalesce(df_pivoted, cols, col_nm)
-
+    return None
+# TODO: Modularize the above three functions (df-coalescer)
 
 
 def get_numeric_time_index(val):
@@ -199,33 +169,56 @@ def get_numeric_time_index(val):
     Function to create numeric value for month and year combination (for
     sorting purposes)
     """
-    # print(val)
     if re.findall('-', val):
         val1, val2 = val.split('-')
     else:
         val1, val2 = val.split(' ')
 
-    len_val_dict = {len(val1): val1, len(val2): val2}
-    list_of_lens = sorted(list(len_val_dict.keys()))
-    # print(len_val_dict)
-    month = len_val_dict.get(list_of_lens[0])
-    year = len_val_dict.get(list_of_lens[-1])
+    if val1.isnumeric():
+        year, month = str(val1)[0:2], val2
+    else:
+        month, year = val1, str(val2)[0:2]
 
     month_index = month_to_index.get(month.title())
-    # print(f"Year: {year}, Month: {month}")
-    # print(f"20{year}{month_index}")
     to_return = int(f"20{year}{month_index}")
+
     return to_return
 # get_numeric_time_index('Feb-31')
 # get_numeric_time_index('31-Feb')
+# get_numeric_time_index('FEB-2031')
+# get_numeric_time_index('2031-FEB')
 
 
-df_pivoted.insert(1, 'month_rank',
-                  df_pivoted.month.apply(get_numeric_time_index))
-df_pivoted.sort_values('month_rank', inplace=True)
-df_pivoted.reset_index(drop=True, inplace=True)
-df_pivoted.index.name = 'Month Index'
-df_pivoted.reset_index(inplace=True)
+def get_month_hash_and_sort(df: pd.DataFrame, hash_parent: str = 'Month Index',
+                            hash_child: str = 'collected_date',
+                            name_of_hash: str = 'Lookup-Key',
+                            drop_month_index: bool = True) -> None:
+    """
+    Creates numeric index for months and a unique identifier for a given
+    futures month based on a collected date
+    :param df: DataFrame to perform operation on
+    :param hash_parent: First level needed for unique relationship
+    :param hash_child: Second level needed for unique relationship
+    :param name_of_hash: Name of hashed field to user in DataFrame
+    :param drop_month_index: Boolean value indication whether or not to drop
+    the numeric index for month once it has been embedded into the unique field
+    """
+    df.insert(1, 'month_rank',
+              df.month.apply(get_numeric_time_index))
+    df.sort_values('month_rank', inplace=True)
+    df.reset_index(drop=True, inplace=True)
+    df.index.name = hash_parent
+    df.reset_index(inplace=True)
+
+    df.insert(0, name_of_hash, df[hash_child].astype(str)
+              + ' - ' + df[hash_parent].astype(str))
+
+    if drop_month_index:
+        df.drop(columns=[hash_parent], inplace=True)
+
+    return None
+# TODO: Modularize the above two functions (hash-sorter)
+
 
 def floatify_cols(df, list_of_cols):
     """
@@ -237,11 +230,6 @@ def floatify_cols(df, list_of_cols):
         df[col] = df[col].apply(float)
 
     return None
-
-
-metric_cols = [col for col in df_pivoted.columns if re.findall(':', col)]
-floatify_cols(df_pivoted, metric_cols)
-df_pivoted.dtypes
 
 
 def prettify_col(col):
@@ -257,95 +245,161 @@ def prettify_col(col):
     return col
 
 
-
-df_pivoted.columns = [prettify_col(col) for col in df_pivoted.columns]
-dfp2 = df_pivoted.copy()
-
-df_pivoted.rename(columns={'NYH ULSD-HEATING OIL': 'NYH ULSD-Heating Oil',
-                          'BRENT': 'Brent',
-                          'GASOLINE-RBOB': 'Gasoline-RBOB',
-                           'USGC-HSFO': 'USGC-HSFO (/bbl)'}, inplace=True)
-
-
-df_pivoted['USGC-HSFO'] = df_pivoted['USGC-HSFO (/bbl)'] / 42
-
-
+def prettify_cols_for_export(df: pd.DataFrame):
+    """
+    Implements prettify_col() function and does in-place manual renaming of
+    some edge cases.
+    """
+    df.columns = [prettify_col(col) for col in df.columns]
+    df.rename(columns={'NYH ULSD-HEATING OIL': 'NYH ULSD-Heating Oil',
+                       'BRENT': 'Brent', 'GASOLINE-RBOB': 'Gasoline-RBOB',
+                       'USGC-HSFO': 'USGC-HSFO (/bbl)'}, inplace=True)
+    return None
+# TODO: Modularize the above three functions (df-export-prepper)
 
 
-df_pivoted = df_pivoted[['Collected Date',
-                        'Updated Date',
-                        'Updated Time',
-                        'Updated Time Zone',
-                        'Month',
-                        'Month Index',
-                        'Brent',
-                        'Gasoline-RBOB',
-                        'NYH ULSD-Heating Oil',
-                        'USGC-ULSD',
-                        'USGC-HSFO',
-                        'WTI',
-                        'USGC-HSFO (/bbl)']]
+def get_context_and_date_for_data(df_data: pd.DataFrame) -> tuple:
+    """
+    Generates the DataFrame for 'Context' tab of ETL output as well as
+    extracts and re-formats the 'collected date'.
+    :param df_data: Pivoted DataFrame for primary output tab
+    :return: DataFrame to populate 'Context' tab and the formatted date for
+    file name
+    """
+    path_to_urls = os.path.join(os.getcwd(), r'urls.csv')
+    context_df = pd.read_csv(path_to_urls)
 
-df_pivoted.insert(0, 'Lookup-Key', df_pivoted['Collected Date'].astype(str)
-                  + ' - ' + df_pivoted['Month Index'].astype(str))
+    date_frmt = list(Counter(df_data['Collected Date']).keys())[0]
 
-df_pivoted.drop(columns=['Month Index'], inplace=True)
+    source_date_df = \
+        pd.DataFrame(data=['CME Group (Prior Settle)', date_frmt],
+                     index=['Source', 'Date'], columns=['Href'])
+    source_date_df = source_date_df.reset_index()
+    source_date_df.rename(columns={'index': 'Name'}, inplace=True)
 
-# df_pivoted['Month Rank'].min()
+    context_df = pd.concat([source_date_df, context_df])
 
-
-df_vertical = df_pivoted.copy()
-# df_transposed = df_pivoted.transpose()
-
-# from importlib import reload
-# reload(cr)
-# reload(fh)
-
-file_nm2 = fh.get_file_name('etl_outputs_xlsx',
-                           'CME Group Futures Price - Prior Settle',
-                           is_etl=True)
-
-# Deriving context tab contents
-path_to_read = os.path.join(os.getcwd(), r'urls.csv')
-dtl_df = pd.read_csv(path_to_read)
-
-collected_date = list(Counter(df_pivoted['Collected Date']).keys())[0]
-date_df = pd.DataFrame(data=['CME Group (Prior Settle)', collected_date],
-                       index=['Source', 'Date'], columns=['Href'])
-date_df = date_df.reset_index()
-date_df.rename(columns={'index': 'Name'}, inplace=True)
-
-dtl_df = pd.concat([date_df, dtl_df])
+    return context_df, date_frmt
 
 
-dfs = {'Data_Vertical': df_pivoted, 'Context': dtl_df}
+def fancy_excel_writer(path_to_write: str, dict_of_dfs: dict) -> None:
+    """
+    Function to write out to a .xlsx file based on a path to write to and a
+    dict of DataFrames.
+    :param path_to_write: Full file path to write to
+    :param dict_of_dfs: Dictionary of DataFrames following the convention
+    Tab Name: Data for Tab
+    """
+    writer = pd.ExcelWriter(path_to_write, 'xlsxwriter')
+    for sheetname, df in dict_of_dfs.items():
 
-date_fmrt = '-'.join(collected_date.split('/')[::-1])
-print(date_fmrt)
-file_nm = f"CME Group Futures Price - Prior Settle {date_fmrt}.xlsx"
+        if sheetname == 'Context':
+            df.to_excel(writer, sheet_name=sheetname, index=False,
+                        header=False)
+        else:
+            df.to_excel(writer, sheet_name=sheetname, index=False)
 
-path_to_write = os.path.join(os.getcwd(), 'etl_outputs_xlsx', file_nm)
-path2 = os.path.join(os.getcwd(), 'etl_outputs_xlsx', file_nm2)
-print(path_to_write)
-print(path2)
+        worksheet = writer.sheets[sheetname]  # pull worksheet object
 
-writer = pd.ExcelWriter(path_to_write, 'xlsxwriter')
-for sheetname, df in dfs.items():
-
-    if sheetname == 'Context':
-        df.to_excel(writer, sheet_name=sheetname, index=False, header=False)
-    else:
-        df.to_excel(writer, sheet_name=sheetname, index=False)
-
-    worksheet = writer.sheets[sheetname]  # pull worksheet object
-
-    for idx, col in enumerate(df):  # loop through all columns
-        series = df[col]
-        max_len = max((
-            series.astype(str).map(len).max(),  # len of largest item
-            len(str(series.name))  # len of column name/header
+        for idx, col in enumerate(df):  # loop through all columns
+            series = df[col]
+            max_len = max((
+                series.astype(str).map(len).max(),  # len of largest item
+                len(str(series.name))  # len of column name/header
             )) + 1  # adding a little extra space
-        worksheet.set_column(idx, idx, max_len)  # set column width
-writer.save()
-    
+            worksheet.set_column(idx, idx, max_len)  # set column width
+    writer.save()
+
+    return None
+# TODO: Modularize the above two functions (Excel-Handler)
+
+
+def run_pipeline(path_str):
+
+    # =========================================================================
+    # Importing and lightly cleaning up from scraping CSV output
+    df = read_csv_from_path(path_str)
+
+    # =========================================================================
+    # Splitting components within 'last updated' column into their own fields
+    cols_to_explode = ['last_updated_date', 'last_updated_time_military',
+                       'last_updated_time_local', 'last_updated_time_zone']
+
+    df = explode_col_by_func(df, 'updated',
+                             cols_to_explode, parse_last_updated)
+
+    df.drop(columns=['last_updated_time_military'], inplace=True)
+
+    # =========================================================================
+    # Pivoting DataFrame based on 'metric_id' column
+    df_pivoted = df.pivot(index='month', columns='metric_id',
+                          values=df.columns.tolist()[2:])
+
+    # Combining multi-index into single column index
+    df_pivoted.columns = [f"{col[0]}: {col[1]}" for col in df_pivoted.columns]
+
+    df_pivoted.index.name = 'month'
+    df_pivoted.reset_index(inplace=True)
+
+    # =========================================================================
+    # Coalescing multiple sets of columns into individual fields
+    coalesced_col_nms = ['updated_time_zone', 'collected_date',
+                         'updated_date', 'updated_time']
+
+    patterns_to_find = ['.*_zone:', 'collected_date: ', 'last_updated_date: ',
+                        '.*time_local:']
+
+    coalesce_multiple(df_pivoted, patterns_to_find, coalesced_col_nms)
+
+    # =========================================================================
+    # Sorting on month/year and creating Lookup-ID Column
+    get_month_hash_and_sort(df_pivoted)
+
+    # =========================================================================
+    # Cleansing & converting numeric columns to floats pre-export
+    metric_cols = [col for col in df_pivoted.columns if re.findall(':', col)]
+    floatify_cols(df_pivoted, metric_cols)
+
+    # =========================================================================
+    # Renaming column names pre-export
+    prettify_cols_for_export(df_pivoted)
+
+    # =========================================================================
+    # Converting USGC-HSFO column to a per gallon like other metrics
+    df_pivoted['USGC-HSFO'] = df_pivoted['USGC-HSFO (/bbl)'] / 42
+
+    # =========================================================================
+    # Re-ordering DataFrame based on standards stored externally
+    path_to_col_order = os.path.join(os.getcwd(), 'ETL_col_order.csv')
+
+    df_cols = pd.read_csv(path_to_col_order)
+
+    col_names_for_export = df_cols['Column_Names'].tolist()
+
+    df_pivoted = df_pivoted[col_names_for_export]
+
+    # =========================================================================
+    # Generating DataFrame for 'Context' tab and getting date for file name
+    context_df, date_frmt = get_context_and_date_for_data(df_pivoted)
+
+    # =========================================================================
+    # Creating dict of Tab_Name: Associated DataFrame for Excel writer
+    dfs = {'Data_Vertical': df_pivoted, 'Context': context_df}
+
+    # =========================================================================
+    # Creating file name and path to write data to
+    file_nm = f"CME Group Futures Price - Prior Settle {date_frmt}.xlsx"
+    path_to_write = os.path.join(os.getcwd(), 'etl_outputs_xlsx', file_nm)
+
+    # =========================================================================
+    # Writing out to .xlsx
+    fancy_excel_writer(path_to_write, dfs)
+
+    return None
+
+
+path_to_csv = r'C:\Users\GEM7318\Documents\Github\Energy-Scraping' \
+              r'\outputs_csv\2020-04-06 ~ Combined Output ~ v3.csv'
+
+run_pipeline(path_to_csv)
 

@@ -105,3 +105,22 @@ def save_raw_file(data, file_name, folder_ext):
 # save_raw_file(sample_str, 'Test', '_txt')
 
 
+def get_most_recently_modified_file():
+    """
+    Imports most recently modified raw output csv as a DataFrame
+    :return: DataFrame
+    """
+    base_path = os.path.join(os.getcwd(), r'outputs_csv')
+    full_paths = [os.path.join(base_path, val) for val in
+                  os.listdir(base_path)]
+    file_paths = [val for val in full_paths if os.path.isfile(val)]
+
+    mod_file_dict = {os.path.getmtime(path): path for path in file_paths}
+    most_recent_mod = \
+        mod_file_dict[sorted(mod_file_dict.keys(), reverse=True)[0]]
+
+    df = pd.read_csv(most_recent_mod)
+    df.drop(df.head(1).index, inplace=True)
+    print(f"Imported:\n\t\t{most_recent_mod}")
+
+    return df

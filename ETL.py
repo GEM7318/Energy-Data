@@ -198,20 +198,34 @@ def get_numeric_time_index(val):
         val1, val2 = val.split(' ')
 
     if val1.isnumeric():
-        year, month = str(val1)[0:2], val2
+        year, month = str(val1)[-2:], val2
     else:
-        month, year = val1, str(val2)[0:2]
+        month, year = val1, str(val2)[-2:]
 
     month_index = month_to_index.get(month.title())
     to_return = int(f"20{year}{month_index}")
 
     return to_return
 
-
+# print(month_to_index.keys())
 # get_numeric_time_index('Feb-31')
 # get_numeric_time_index('31-Feb')
 # get_numeric_time_index('FEB-2031')
 # get_numeric_time_index('2031-FEB')
+# get_numeric_time_index('Jan 2020')
+# get_numeric_time_index('Jan 2030')
+# # test = [1,2,3]
+# # test[::-2]
+#
+# tester = 'JAN 2030'
+# val1, val2 = tester.split(' ')
+# print(val1, val2)
+# val1.isnumeric()
+# month, year = val1, str(val2)[-2:]
+# str(val2)
+# month
+# year
+# problem is in both month_index and hash functions
 
 
 def get_month_hash_and_sort(df: pd.DataFrame, hash_parent: str = 'Month Index',
@@ -230,6 +244,7 @@ def get_month_hash_and_sort(df: pd.DataFrame, hash_parent: str = 'Month Index',
     """
     df.insert(1, 'month_rank',
               df.month.apply(get_numeric_time_index))
+
     df.sort_values('month_rank', inplace=True)
     df.reset_index(drop=True, inplace=True)
     df.index.name = hash_parent
@@ -242,10 +257,13 @@ def get_month_hash_and_sort(df: pd.DataFrame, hash_parent: str = 'Month Index',
         df.drop(columns=[hash_parent], inplace=True)
 
     return None
-
+# TODO: Fix such that the sorting still works for recent/forward looking files
 
 # TODO: Modularize the above two functions (hash-sorter)
 
+df = read_csv_from_path(r'C:\Users\GEM7318\Documents\Github\Energy-Scraping'
+                 r'\outputs_csv\2020-04-12 ~ Combined Output ~ v2.csv')
+get_month_hash_and_sort(df)
 
 def floatify_cols(df, list_of_cols):
     """

@@ -1,4 +1,3 @@
-
 # Imports
 import os
 import pandas as pd
@@ -18,10 +17,27 @@ def standardize_excel_date_str(val):
     Quick & dirty function to convert the Excel-reformatted M/D/YYYY to a
     YYYY-MM-DD style string.
     """
-    year, day, month = val.split('/')[::-1]
+    if re.findall('/', val):
+        month, day, year = val.split('/')
+    else:
+        year, month, day = val.split('-')
+
     reformatted_date = f"{str(year).zfill(4)}-{str(month).zfill(2)}" \
                        f"-{str(day).zfill(2)}"
+
     return reformatted_date
+#
+#
+# tester = pd.read_csv(path_str)
+# tester = pd.read_csv(
+#     r'C:\Users\GEM7318\Documents\Github\Energy-Scraping\outputs_csv\2020-04-12 ~ Combined Output ~ v1.csv')
+# test_date = list(tester['Collected Date'])[2]
+# testyear, testmonth, testday = test_date.split('-')
+# test_date.split('/')
+# standardize_excel_date_str(test_date)
+
+
+# standardize_excel_date_str('4/12/2020')
 
 
 def read_csv_from_path(full_path: str):
@@ -45,6 +61,9 @@ def read_csv_from_path(full_path: str):
     df.collected_date = df.collected_date.apply(standardize_excel_date_str)
 
     return df
+
+
+# read_csv_from_path(path_str)
 # TODO: Modularize the above two functions (ETL-reader)
 
 
@@ -96,6 +115,8 @@ def explode_col_by_func(df: pd.DataFrame, old_col: str, new_cols: list,
         pass
 
     return df
+
+
 # TODO: Modularize the above two functions (column-exploder)
 
 
@@ -161,6 +182,8 @@ def coalesce_multiple(df: pd.DataFrame, col_patterns_to_coalesce: list,
         coalesce(df, cols, col_nm, drop_coalesced_cols)
 
     return None
+
+
 # TODO: Modularize the above three functions (df-coalescer)
 
 
@@ -183,6 +206,8 @@ def get_numeric_time_index(val):
     to_return = int(f"20{year}{month_index}")
 
     return to_return
+
+
 # get_numeric_time_index('Feb-31')
 # get_numeric_time_index('31-Feb')
 # get_numeric_time_index('FEB-2031')
@@ -217,6 +242,8 @@ def get_month_hash_and_sort(df: pd.DataFrame, hash_parent: str = 'Month Index',
         df.drop(columns=[hash_parent], inplace=True)
 
     return None
+
+
 # TODO: Modularize the above two functions (hash-sorter)
 
 
@@ -255,6 +282,8 @@ def prettify_cols_for_export(df: pd.DataFrame):
                        'BRENT': 'Brent', 'GASOLINE-RBOB': 'Gasoline-RBOB',
                        'USGC-HSFO': 'USGC-HSFO (/bbl)'}, inplace=True)
     return None
+
+
 # TODO: Modularize the above three functions (df-export-prepper)
 
 
@@ -311,13 +340,18 @@ def fancy_excel_writer(path_to_write: str, dict_of_dfs: dict) -> None:
     writer.save()
 
     return None
+
+
 # TODO: Modularize the above two functions (Excel-Handler)
 
 
 def run_pipeline(path_str):
+    print(f"Pipeline Started for:\n\t{path_str}")
 
     # =========================================================================
     # Importing and lightly cleaning up from scraping CSV output
+    # path_str = r'C:\Users\GEM7318\Documents\Github\Energy-Scraping' \
+    #            r'\outputs_csv\2020-04-11 ~ Combined Output ~ v1.csv'
     df = read_csv_from_path(path_str)
 
     # =========================================================================
@@ -390,16 +424,17 @@ def run_pipeline(path_str):
     # Creating file name and path to write data to
     file_nm = f"CME Group Futures Price - Prior Settle {date_frmt}.xlsx"
     path_to_write = os.path.join(os.getcwd(), 'etl_outputs_xlsx', file_nm)
+    path_to_write_2 = os.path.join(
+        r'C:\Users\GEM7318\Dropbox\1 - CME Group Futures Files', file_nm)
 
     # =========================================================================
     # Writing out to .xlsx
     fancy_excel_writer(path_to_write, dfs)
-
+    fancy_excel_writer(path_to_write_2, dfs)
+    print(f"Pipeline Completed for:\n\t{path_str}\n")
     return None
 
+# path_to_csv = r'C:\Users\GEM7318\Documents\Github\Energy-Scraping' \
+#               r'\outputs_csv\2020-04-06 ~ Combined Output ~ v3.csv'
 
-path_to_csv = r'C:\Users\GEM7318\Documents\Github\Energy-Scraping' \
-              r'\outputs_csv\2020-04-06 ~ Combined Output ~ v3.csv'
-
-run_pipeline(path_to_csv)
-
+# run_pipeline(path_to_csv)

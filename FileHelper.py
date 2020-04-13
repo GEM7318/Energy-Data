@@ -2,6 +2,7 @@ import os
 from datetime import datetime
 import random
 import pandas as pd
+import re
 
 
 def read_and_shuffle_hrefs(file_nm=r'urls.csv'):
@@ -19,6 +20,8 @@ def read_and_shuffle_hrefs(file_nm=r'urls.csv'):
     shuffled_urls = {k: urls[k] for k in names}
 
     return shuffled_urls
+
+
 # urls = read_and_shuffle_hrefs()
 # print(urls.keys())
 
@@ -67,6 +70,8 @@ def get_file_name(folder_ext: str, file_name: str, is_etl=False) -> str:
         file_name = f"{file_name} {current_date}.{file_ext}"
 
     return file_name
+
+
 # get_file_name('outputs_csv', 'Daily Total')
 # get_file_name('_txt', 'Brent')
 
@@ -98,6 +103,7 @@ def save_raw_file(data, file_name, folder_ext):
 
     return None
 
+
 # df = pd.DataFrame()
 # save_raw_file(df, 'Combined Total', 'outputs_csv')
 
@@ -105,10 +111,26 @@ def save_raw_file(data, file_name, folder_ext):
 # save_raw_file(sample_str, 'Test', '_txt')
 
 
-def get_most_recently_modified_file():
+def get_path_to_most_recent_file(folder_ext=r'outputs_csv'):
     """
     Imports most recently modified raw output csv as a DataFrame
     :return: DataFrame
+    """
+    base_path = os.path.join(os.getcwd(), folder_ext)
+    full_paths = [os.path.join(base_path, val) for val in
+                  os.listdir(base_path)]
+    file_paths = [val for val in full_paths if os.path.isfile(val)]
+
+    mod_file_dict = {os.path.getmtime(path): path for path in file_paths}
+    most_recent_mod = \
+        mod_file_dict[sorted(mod_file_dict.keys(), reverse=True)[0]]
+
+    return most_recent_mod
+
+
+def get_latest_output_for_date(date_str):
+    """
+    Imports most recently modified raw output csv for a given day.
     """
     base_path = os.path.join(os.getcwd(), r'outputs_csv')
     full_paths = [os.path.join(base_path, val) for val in
@@ -124,3 +146,53 @@ def get_most_recently_modified_file():
     print(f"Imported:\n\t\t{most_recent_mod}")
 
     return df
+
+# date_in = '2020-04-06'
+# test_str = '2020-04-06 ~ Combined Output ~ v3.csv'
+# date_str, _, version = test_str.split(' ~ ')
+# version_num = int(version[::-len(version)])
+# files = os.listdir(r'C:\Users\GEM7318\Documents\Github\Energy-Scraping'
+#                    r'\outputs_csv')
+# days_files = [val for val in files if date_in in val]
+
+
+def get_latest_file_for_date(dir_str: str, date_str: str) -> str:
+    """
+    Gets full path to the 'latest' file name by version number for all files
+    within a given directory on a given date based on the version number.
+    :param dir_str: Directory to traverse
+    :param date_str: Date to partition by
+    :return: Path to file that has the highest version number on the given
+    date
+    """
+    files = [file for file in os.listdir(dir_str) if date_str in file]
+
+    file_version_dict = {}
+    for file in files:
+        date_str, _, version = os.path.splitext(file)[0].split(' ~ ')
+        version_num = int(version[::-len(version)])
+        file_version_dict[version_num] = file
+
+    latest_file = file_version_dict[list(file_version_dict.keys())[::-1][0]]
+    latest_path = os.path.join(dir_str, latest_file)
+
+    return latest_path
+# outputs_dir = os.path.join(os.getcwd(), 'outputs_csv')
+# get_latest_file_for_date(outputs_dir, '2020-04-10')
+# get_latest_file_for_date(outputs_dir, '2020-04-06')
+
+
+def get_distinct_dates_from_dir(dir_str: str) -> list:
+    """
+    Traverses a directory following tilda-delimited naming convention with date
+    as first argument and returns distinct dates within directory
+    :param dir_str: Directory to traverse
+    :return: Sorted list of distinct dates within the directory
+    """
+    files = [file for file in os.listdir(dir_str) if re.findall('~', file)]
+    dates = {file.split('~')[0] for file in files}
+    dates = sorted(list(dates))
+
+    return dates
+# get_distinct_dates_from_dir(outputs_dir)
+

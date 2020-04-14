@@ -1,0 +1,31 @@
+INFO:root:Could not load invalid DataFrames: []
+INFO:root:Could not load invalid DataFrames: []
+ERROR:root:Error Occurred
+Traceback (most recent call last):
+  File "C:\Users\GEM7318\Anaconda3\envs\energyenv\lib\site-packages\xlsxwriter\workbook.py", line 316, in close
+    self._store_workbook()
+  File "C:\Users\GEM7318\Anaconda3\envs\energyenv\lib\site-packages\xlsxwriter\workbook.py", line 632, in _store_workbook
+    raise e
+  File "C:\Users\GEM7318\Anaconda3\envs\energyenv\lib\site-packages\xlsxwriter\workbook.py", line 629, in _store_workbook
+    xlsx_file = ZipFile(self.filename, "w", compression=ZIP_DEFLATED,
+  File "C:\Users\GEM7318\Anaconda3\envs\energyenv\lib\zipfile.py", line 1251, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\GEM7318\\Documents\\Github\\Energy-Scraping\\etl_outputs_xlsx\\CME Group Futures Price - Prior Settle (COMBINED).xlsx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<input>", line 197, in write_combined_dict
+  File "C:\Users\GEM7318\Documents\Github\Energy-Scraping\ETL.py", line 358, in fancy_excel_writer
+    writer.save()
+  File "C:\Users\GEM7318\Anaconda3\envs\energyenv\lib\site-packages\pandas\io\excel\_xlsxwriter.py", line 195, in save
+    return self.book.close()
+  File "C:\Users\GEM7318\Anaconda3\envs\energyenv\lib\site-packages\xlsxwriter\workbook.py", line 318, in close
+    raise FileCreateError(e)
+xlsxwriter.exceptions.FileCreateError: [Errno 13] Permission denied: 'C:\\Users\\GEM7318\\Documents\\Github\\Energy-Scraping\\etl_outputs_xlsx\\CME Group Futures Price - Prior Settle (COMBINED).xlsx'
+INFO:root:Could not load invalid DataFrames: []
+INFO:root:Could not load invalid DataFrames: []
+INFO:root:Could not load invalid DataFrames: []
+INFO:root:Could not load invalid DataFrames: []
+INFO:root:Could not load invalid DataFrames: []
+INFO:root:Could not load invalid DataFrames: []

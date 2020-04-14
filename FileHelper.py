@@ -196,3 +196,18 @@ def get_distinct_dates_from_dir(dir_str: str) -> list:
     return dates
 # get_distinct_dates_from_dir(outputs_dir)
 
+
+def file_checker(path_to_file: str) -> bool:
+    """
+    Simple function to test whether or not file is open.
+    :param path_to_file: Path to file
+    :return: Boolean indicator of file being currently closed/writable or not
+    """
+    is_okay = True
+    try:
+        tester = open(path_to_file, "w")
+        tester.close()
+    except IOError:
+        is_okay = False
+
+    return is_okay

@@ -261,9 +261,9 @@ def get_month_hash_and_sort(df: pd.DataFrame, hash_parent: str = 'Month Index',
 
 # TODO: Modularize the above two functions (hash-sorter)
 
-df = read_csv_from_path(r'C:\Users\GEM7318\Documents\Github\Energy-Scraping'
-                 r'\outputs_csv\2020-04-12 ~ Combined Output ~ v2.csv')
-get_month_hash_and_sort(df)
+# df = read_csv_from_path(r'C:\Users\GEM7318\Documents\Github\Energy-Scraping'
+#                  r'\outputs_csv\2020-04-12 ~ Combined Output ~ v2.csv')
+# get_month_hash_and_sort(df)
 
 def floatify_cols(df, list_of_cols):
     """
@@ -358,8 +358,6 @@ def fancy_excel_writer(path_to_write: str, dict_of_dfs: dict) -> None:
     writer.save()
 
     return None
-
-
 # TODO: Modularize the above two functions (Excel-Handler)
 
 

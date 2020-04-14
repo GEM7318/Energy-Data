@@ -8,6 +8,9 @@ import ETL_Combine_Processed as combine
 from selenium import webdriver
 import os
 
+cwd = os.path.join(os.getcwd().split('Energy-Scraping')[0], 'Energy_Scraping')
+os.chdir(cwd)
+
 # from importlib import reload
 # reload(cr)
 # reload(fh)
@@ -35,5 +38,12 @@ most_recently_modified_file = fh.get_path_to_most_recent_file()
 # Running through pipeline*********
 etl.run_pipeline(most_recently_modified_file)
 
-# Running combine-all-processed pipeline
-combine.run_pipeline()
+# Running the combining of all-processed files through initial ETL
+
+project_path = os.path.join(os.getcwd(), 'etl_outputs_xlsx')
+user_path = r'C:\Users\GEM7318\Dropbox\1 - CME Group Futures Files'
+# TODO: Change user_path such that it's based on a config file from Tom
+all_paths = [project_path, user_path]
+
+combine.run_pipeline(all_paths, r'CME Group Futures Price - Prior Settle ('
+                             r'COMBINED).xlsx')

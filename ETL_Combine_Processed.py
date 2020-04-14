@@ -68,6 +68,8 @@ def get_dict_of_dfs(list_of_paths: list) -> dict:
         df_dict[os.path.split(path)[-1].split('.')[0]] = pd.read_excel(path)
 
     return df_dict
+
+
 # get_dict_of_dfs(paths)
 
 def get_col_check_dtl(dict_of_dfs, valid_col_hash=valid_col_hash):
@@ -163,6 +165,8 @@ def combine_valid_dfs(dict_of_dfs, hash_dict):
     combined_df.reset_index(drop=True, inplace=True)
 
     return combined_df
+
+
 # TODO: Add logic to log dataframes that can't be loaded due to column mismatch
 
 
@@ -191,15 +195,14 @@ def get_context_for_combined(df_data: pd.DataFrame) -> pd.DataFrame:
 
     return context_df
 
-# fh.get_file_name('etl_outputs_xlsx', 'CME Group Futures Price - Prior Settle (COMBINED)')
 
-
-def write_combined_dict(dfs, base_file_name=
-                        "CME Group Futures Price - Prior Settle (COMBINED)",
-                        folder_ext='etl_outputs_xlsx'):
-
+def write_combined_dict(dfs,
+                        base_file_name=r"CME Group Futures Price - Prior "
+                                       r"Settle (COMBINED).xlsx",
+                        base_path=os.path.join(os.getcwd(),
+                                               'etl_outputs_xlsx')):
+    base_file_name, folder_ext = base_file_name.split('.')
     initial_file_name = f"{base_file_name}.xlsx"
-    base_path = os.path.join(os.getcwd(), folder_ext)
     initial_write_path = os.path.join(base_path, initial_file_name)
     print(initial_write_path)
 
@@ -218,32 +221,13 @@ def write_combined_dict(dfs, base_file_name=
                               'path', e)
 
     return None
-    # finally:
-    #     etl.fancy_excel_writer(path_one_except, dfs)
-
-    # try:
-    #     other_path = os.path.join(
-    #         r'C:\Users\GEM7318\Dropbox\1 - CME Group Futures Files', file_nm)
-    #     etl.fancy_excel_writer(other_path, dfs)
-    # except:
-    #     other_path = os.path.join(
-    #         r'C:\Users\GEM7318\Dropbox\1 - CME Group Futures Files',
-    #         'Exceptions', file_nm)
-    #     etl.fancy_excel_writer(other_path, dfs)
+# TODO: Change fh.get_file_name() above such that it will continue to
+#  function if using a different directory structured
 
 
-
-
-# TODO: Add logging to the above so you can see where it's adding files to
-
-# tester = r'C:\Users\GEM7318\Documents\Github\Energy-Scraping\etl_outputs_xlsx\CME Group Futures Price - Prior Settle (COMBINED).xlsx'
-
-# from importlib import reload
-# reload(fh)
-
-# print(paths)
-
-def run_pipeline():
+def run_pipeline(paths_to_write_to: list,
+                 base_file_name: str =
+                 r'CME Group Futures Price - Prior Settle (COMBINED).xlsx'):
     df_dict = get_dict_of_dfs(paths)
 
     hash_dict = get_col_check_dtl(df_dict)
@@ -253,13 +237,15 @@ def run_pipeline():
     dfs = {'Combined_Vertical': df_total,
            'Context': get_context_for_combined(df_total)}
 
-    write_combined_dict(dfs)
+    for path in paths_to_write_to:
+        write_combined_dict(dfs, base_file_name, path)
 
     print(f"<Combine-All Pipeline Completed>")
 
-run_pipeline()
 
-# df_dict = get_dict_of_dfs(paths)
-# hash_dict = get_col_check_dtl(df_dict)
-# df_total = combine_valid_dfs(df_dict, hash_dict)
-# context =
+# project_path = os.path.join(os.getcwd(), 'etl_outputs_xlsx')
+# user_path = r'C:\Users\GEM7318\Dropbox\1 - CME Group Futures Files'
+# all_paths = [project_path, user_path]
+
+# run_pipeline(all_paths, r'CME Group Futures Price - Prior Settle ('
+#                              r'COMBINED).xlsx')

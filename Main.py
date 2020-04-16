@@ -4,16 +4,23 @@ import Crawler as cr
 import FileHelper as fh
 import ETL as etl
 import ETL_Combine_Processed as combine
+import random
+import time
 
 from selenium import webdriver
 import os
 
-cwd = os.path.join(os.getcwd().split('Energy-Scraping')[0], 'Energy_Scraping')
+cwd = os.path.join(os.getcwd().split('Energy-Scraping')[0], 'Energy-Scraping')
 os.chdir(cwd)
 
 # from importlib import reload
 # reload(cr)
 # reload(fh)
+
+# Random sleeping time so doesn't start at exact same time every night*****
+intl_sleep = random.randint(0, 60 * 5)
+print(f"<Sleeping for a randomly generated {intl_sleep} seconds>")
+time.sleep(intl_sleep)
 
 # Reading in URLS*****************
 urls = fh.read_and_shuffle_hrefs()

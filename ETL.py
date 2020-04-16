@@ -420,11 +420,11 @@ def run_pipeline(path_str):
 
     # =========================================================================
     # Re-ordering DataFrame based on standards stored externally
-    path_to_col_order = os.path.join(os.getcwd(), 'ETL_col_order.csv')
+    # path_to_col_order = os.path.join(os.getcwd(), 'ETL_col_order.csv')
+    path_to_col_order = os.path.join(os.getcwd(), 'ETL_Output_Template.xlsx')
 
-    df_cols = pd.read_csv(path_to_col_order)
-
-    col_names_for_export = df_cols['Column_Names'].tolist()
+    df_cols = pd.read_excel(path_to_col_order)
+    col_names_for_export = df_cols.columns.tolist()
 
     df_pivoted = df_pivoted[col_names_for_export]
 

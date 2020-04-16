@@ -50,8 +50,11 @@ dir_to_concat = os.path.join(os.getcwd(), 'etl_outputs_xlsx')
 
 paths = [os.path.join(dir_to_concat, file)
          for file in os.listdir(dir_to_concat)
-         if r'.xlsx' in file and 'combined' not in file.lower()]
+         if r'.xlsx' in file and 'combined' not in file.lower()
+         and r'$' not in file.lower()]
 
+# for path in paths:
+#     print(path)
 
 # TODO: Change to get_files_to_combine()
 # paths

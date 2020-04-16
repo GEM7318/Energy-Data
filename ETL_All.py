@@ -17,7 +17,9 @@ dates = fh.get_distinct_dates_from_dir(outputs_dir)
 # dates
 
 files = [fh.get_latest_file_for_date(outputs_dir, date) for date in dates]
-# files
+# print(files[1])
+
+# etl.run_pipeline(r'C:\Users\GEM7318\Documents\Github\Energy-Scraping\outputs_csv\2020-04-06 ~ Combined Output ~ v3.csv')
 
 for file in files:
     etl.run_pipeline(file)

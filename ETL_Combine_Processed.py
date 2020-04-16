@@ -27,36 +27,61 @@ logging.basicConfig(filename='test.log', level=logging.DEBUG)
 # 4: Verify that the new file's columns match the main file's columns,
 # append one on top of the other and write back out to Excel
 
-def quick_hash(unhashed):
-    """Quick hashing function to truncate the length playlist_id:
-    snapshot_id key.
+# def quick_hash(unhashed):
+#     """Quick hashing function to truncate the length playlist_id:
+#     snapshot_id key.
+#     """
+#     hashed_base = hashlib.md5(unhashed.encode('utf-8'))
+#     hashed_str = hashed_base.hexdigest()
+#     return hashed_str
+
+
+def hash_from_cols(df):
+    """Quick hashing function to return hash value from a DataFrame's columns.
     """
-    hashed_base = hashlib.md5(unhashed.encode('utf-8'))
-    hashed_str = hashed_base.hexdigest()
-    return hashed_str
+    to_hash = '~'.join(df.columns.to_list())
 
+    hash_base = hashlib.md5(to_hash.encode('utf-8'))
+    hashed = hash_base.hexdigest()
 
-# TODO: Change to hash_df_cols() function
+    return hashed
 
-
-template_df = pd.read_excel(os.path.join(os.getcwd().split('Energy-Scraping')
-                                         [0], 'Energy-Scraping',
-                                         'ETL_Output_Template.xlsx'))
-valid_col_hash = quick_hash('~'.join(template_df.columns.to_list()))
+# template_df = pd.read_excel()
+# valid_col_hash = hash_from_cols(template_df)
 # TODO: Change to get column_template_hash()
 
+def get_valid_hash(path_to_template=None):
 
-dir_to_concat = os.path.join(os.getcwd(), 'etl_outputs_xlsx')
+    if not path_to_template:
+        path_to_template = \
+            os.path.join(os.getcwd().split('Energy-Scraping')[0],
+                         'Energy-Scraping', 'ETL_Output_Template.xlsx')
+    else:
+        pass
 
-paths = [os.path.join(dir_to_concat, file)
-         for file in os.listdir(dir_to_concat)
-         if r'.xlsx' in file and 'combined' not in file.lower()
-         and r'$' not in file.lower()]
+    df = pd.read_excel(path_to_template)
+    template_hash = hash_from_cols(df)
 
-# for path in paths:
-#     print(path)
+    return template_hash
+# get_valid_hash()
+
+
+def get_paths_to_files(path_to_read=None):
+
+    if not path_to_read:
+        path_to_read = os.path.join(os.getcwd(), 'etl_outputs_xlsx')
+
+    else:
+        pass
+
+    paths = [os.path.join(path_to_read, file)
+             for file in os.listdir(path_to_read)
+             if r'.xlsx' in file and 'combined' not in file.lower()]
+
+    return paths
 
 # TODO: Change to get_files_to_combine()
+# get_paths_to_files(r'C:\Users\GEM7318\Dropbox\1 - CME Group Futures Files')
 # paths
 
 def get_dict_of_dfs(list_of_paths: list) -> dict:
@@ -73,29 +98,19 @@ def get_dict_of_dfs(list_of_paths: list) -> dict:
     return df_dict
 
 
-# get_dict_of_dfs(paths)
-
-def get_col_check_dtl(dict_of_dfs, valid_col_hash=valid_col_hash):
+def get_col_check_dtl(dict_of_dfs):
     """
     Returns a dictionary of df_name: hash value for columns.
     :param dict_of_dfs:
     :return:
     """
+    template_hash = get_valid_hash()
+
     hash_dict = {}
     for k, v in dict_of_dfs.items():
-        df_cols = v.columns.to_list()
-        cols_hash = quick_hash('~'.join(df_cols))
-        hash_dict[k] = cols_hash == valid_col_hash
+        hash_dict[k] = hash_from_cols(v) == template_hash
 
     return hash_dict
-
-
-# for k, v in hash_dict.items():
-#     print(f"{k}:\n\t{v}")
-
-
-# df = df_dict['CME Group Futures Price - Prior Settle 2020-04-04']
-# df.shape
 
 
 def get_list_of_indicators(df,
@@ -231,6 +246,9 @@ def write_combined_dict(dfs,
 def run_pipeline(paths_to_write_to: list,
                  base_file_name: str =
                  r'CME Group Futures Price - Prior Settle (COMBINED).xlsx'):
+
+    paths = get_paths_to_files()
+
     df_dict = get_dict_of_dfs(paths)
 
     hash_dict = get_col_check_dtl(df_dict)
@@ -246,9 +264,12 @@ def run_pipeline(paths_to_write_to: list,
     print(f"<Combine-All Pipeline Completed>")
 
 
-# project_path = os.path.join(os.getcwd(), 'etl_outputs_xlsx')
+project_path = os.path.join(os.getcwd(), 'etl_outputs_xlsx')
+base_file_nm = r'CME Group Futures Price - Prior Settle (COMBINED).xlsx'
 # user_path = r'C:\Users\GEM7318\Dropbox\1 - CME Group Futures Files'
 # all_paths = [project_path, user_path]
+
+# run_pipeline([project_path], base_file_nm)
 
 # run_pipeline(all_paths, r'CME Group Futures Price - Prior Settle ('
 #                              r'COMBINED).xlsx')

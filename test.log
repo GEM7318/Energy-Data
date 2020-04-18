@@ -519,3 +519,489 @@ DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
 DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:59777/session/029b909c884f0e44d159e0b8250b07fd/window {}
 DEBUG:urllib3.connectionpool:http://127.0.0.1:59777 "DELETE /session/029b909c884f0e44d159e0b8250b07fd/window HTTP/1.1" 200 14
 DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:54081
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session HTTP/1.1" 200 683
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/window/maximize {}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/window/maximize HTTP/1.1" 200 52
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/url {"url": "https://www.cmegroup.com/trading/energy/refined-products/gulf-coast-no-6-fuel-oil-30pct-sulfur-platts-swap.html"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "return document.body.scrollHeight", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 13
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "window.scrollTo(300, 928)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 13
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "window.scrollTo(828, 37)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/source {}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "GET /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/source HTTP/1.1" 200 619039
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/url {"url": "https://www.cmegroup.com/trading/energy/refined-products/rbob-gasoline.html"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "return document.body.scrollHeight", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 11
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "window.scrollTo(0, 679)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 13
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "window.scrollTo(679, 1561)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "window.scrollTo(1561, 2265)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "window.scrollTo(2265, 3194)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/source {}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "GET /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/source HTTP/1.1" 200 558444
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/url {"url": "https://www.cmegroup.com/trading/energy/refined-products/gulf-coast-ultra-low-sulfur-diesel-usld-platts-calendar-swap.html"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "return document.body.scrollHeight", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 11
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "window.scrollTo(0, 898)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 13
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "window.scrollTo(898, 1828)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "window.scrollTo(1828, 890)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 13
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "window.scrollTo(890, 1746)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/source {}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "GET /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/source HTTP/1.1" 200 563763
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/url {"url": "https://www.cmegroup.com/trading/energy/crude-oil/brent-crude-oil.html"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "return document.body.scrollHeight", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 11
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "window.scrollTo(0, 722)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 13
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "window.scrollTo(722, 1692)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "window.scrollTo(1692, 774)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 13
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "window.scrollTo(774, 1753)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/source {}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "GET /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/source HTTP/1.1" 200 658991
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/url {"url": "https://www.cmegroup.com/trading/energy/refined-products/heating-oil.html"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "return document.body.scrollHeight", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 11
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "window.scrollTo(0, 582)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 13
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "window.scrollTo(582, 1651)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/source {}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "GET /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/source HTTP/1.1" 200 558924
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/url {"url": "https://www.cmegroup.com/trading/energy/crude-oil/light-sweet-crude_quotes_globex.html"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "return document.body.scrollHeight", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 11
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "window.scrollTo(0, 1023)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "window.scrollTo(1023, 1676)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync {"script": "window.scrollTo(1676, 839)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "POST /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/source {}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "GET /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/source HTTP/1.1" 200 672262
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:54081/session/a4f05e2f8f225218cbe9fb8b3d7ec90a/window {}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:54081 "DELETE /session/a4f05e2f8f225218cbe9fb8b3d7ec90a/window HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:62521
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session HTTP/1.1" 200 682
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/window/maximize {}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/window/maximize HTTP/1.1" 200 51
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/url {"url": "https://www.cmegroup.com/trading/energy/refined-products/gulf-coast-ultra-low-sulfur-diesel-usld-platts-calendar-swap.html"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "return document.body.scrollHeight", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 11
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "window.scrollTo(0, 782)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 13
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "window.scrollTo(782, 1434)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "window.scrollTo(1434, 603)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 13
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "window.scrollTo(603, 6)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 11
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "window.scrollTo(6, 1053)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/source {}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "GET /session/70ae344c6a4df829457869b1248a4232/source HTTP/1.1" 200 563801
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/url {"url": "https://www.cmegroup.com/trading/energy/refined-products/rbob-gasoline.html"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "return document.body.scrollHeight", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 11
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "window.scrollTo(0, 774)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 13
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "window.scrollTo(774, 1711)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "window.scrollTo(1711, 965)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 13
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "window.scrollTo(965, 1632)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "window.scrollTo(1632, 2458)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/source {}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "GET /session/70ae344c6a4df829457869b1248a4232/source HTTP/1.1" 200 558115
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/url {"url": "https://www.cmegroup.com/trading/energy/refined-products/heating-oil.html"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "return document.body.scrollHeight", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 11
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "window.scrollTo(0, 1035)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "window.scrollTo(1035, 126)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 13
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "window.scrollTo(126, 1114)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/source {}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "GET /session/70ae344c6a4df829457869b1248a4232/source HTTP/1.1" 200 559191
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/url {"url": "https://www.cmegroup.com/trading/energy/refined-products/gulf-coast-no-6-fuel-oil-30pct-sulfur-platts-swap.html"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "return document.body.scrollHeight", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 11
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "window.scrollTo(0, 845)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 13
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "window.scrollTo(845, 289)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 13
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "window.scrollTo(289, 910)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/source {}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "GET /session/70ae344c6a4df829457869b1248a4232/source HTTP/1.1" 200 459737
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/url {"url": "https://www.cmegroup.com/trading/energy/crude-oil/brent-crude-oil.html"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "return document.body.scrollHeight", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 11
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "window.scrollTo(0, 1026)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "window.scrollTo(1026, 482)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 13
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "window.scrollTo(482, 1478)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/source {}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "GET /session/70ae344c6a4df829457869b1248a4232/source HTTP/1.1" 200 659020
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/url {"url": "https://www.cmegroup.com/trading/energy/crude-oil/light-sweet-crude_quotes_globex.html"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "return document.body.scrollHeight", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 11
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "window.scrollTo(0, 675)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 13
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "window.scrollTo(675, 1751)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/execute/sync {"script": "window.scrollTo(1751, 2526)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "POST /session/70ae344c6a4df829457869b1248a4232/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/source {}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "GET /session/70ae344c6a4df829457869b1248a4232/source HTTP/1.1" 200 747089
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:62521/session/70ae344c6a4df829457869b1248a4232/window {}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62521 "DELETE /session/70ae344c6a4df829457869b1248a4232/window HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51977/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:51977
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51977 "POST /session HTTP/1.1" 200 682
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51977/session/19acddd88b70eeda5476a2c3f0d1d5ab/window/maximize {}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51977 "POST /session/19acddd88b70eeda5476a2c3f0d1d5ab/window/maximize HTTP/1.1" 200 51
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51977/session/19acddd88b70eeda5476a2c3f0d1d5ab/url {"url": "https://www.cmegroup.com/trading/energy/crude-oil/light-sweet-crude_quotes_globex.html"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51977 "POST /session/19acddd88b70eeda5476a2c3f0d1d5ab/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51977/session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync {"script": "return document.body.scrollHeight", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51977 "POST /session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51977/session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51977 "POST /session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync HTTP/1.1" 200 11
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51977/session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync {"script": "window.scrollTo(0, 1038)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51977 "POST /session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:51977/session/19acddd88b70eeda5476a2c3f0d1d5ab/source {}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51977 "GET /session/19acddd88b70eeda5476a2c3f0d1d5ab/source HTTP/1.1" 200 748153
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51977/session/19acddd88b70eeda5476a2c3f0d1d5ab/url {"url": "https://www.cmegroup.com/trading/energy/refined-products/gulf-coast-ultra-low-sulfur-diesel-usld-platts-calendar-swap.html"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51977 "POST /session/19acddd88b70eeda5476a2c3f0d1d5ab/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51977/session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync {"script": "return document.body.scrollHeight", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51977 "POST /session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51977/session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51977 "POST /session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync HTTP/1.1" 200 11
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51977/session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync {"script": "window.scrollTo(0, 563)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51977 "POST /session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:51977/session/19acddd88b70eeda5476a2c3f0d1d5ab/source {}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51977 "GET /session/19acddd88b70eeda5476a2c3f0d1d5ab/source HTTP/1.1" 200 563912
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51977/session/19acddd88b70eeda5476a2c3f0d1d5ab/url {"url": "https://www.cmegroup.com/trading/energy/crude-oil/brent-crude-oil.html"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51977 "POST /session/19acddd88b70eeda5476a2c3f0d1d5ab/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51977/session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync {"script": "return document.body.scrollHeight", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51977 "POST /session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51977/session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51977 "POST /session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync HTTP/1.1" 200 11
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51977/session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync {"script": "window.scrollTo(0, 626)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51977 "POST /session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:51977/session/19acddd88b70eeda5476a2c3f0d1d5ab/source {}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51977 "GET /session/19acddd88b70eeda5476a2c3f0d1d5ab/source HTTP/1.1" 200 658949
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51977/session/19acddd88b70eeda5476a2c3f0d1d5ab/url {"url": "https://www.cmegroup.com/trading/energy/refined-products/heating-oil.html"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51977 "POST /session/19acddd88b70eeda5476a2c3f0d1d5ab/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51977/session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync {"script": "return document.body.scrollHeight", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51977 "POST /session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51977/session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51977 "POST /session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync HTTP/1.1" 200 11
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51977/session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync {"script": "window.scrollTo(0, 593)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51977 "POST /session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51977/session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51977 "POST /session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync HTTP/1.1" 200 13
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51977/session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync {"script": "window.scrollTo(593, 1513)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51977 "POST /session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51977/session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51977 "POST /session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51977/session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync {"script": "window.scrollTo(1513, 716)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51977 "POST /session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:51977/session/19acddd88b70eeda5476a2c3f0d1d5ab/source {}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51977 "GET /session/19acddd88b70eeda5476a2c3f0d1d5ab/source HTTP/1.1" 200 558620
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51977/session/19acddd88b70eeda5476a2c3f0d1d5ab/url {"url": "https://www.cmegroup.com/trading/energy/refined-products/gulf-coast-no-6-fuel-oil-30pct-sulfur-platts-swap.html"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51977 "POST /session/19acddd88b70eeda5476a2c3f0d1d5ab/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51977/session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync {"script": "return document.body.scrollHeight", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51977 "POST /session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51977/session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51977 "POST /session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync HTTP/1.1" 200 11
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51977/session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync {"script": "window.scrollTo(0, 931)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51977 "POST /session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:51977/session/19acddd88b70eeda5476a2c3f0d1d5ab/source {}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51977 "GET /session/19acddd88b70eeda5476a2c3f0d1d5ab/source HTTP/1.1" 200 581203
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51977/session/19acddd88b70eeda5476a2c3f0d1d5ab/url {"url": "https://www.cmegroup.com/trading/energy/refined-products/rbob-gasoline.html"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51977 "POST /session/19acddd88b70eeda5476a2c3f0d1d5ab/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51977/session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync {"script": "return document.body.scrollHeight", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51977 "POST /session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51977/session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync {"script": "return window.scrollY", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51977 "POST /session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync HTTP/1.1" 200 11
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51977/session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync {"script": "window.scrollTo(0, 1000)", "args": []}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51977 "POST /session/19acddd88b70eeda5476a2c3f0d1d5ab/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:51977/session/19acddd88b70eeda5476a2c3f0d1d5ab/source {}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51977 "GET /session/19acddd88b70eeda5476a2c3f0d1d5ab/source HTTP/1.1" 200 558701
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:51977/session/19acddd88b70eeda5476a2c3f0d1d5ab/window {}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:51977 "DELETE /session/19acddd88b70eeda5476a2c3f0d1d5ab/window HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request

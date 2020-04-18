@@ -66,7 +66,7 @@ def get_valid_hash(path_to_template=None):
 # get_valid_hash()
 
 
-def get_paths_to_files(path_to_read=None):
+def get_paths_to_base_etl_outputs(path_to_read=None):
 
     if not path_to_read:
         path_to_read = os.path.join(os.getcwd(), 'etl_outputs_xlsx')
@@ -80,9 +80,6 @@ def get_paths_to_files(path_to_read=None):
 
     return paths
 
-# TODO: Change to get_files_to_combine()
-# get_paths_to_files(r'C:\Users\GEM7318\Dropbox\1 - CME Group Futures Files')
-# paths
 
 def get_dict_of_dfs(list_of_paths: list) -> dict:
     """
@@ -247,7 +244,7 @@ def run_pipeline(paths_to_write_to: list,
                  base_file_name: str =
                  r'CME Group Futures Price - Prior Settle (COMBINED).xlsx'):
 
-    paths = get_paths_to_files()
+    paths = get_paths_to_base_etl_outputs()
 
     df_dict = get_dict_of_dfs(paths)
 

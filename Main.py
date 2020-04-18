@@ -19,7 +19,8 @@ os.chdir(cwd)
 
 # Random sleeping time so doesn't start at exact same time every night*****
 intl_sleep = random.randint(0, 60 * 5)
-print(f"<Sleeping for a randomly generated {intl_sleep} seconds>")
+print(f"<Sleeping for a randomly generated {intl_sleep} seconds before "
+      f"beginning scraping>")
 time.sleep(intl_sleep)
 
 # Reading in URLS*****************
@@ -49,8 +50,9 @@ etl.run_pipeline(most_recently_modified_file)
 
 project_path = os.path.join(os.getcwd(), 'etl_outputs_xlsx')
 user_path = r'C:\Users\GEM7318\Dropbox\1 - CME Group Futures Files'
-# TODO: Change user_path such that it's based on a config file from Tom
 all_paths = [project_path, user_path]
+# TODO: Change user_path such that it's based on a config file from Tom
 
-combine.run_pipeline(all_paths, r'CME Group Futures Price - Prior Settle ('
-                             r'COMBINED).xlsx')
+base_file_nm = r'CME Group Futures Price - Prior Settle (COMBINED).xlsx'
+
+combine.run_pipeline(all_paths, base_file_nm)

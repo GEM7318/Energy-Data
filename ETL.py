@@ -47,25 +47,43 @@ def read_csv_from_path(full_path: str):
     :param full_path: Path where CSV is stored
     :return: pd.DataFrame with slight modifications performed
     """
+    # full_path = r'C:\Users\GEM7318\Documents\Github\Energy-Scraping' \
+    #            r'\outputs_csv\2020-04-23 ~ Combined Output ~ v1.csv'
     df = pd.read_csv(full_path)
-    df.drop(df.head(1).index, inplace=True)
+    # df.drop(df.head(1).index, inplace=True)
+    df.drop(index=0, inplace=True)
 
     df.columns = [col.lower().replace(' ', '_') for col in df.columns]
     df.columns = [col.lower().replace('_/_', '_') for col in df.columns]
 
     cols_to_drop = ['options', 'charts', 'last', 'change', 'open', 'high',
-                    'low', 'volume', 'hi_low_limit', 'unnamed:_12_level_0',
-                    'unnamed:_13_level_0', 'collected_timestamp']
+                    'low', 'volume', 'hi_low_limit', 'collected_timestamp']
+    unnamed_cols_to_drop = [col for col in df.columns if 'unnamed' in
+                            col.lower()]
+    cols_to_drop = cols_to_drop + unnamed_cols_to_drop
     df.drop(columns=cols_to_drop, inplace=True)
 
     df.collected_date = df.collected_date.apply(standardize_excel_date_str)
 
+    df = df[['metric_id', 'month', 'prior_settle', 'updated',
+             'collected_date']]
+
     return df
 
 
+
+# path_str2 = r'C:\Users\GEM7318\Documents\Github\Energy-Scraping' \
+#            r'\outputs_csv\2020-04-21 ~ Combined Output ~ v1.csv'
+#
+# path_str = r'C:\Users\GEM7318\Documents\Github\Energy-Scraping' \
+#            r'\outputs_csv\2020-04-23 ~ Combined Output ~ v1.csv'
 # read_csv_from_path(path_str)
 # TODO: Modularize the above two functions (ETL-reader)
 
+# df1 = read_csv_from_path(path_str2)
+# df2 = read_csv_from_path(path_str)
+# df1.columns
+# df2.columns
 
 def parse_last_updated(val):
     """
@@ -367,8 +385,14 @@ def run_pipeline(path_str):
     # =========================================================================
     # Importing and lightly cleaning up from scraping CSV output
     # path_str = r'C:\Users\GEM7318\Documents\Github\Energy-Scraping' \
-    #            r'\outputs_csv\2020-04-11 ~ Combined Output ~ v1.csv'
+    #            r'\outputs_csv\2020-04-23 ~ Combined Output ~ v1.csv'
+    # path_str = r'C:\Users\GEM7318\Documents\Github\Energy-Scraping' \
+    #            r'\outputs_csv\2020-04-21 ~ Combined Output ~ v1.csv'
     df = read_csv_from_path(path_str)
+
+    # [col for col in df.columns if 'collected' in col]
+    # type(df.iloc[2])
+    # df.shape
 
     # =========================================================================
     # Splitting components within 'last updated' column into their own fields
@@ -390,7 +414,21 @@ def run_pipeline(path_str):
 
     df_pivoted.index.name = 'month'
     df_pivoted.reset_index(inplace=True)
+    df_pivoted.drop(columns=[col for col in df_pivoted.columns if 'month:'
+                             in col], inplace=True)
 
+    dfp1 = df_pivoted.copy()
+    dfp2 = df_pivoted.copy()
+    dfp1.shape
+    dfp2.shape
+    [col for col in dfp2.columns if 'collected' in col]
+    [col for col in dfp1.columns if 'collected' in col]
+    [col for col in dfp2.columns]
+    for col in dfp1.columns:
+        if col in list(dfp2.columns):
+            pass
+        else:
+            print(col)
     # =========================================================================
     # Coalescing multiple sets of columns into individual fields
     coalesced_col_nms = ['updated_time_zone', 'collected_date',

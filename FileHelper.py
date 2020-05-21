@@ -35,12 +35,16 @@ def combine_scraped_dfs(dict_of_dfs: dict) -> pd.DataFrame:
     the futures by month for that metric
     :return: A single DataFrame containing futures by month for all metrics
     """
-    df_total = pd.DataFrame()
+    # df_total = pd.DataFrame()
 
-    for _, v in dict_of_dfs.items():
+    dfs = []
+    for k, v in dict_of_dfs.items():
+        print(f"Combine:\n\t{k}")
         v.drop(v.tail(1).index, inplace=True)
-        df_total = df_total.append(v)
+        dfs.append(v)
+        # df_total = df_total.append(v)
 
+    df_total = pd.concat(dfs)
     return df_total
 
 

@@ -61,7 +61,12 @@ def read_csv_from_path(full_path: str):
     unnamed_cols_to_drop = [col for col in df.columns if 'unnamed' in
                             col.lower()]
     cols_to_drop = cols_to_drop + unnamed_cols_to_drop
-    df.drop(columns=cols_to_drop, inplace=True)
+    for col in cols_to_drop:
+        try:
+            df.drop(columns=[col], inplace=True)
+        except:
+            print(f"Could not drop column {col} from file")
+    # df.drop(columns=cols_to_drop, inplace=True)
 
     df.collected_date = df.collected_date.apply(standardize_excel_date_str)
 

@@ -14,10 +14,15 @@ from datetime import datetime
 def get_list_of_directions(up_lower: int = 2, up_upper: int = 4,
                            down_lower: int = 0, down_upper: int = 2) \
                             -> list:
-    """
-    Generates a list of Up/Down directions to scroll based on lower/upper
-    bounds of the number of times to scroll in each direction
-    :return: List of Up/Down directions to scroll
+    """Generates n-length list of randomly-generated directions to scroll
+    based on lower/upper bounds of times to scroll in each direction.
+    Args:
+        up_lower: Lower bound of number of times to scroll up
+        up_upper: upper bound of times of times to scroll up
+        down_lower: Lower bound of number of times to scroll down
+        down_upper: upper bound of times of times to scroll down
+    Returns:
+        List of Up/Down directions to scroll
     """
 
     down_scroll = [f"Down-{val}"

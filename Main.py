@@ -30,8 +30,8 @@ urls = fh.read_and_shuffle_hrefs()
 # print(urls['WTI'])
 
 # Scraping************************
-# browser = webdriver.Chrome(os.path.join(os.getcwd(), r'chromedriver.exe'))
-browser = webdriver.Chrome(ChromeDriverManager().install())
+browser = webdriver.Chrome(os.path.join(os.getcwd(), r'chromedriver.exe'))
+# browser = webdriver.Chrome(ChromeDriverManager().install())
 
 browser.maximize_window()
 

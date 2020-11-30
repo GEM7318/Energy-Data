@@ -5,7 +5,7 @@ import pandas as pd
 import re
 
 
-def read_and_shuffle_hrefs(file_nm=r'urls.csv'):
+def read_and_shuffle_hrefs(file_nm=r"urls.csv"):
     """
     Reads in csv of names and hrefs and returns shuffled dictionary to
     traverse.
@@ -13,7 +13,7 @@ def read_and_shuffle_hrefs(file_nm=r'urls.csv'):
     path_to_read = os.path.join(os.getcwd(), file_nm)
     urls_df = pd.read_csv(path_to_read)
 
-    urls = urls_df.set_index('Name')['Href'].to_dict()
+    urls = urls_df.set_index("Name")["Href"].to_dict()
 
     names = [val for val in urls.keys()]
     random.shuffle(names)
@@ -59,14 +59,15 @@ def get_file_name(folder_ext: str, file_name: str, is_etl=False) -> str:
     within a given day
     """
     base_path = os.path.join(os.getcwd(), folder_ext)
-    current_date = str(datetime.today()).split(' ')[0]
+    current_date = str(datetime.today()).split(" ")[0]
 
     files = os.listdir(base_path)
-    pre_existing_files = [file for file in files if
-                          file_name in file and current_date in file]
+    pre_existing_files = [
+        file for file in files if file_name in file and current_date in file
+    ]
     index_num = len(pre_existing_files) + 1
 
-    file_ext = folder_ext.split('_')[-1]
+    file_ext = folder_ext.split("_")[-1]
 
     if not is_etl:
         file_name = f"{current_date} ~ {file_name} ~ v{index_num}.{file_ext}"
@@ -94,12 +95,12 @@ def save_raw_file(data, file_name, folder_ext):
 
     file_ext = os.path.splitext(file_name)[-1]
 
-    if file_ext == r'.txt':
+    if file_ext == r".txt":
 
-        with open(path_to_write, 'w', encoding='utf-8') as f:
+        with open(path_to_write, "w", encoding="utf-8") as f:
             f.write(data)
 
-    elif file_ext == r'.csv':
+    elif file_ext == r".csv":
 
         data.to_csv(path_to_write, index=False)
 
@@ -115,19 +116,17 @@ def save_raw_file(data, file_name, folder_ext):
 # save_raw_file(sample_str, 'Test', '_txt')
 
 
-def get_path_to_most_recent_file(folder_ext=r'outputs_csv'):
+def get_path_to_most_recent_file(folder_ext=r"outputs_csv"):
     """
     Imports most recently modified raw output csv as a DataFrame
     :return: DataFrame
     """
     base_path = os.path.join(os.getcwd(), folder_ext)
-    full_paths = [os.path.join(base_path, val) for val in
-                  os.listdir(base_path)]
+    full_paths = [os.path.join(base_path, val) for val in os.listdir(base_path)]
     file_paths = [val for val in full_paths if os.path.isfile(val)]
 
     mod_file_dict = {os.path.getmtime(path): path for path in file_paths}
-    most_recent_mod = \
-        mod_file_dict[sorted(mod_file_dict.keys(), reverse=True)[0]]
+    most_recent_mod = mod_file_dict[sorted(mod_file_dict.keys(), reverse=True)[0]]
 
     return most_recent_mod
 
@@ -136,20 +135,19 @@ def get_latest_output_for_date(date_str):
     """
     Imports most recently modified raw output csv for a given day.
     """
-    base_path = os.path.join(os.getcwd(), r'outputs_csv')
-    full_paths = [os.path.join(base_path, val) for val in
-                  os.listdir(base_path)]
+    base_path = os.path.join(os.getcwd(), r"outputs_csv")
+    full_paths = [os.path.join(base_path, val) for val in os.listdir(base_path)]
     file_paths = [val for val in full_paths if os.path.isfile(val)]
 
     mod_file_dict = {os.path.getmtime(path): path for path in file_paths}
-    most_recent_mod = \
-        mod_file_dict[sorted(mod_file_dict.keys(), reverse=True)[0]]
+    most_recent_mod = mod_file_dict[sorted(mod_file_dict.keys(), reverse=True)[0]]
 
     df = pd.read_csv(most_recent_mod)
     df.drop(df.head(1).index, inplace=True)
     print(f"Imported:\n\t\t{most_recent_mod}")
 
     return df
+
 
 # date_in = '2020-04-06'
 # test_str = '2020-04-06 ~ Combined Output ~ v3.csv'
@@ -173,14 +171,16 @@ def get_latest_file_for_date(dir_str: str, date_str: str) -> str:
 
     file_version_dict = {}
     for file in files:
-        date_str, _, version = os.path.splitext(file)[0].split(' ~ ')
-        version_num = int(version[::-len(version)])
+        date_str, _, version = os.path.splitext(file)[0].split(" ~ ")
+        version_num = int(version[:: -len(version)])
         file_version_dict[version_num] = file
 
     latest_file = file_version_dict[list(file_version_dict.keys())[::-1][0]]
     latest_path = os.path.join(dir_str, latest_file)
 
     return latest_path
+
+
 # outputs_dir = os.path.join(os.getcwd(), 'outputs_csv')
 # get_latest_file_for_date(outputs_dir, '2020-04-10')
 # get_latest_file_for_date(outputs_dir, '2020-04-06')
@@ -193,11 +193,13 @@ def get_distinct_dates_from_dir(dir_str: str) -> list:
     :param dir_str: Directory to traverse
     :return: Sorted list of distinct dates within the directory
     """
-    files = [file for file in os.listdir(dir_str) if re.findall('~', file)]
-    dates = {file.split('~')[0] for file in files}
+    files = [file for file in os.listdir(dir_str) if re.findall("~", file)]
+    dates = {file.split("~")[0] for file in files}
     dates = sorted(list(dates))
 
     return dates
+
+
 # get_distinct_dates_from_dir(outputs_dir)
 
 

@@ -7,7 +7,7 @@ import FileHelper as fh
 
 import logging
 
-logging.basicConfig(filename='test.log', level=logging.DEBUG)
+logging.basicConfig(filename="test.log", level=logging.DEBUG)
 
 
 # Steps to build for initial concatenation-------------------------------------
@@ -39,23 +39,27 @@ logging.basicConfig(filename='test.log', level=logging.DEBUG)
 def hash_from_cols(df):
     """Quick hashing function to return hash value from a DataFrame's columns.
     """
-    to_hash = '~'.join(df.columns.to_list())
+    to_hash = "~".join(df.columns.to_list())
 
-    hash_base = hashlib.md5(to_hash.encode('utf-8'))
+    hash_base = hashlib.md5(to_hash.encode("utf-8"))
     hashed = hash_base.hexdigest()
 
     return hashed
+
 
 # template_df = pd.read_excel()
 # valid_col_hash = hash_from_cols(template_df)
 # TODO: Change to get column_template_hash()
 
+
 def get_valid_hash(path_to_template=None):
 
     if not path_to_template:
-        path_to_template = \
-            os.path.join(os.getcwd().split('Energy-Scraping')[0],
-                         'Energy-Scraping', 'ETL_Output_Template.xlsx')
+        path_to_template = os.path.join(
+            os.getcwd().split("Energy-Scraping")[0],
+            "Energy-Scraping",
+            "ETL_Output_Template.xlsx",
+        )
     else:
         pass
 
@@ -63,20 +67,24 @@ def get_valid_hash(path_to_template=None):
     template_hash = hash_from_cols(df)
 
     return template_hash
+
+
 # get_valid_hash()
 
 
 def get_paths_to_base_etl_outputs(path_to_read=None):
 
     if not path_to_read:
-        path_to_read = os.path.join(os.getcwd(), 'etl_outputs_xlsx')
+        path_to_read = os.path.join(os.getcwd(), "etl_outputs_xlsx")
 
     else:
         pass
 
-    paths = [os.path.join(path_to_read, file)
-             for file in os.listdir(path_to_read)
-             if r'.xlsx' in file and 'combined' not in file.lower()]
+    paths = [
+        os.path.join(path_to_read, file)
+        for file in os.listdir(path_to_read)
+        if r".xlsx" in file and "combined" not in file.lower()
+    ]
 
     return paths
 
@@ -90,7 +98,7 @@ def get_dict_of_dfs(list_of_paths: list) -> dict:
     df_dict = {}
     for path in list_of_paths:
         print(path)
-        df_dict[os.path.split(path)[-1].split('.')[0]] = pd.read_excel(path)
+        df_dict[os.path.split(path)[-1].split(".")[0]] = pd.read_excel(path)
 
     return df_dict
 
@@ -110,8 +118,7 @@ def get_col_check_dtl(dict_of_dfs):
     return hash_dict
 
 
-def get_list_of_indicators(df,
-                           cols_to_check=['WTI', 'USGC-ULSD', 'USGC-HSFO']):
+def get_list_of_indicators(df, cols_to_check=["WTI", "USGC-ULSD", "USGC-HSFO"]):
     """
     Gets a list of 1s and 0s to indicate invalid/valid records of a DataFrame
     based on numeric values of specified columns
@@ -149,7 +156,7 @@ def truncate_df(df):
 
         if total_less_current == remaining_unusable:
             last_valid_index = i
-            df2 = df.iloc[0:(last_valid_index - 1)]
+            df2 = df.iloc[0 : (last_valid_index - 1)]
             break
 
         else:
@@ -167,15 +174,13 @@ def combine_valid_dfs(dict_of_dfs, hash_dict):
     :return:
     """
     dict_of_trunc_dfs = {k: truncate_df(v) for k, v in dict_of_dfs.items()}
-    combined_df = pd.concat([dict_of_trunc_dfs[k]
-                             for k, v in hash_dict.items() if v])
+    combined_df = pd.concat([dict_of_trunc_dfs[k] for k, v in hash_dict.items() if v])
 
     invalid_dfs = [k for k, v in hash_dict.items() if not v]
     try:
         invalid_dfs == []
     except Exception as e:
-        logging.exception(f"Could not load invalid DataFrames: {invalid_dfs}",
-                          e)
+        logging.exception(f"Could not load invalid DataFrames: {invalid_dfs}", e)
 
     combined_df.reset_index(drop=True, inplace=True)
 
@@ -193,30 +198,31 @@ def get_context_for_combined(df_data: pd.DataFrame) -> pd.DataFrame:
     :return: DataFrame to populate 'Context' tab and the formatted date for
     file name
     """
-    path_to_urls = os.path.join(os.getcwd(), r'urls.csv')
+    path_to_urls = os.path.join(os.getcwd(), r"urls.csv")
     context_df = pd.read_csv(path_to_urls)
 
-    list_of_dates = sorted(list(set(df_data['Collected Date'])))
+    list_of_dates = sorted(list(set(df_data["Collected Date"])))
     first_date, last_date = list_of_dates[0], list_of_dates[-1]
 
-    source_date_df = \
-        pd.DataFrame(data=['CME Group (Prior Settle)', first_date, last_date],
-                     index=['Source', 'First Date in File',
-                            'Last Date in File'], columns=['Href'])
+    source_date_df = pd.DataFrame(
+        data=["CME Group (Prior Settle)", first_date, last_date],
+        index=["Source", "First Date in File", "Last Date in File"],
+        columns=["Href"],
+    )
     source_date_df = source_date_df.reset_index()
-    source_date_df.rename(columns={'index': 'Name'}, inplace=True)
+    source_date_df.rename(columns={"index": "Name"}, inplace=True)
 
     context_df = pd.concat([source_date_df, context_df])
 
     return context_df
 
 
-def write_combined_dict(dfs,
-                        base_file_name=r"CME Group Futures Price - Prior "
-                                       r"Settle (COMBINED).xlsx",
-                        base_path=os.path.join(os.getcwd(),
-                                               'etl_outputs_xlsx')):
-    base_file_name, folder_ext = base_file_name.split('.')
+def write_combined_dict(
+    dfs,
+    base_file_name=r"CME Group Futures Price - Prior " r"Settle (COMBINED).xlsx",
+    base_path=os.path.join(os.getcwd(), "etl_outputs_xlsx"),
+):
+    base_file_name, folder_ext = base_file_name.split(".")
     initial_file_name = f"{base_file_name}.xlsx"
     initial_write_path = os.path.join(base_path, initial_file_name)
     print(initial_write_path)
@@ -226,23 +232,24 @@ def write_combined_dict(dfs,
 
     else:
         try:
-            except_file_nm = fh.get_file_name('etl_outputs_xlsx',
-                                              base_file_name)
+            except_file_nm = fh.get_file_name("etl_outputs_xlsx", base_file_name)
             except_write_path = os.path.join(base_path, except_file_nm)
             etl.fancy_excel_writer(except_write_path, dfs)
 
         except Exception as e:
-            logging.exception('Exception Occurred: Could not write to main '
-                              'path', e)
+            logging.exception("Exception Occurred: Could not write to main " "path", e)
 
     return None
+
+
 # TODO: Change fh.get_file_name() above such that it will continue to
 #  function if using a different directory structured
 
 
-def run_pipeline(paths_to_write_to: list,
-                 base_file_name: str =
-                 r'CME Group Futures Price - Prior Settle (COMBINED).xlsx'):
+def run_pipeline(
+    paths_to_write_to: list,
+    base_file_name: str = r"CME Group Futures Price - Prior Settle (COMBINED).xlsx",
+):
 
     paths = get_paths_to_base_etl_outputs()
 
@@ -252,8 +259,7 @@ def run_pipeline(paths_to_write_to: list,
 
     df_total = combine_valid_dfs(df_dict, hash_dict)
 
-    dfs = {'Combined_Vertical': df_total,
-           'Context': get_context_for_combined(df_total)}
+    dfs = {"Combined_Vertical": df_total, "Context": get_context_for_combined(df_total)}
 
     for path in paths_to_write_to:
         write_combined_dict(dfs, base_file_name, path)
@@ -261,8 +267,8 @@ def run_pipeline(paths_to_write_to: list,
     print(f"<Combine-All Pipeline Completed>")
 
 
-project_path = os.path.join(os.getcwd(), 'etl_outputs_xlsx')
-base_file_nm = r'CME Group Futures Price - Prior Settle (COMBINED).xlsx'
+project_path = os.path.join(os.getcwd(), "etl_outputs_xlsx")
+base_file_nm = r"CME Group Futures Price - Prior Settle (COMBINED).xlsx"
 # user_path = r'C:\Users\GEM7318\Dropbox\1 - CME Group Futures Files'
 # all_paths = [project_path, user_path]
 
